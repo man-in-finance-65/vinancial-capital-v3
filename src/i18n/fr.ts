@@ -3,7 +3,7 @@ import type { Dict } from './types';
 export const fr: Dict = {
   meta: {
     home: {
-      title: 'Vinancial Capital | Financement commercial, bien évalué',
+      title: "Vinancial Capital | Financement d'équipement, bien évalué",
       description: "Nous aidons les propriétaires d'entreprise à financer leur équipement. Nous parlons votre langue. Nous disons la vérité.",
     },
     calculator: {
@@ -24,7 +24,7 @@ export const fr: Dict = {
     menuClose: 'Fermer le menu',
   },
   footer: {
-    positioning: 'Financement commercial, bien évalué.',
+    positioning: "Financement d'équipement, bien évalué.",
     linksHeading: 'Liens',
     disclaimer:
       'Vinancial Capital est un courtier en financement. Toutes les demandes sont sujettes à la vérification et à l’approbation du prêteur. Ce site ne constitue pas une offre de crédit.',
@@ -34,11 +34,14 @@ export const fr: Dict = {
   },
   hero: {
     industries: {
-      construction: { eyebrow: 'CONSTRUCTION', h1Plain: 'Votre prochaine excavatrice.', h1Sky: 'Bien financée.' },
-      trucking: { eyebrow: 'CAMIONNAGE', h1Plain: 'Un camion de plus.', h1Sky: 'Plus de charges.' },
-      restaurant: { eyebrow: 'RESTAURANTS', h1Plain: 'Votre camion de nourriture.', h1Sky: 'Prêt à servir.' },
+      construction: { eyebrow: 'CONSTRUCTION', word: 'excavatrice' },
+      trucking: { eyebrow: 'CAMIONNAGE', word: 'unité' },
+      restaurant: { eyebrow: 'RESTAURANTS', word: 'chambre froide' },
     },
-    subtext: "Nous aidons les propriétaires d'entreprise à financer leur équipement. Nous parlons votre langue. Nous disons la vérité.",
+    headlineTemplate: 'Votre prochaine {word},',
+    headlineSky: 'bien financée.',
+    subtext:
+      "Nous aidons les entreprises latino-américaines au Canada et aux États-Unis à financer l'équipement qui les fait tourner. Nous parlons votre langue, nous vous accompagnons à chaque étape, et nous disons la vérité, même quand ce n'est pas ce que vous voulez entendre.",
     ctaApply: 'Commencer',
     ctaSeePayment: 'Voir mon paiement',
     pickerLabel: 'Choisissez votre secteur',
@@ -50,27 +53,51 @@ export const fr: Dict = {
     eyebrow: '01',
     heading: 'Comment ça marche',
     steps: [
-      { title: 'Parlez-nous de votre entreprise.', body: 'Cela prend environ 5 minutes. Cela ne vérifie pas votre crédit.' },
-      { title: 'Nous cherchons le bon prêteur.', body: 'Nous regardons vos informations et montrons votre entreprise à des prêteurs qui conviennent.' },
-      { title: 'Vous recevez votre équipement.', body: 'Si un prêteur dit oui, vous signez et vous recevez l’argent.' },
+      { title: 'Parlez-nous de votre entreprise.', body: "Cela prend environ 5 minutes et n'affecte pas votre cote de crédit." },
+      {
+        title: 'Nous cherchons le bon prêteur.',
+        body: 'Nous examinons votre situation et jumelons votre entreprise avec des prêteurs dont les programmes conviennent vraiment à votre secteur et à vos besoins.',
+      },
+      {
+        title: 'Vous recevez votre équipement.',
+        body: "Une fois qu'un prêteur vous approuve, vous signez les papiers et recevez l'argent. Il est ensuite temps de mettre votre équipement au travail.",
+      },
     ],
   },
   whyUs: {
     eyebrow: '02',
     heading: 'Pourquoi nous choisir',
     points: [
-      { title: 'Nous expliquons chaque refus.', body: 'Si un prêteur dit non, nous vous disons pourquoi. Ainsi, vous savez quoi corriger.' },
-      { title: 'Nous parlons espagnol, anglais et français.', body: "Vous pouvez parler d'argent dans la langue dans laquelle vous pensez." },
-      { title: 'Nous connaissons les machines.', body: "Notre fondateur a grandi entouré de camions, d'usines et de fermes." },
+      {
+        title: 'Nous expliquons chaque refus.',
+        body: 'Si un prêteur dit non, nous vous disons exactement pourquoi, pour que vous sachiez quoi corriger plutôt que de deviner.',
+      },
+      {
+        title: 'Nous parlons espagnol, anglais et français.',
+        body: "Parlez d'argent dans la langue qui vous semble la plus naturelle. Rien ne se perd dans la traduction, rien ne se cache dans les petits caractères.",
+      },
+      {
+        title: 'Nous connaissons les machines.',
+        body: "Notre fondateur a grandi entouré de camions, d'usines et de fermes, alors nous comprenons votre équipement aussi bien que nous comprenons le financement.",
+      },
     ],
   },
   industriesSection: {
     eyebrow: '03',
     heading: 'Les secteurs que nous connaissons',
-    construction: { title: 'Construction', body: 'Excavatrices, chargeuses compactes et camions à benne. Nous savons ce qu’ils coûtent et ce qu’ils rapportent.' },
-    trucking: { title: 'Camionnage', body: 'Tracteurs, remorques et camions-cubes. Nous savons comment les charges deviennent des paiements.' },
-    restaurant: { title: 'Restaurants', body: 'Camions de nourriture, fours et réfrigérateurs. Nous savons que les marges sont minces.' },
-    other: 'Un autre secteur? Nous pouvons quand même vous aider.',
+    construction: {
+      title: 'Construction',
+      body: 'Excavatrices, chargeuses compactes, camions à benne — nous comprenons ce que cet équipement coûte, ce qu’il rapporte, et comment il s’inscrit dans une entreprise de construction en croissance.',
+    },
+    trucking: {
+      title: 'Camionnage',
+      body: 'Tracteurs, remorques, camions-cubes — nous comprenons comment chaque charge sur la route devient un paiement sur lequel vous pouvez compter.',
+    },
+    restaurant: {
+      title: 'Restaurants',
+      body: "Chambres froides, fours et équipement de préparation — nous comprenons que dans la restauration, les marges sont minces et un équipement fiable n'est pas facultatif.",
+    },
+    other: 'Vous ne voyez pas votre secteur dans la liste? Nous travaillons avec plusieurs autres, et pouvons probablement vous aider aussi.',
     otherLink: 'Commencer',
   },
   calculatorPreview: {
@@ -205,8 +232,8 @@ export const fr: Dict = {
     back: 'Retour',
     next: 'Suivant',
     step1: {
-      title: 'Ceci n’est pas une demande officielle.',
-      body: "Cela ne vérifie pas votre crédit. Cela n'affecte pas votre cote de crédit. Vous nous parlez de votre entreprise. Nous la lisons. Ensuite, nous vous écrivons par courriel pour vous dire si nous pouvons vous aider.",
+      title: "Ceci n'est pas une demande officielle, seulement une demande de renseignements.",
+      body: "Cela n'affecte pas votre cote de crédit. Parlez-nous un peu de votre entreprise et de ce que vous voulez financer. Nous l'examinons et vous écrivons par courriel pour vous dire comment nous pouvons vous aider.",
       timeNote: 'Cela prend environ 5 minutes.',
       cta: 'Commençons',
     },

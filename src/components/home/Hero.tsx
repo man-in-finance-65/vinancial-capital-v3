@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react';
-import { useLang } from '../../i18n';
+import { useLang, interpolate } from '../../i18n';
 import { useReducedMotion } from '../../hooks/useReducedMotion';
 import { INDUSTRY_ORDER, AUTO_CYCLE_MS, MACHINES, type IndustryKey } from '../../config/machines';
 import { Button } from '../ui/Button';
@@ -71,7 +71,7 @@ export function Hero({ onApply }: { onApply: (industry: IndustryKey) => void }) 
       <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center px-6 pt-32 text-center md:pt-40">
         <span className="font-sans text-xs font-semibold uppercase tracking-[0.34em] text-sky">{copy.eyebrow}</span>
         <h1 className="mt-4 font-slab text-4xl font-semibold leading-[1.08] text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-          {copy.h1Plain} <span className="text-sky">{copy.h1Sky}</span>
+          {interpolate(dict.hero.headlineTemplate, { word: copy.word })} <span className="text-sky">{dict.hero.headlineSky}</span>
         </h1>
         <p className="mt-5 max-w-xl text-base leading-relaxed text-muted md:text-lg">{dict.hero.subtext}</p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

@@ -146,34 +146,37 @@ function SemiTruckBody({ isTouch, reducedMotion }: InteractionProps) {
   );
 }
 
-function FoodTruckBody({ isTouch, reducedMotion }: InteractionProps) {
-  const windowRef = useRef<THREE.Group>(null);
-  const windowState = usePartState(isTouch);
+function WalkInFridgeBody({ isTouch, reducedMotion }: InteractionProps) {
+  const doorRef = useRef<THREE.Group>(null);
+  const doorState = usePartState(isTouch);
 
   useFrame((_, delta) => {
-    if (windowRef.current) stepHinge(windowRef.current, 'x', windowState.state.current, -1.1, delta, reducedMotion);
+    if (doorRef.current) stepHinge(doorRef.current, 'y', doorState.state.current, 1.3, delta, reducedMotion);
   });
 
   return (
     <>
+      {/* body */}
       <mesh position={[0, -0.1, 0]}>
-        <boxGeometry args={[2.0, 1.3, 1.1]} />
-        <meshStandardMaterial color={COLOR_BODY} />
+        <boxGeometry args={[1.6, 1.8, 1.4]} />
+        <meshStandardMaterial color={COLOR_BODY_DARK} />
       </mesh>
-      <mesh position={[-0.55, 0.15, 0.56]}>
-        <boxGeometry args={[0.7, 0.4, 0.04]} />
-        <meshStandardMaterial color={COLOR_ACCENT} emissive={COLOR_ACCENT} emissiveIntensity={0.15} />
+      {/* compressor unit on top */}
+      <mesh position={[0, 0.95, 0]}>
+        <boxGeometry args={[1.0, 0.35, 0.9]} />
+        <meshStandardMaterial color={COLOR_TRIM} />
       </mesh>
-      <group ref={windowRef} position={[0.9, 0.5, 0.56]} {...windowState.handlers}>
-        <mesh position={[0, -0.35, 0.03]}>
-          <boxGeometry args={[0.7, 0.7, 0.05]} />
-          <meshStandardMaterial color={COLOR_ACCENT} />
+      {/* hinged door, swings open from its left edge */}
+      <group ref={doorRef} position={[-0.75, -0.1, 0.71]} {...doorState.handlers}>
+        <mesh position={[0.68, 0, 0.03]}>
+          <boxGeometry args={[1.36, 1.6, 0.06]} />
+          <meshStandardMaterial color={COLOR_BODY} />
+        </mesh>
+        <mesh position={[1.15, 0.1, 0.08]}>
+          <boxGeometry args={[0.06, 0.55, 0.06]} />
+          <meshStandardMaterial color={COLOR_ACCENT} emissive={COLOR_ACCENT} emissiveIntensity={0.15} />
         </mesh>
       </group>
-      <Wheel x={-0.7} z={0.62} isTouch={isTouch} reducedMotion={reducedMotion} />
-      <Wheel x={-0.7} z={-0.62} isTouch={isTouch} reducedMotion={reducedMotion} />
-      <Wheel x={0.7} z={0.62} isTouch={isTouch} reducedMotion={reducedMotion} />
-      <Wheel x={0.7} z={-0.62} isTouch={isTouch} reducedMotion={reducedMotion} />
     </>
   );
 }
@@ -197,7 +200,7 @@ export function PlaceholderMachine({
     <group ref={groupRef}>
       {industry === 'construction' && <ExcavatorBody isTouch={isTouch} reducedMotion={reducedMotion} />}
       {industry === 'trucking' && <SemiTruckBody isTouch={isTouch} reducedMotion={reducedMotion} />}
-      {industry === 'restaurant' && <FoodTruckBody isTouch={isTouch} reducedMotion={reducedMotion} />}
+      {industry === 'restaurant' && <WalkInFridgeBody isTouch={isTouch} reducedMotion={reducedMotion} />}
     </group>
   );
 }

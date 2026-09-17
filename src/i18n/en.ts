@@ -3,7 +3,7 @@ import type { Dict } from './types';
 export const en: Dict = {
   meta: {
     home: {
-      title: 'Vinancial Capital | Commercial financing, properly assessed',
+      title: 'Vinancial Capital | Equipment financing, properly assessed',
       description: 'We help business owners finance equipment. We speak your language. We tell you the truth.',
     },
     calculator: {
@@ -24,7 +24,7 @@ export const en: Dict = {
     menuClose: 'Close menu',
   },
   footer: {
-    positioning: 'Commercial financing, properly assessed.',
+    positioning: 'Equipment financing, properly assessed.',
     linksHeading: 'Links',
     disclaimer:
       'Vinancial Capital is a financing broker. All applications are subject to lender verification and approval. This site does not constitute an offer of credit.',
@@ -34,11 +34,14 @@ export const en: Dict = {
   },
   hero: {
     industries: {
-      construction: { eyebrow: 'CONSTRUCTION', h1Plain: 'Your next excavator.', h1Sky: 'Financed right.' },
-      trucking: { eyebrow: 'TRUCKING', h1Plain: 'One more truck.', h1Sky: 'More loads.' },
-      restaurant: { eyebrow: 'RESTAURANTS', h1Plain: 'Your food truck.', h1Sky: 'Open for business.' },
+      construction: { eyebrow: 'CONSTRUCTION', word: 'excavator' },
+      trucking: { eyebrow: 'TRUCKING', word: 'truck' },
+      restaurant: { eyebrow: 'RESTAURANTS', word: 'walk-in fridge' },
     },
-    subtext: 'We help business owners get equipment financing. We speak your language. We tell you the truth.',
+    headlineTemplate: 'Your next {word},',
+    headlineSky: 'Financed right.',
+    subtext:
+      "We help Latino-owned businesses across Canada and the United States finance the equipment that keeps them running. We speak your language, walk you through every step, and tell you the truth — even when it isn't what you want to hear.",
     ctaApply: 'Get started',
     ctaSeePayment: 'See my payment',
     pickerLabel: 'Choose your industry',
@@ -50,27 +53,51 @@ export const en: Dict = {
     eyebrow: '01',
     heading: 'How it works',
     steps: [
-      { title: 'Tell us about your business.', body: 'It takes about 5 minutes. It does not check your credit.' },
-      { title: 'We look for the right lender.', body: 'We review your info and show your business to lenders that fit.' },
-      { title: 'You get your equipment.', body: 'If a lender says yes, you sign and get funded.' },
+      { title: 'Tell us about your business.', body: "It takes about 5 minutes, and it won't affect your credit score." },
+      {
+        title: 'We look for the right lender.',
+        body: 'We review your situation and match your business with lenders whose programs actually fit your industry and needs.',
+      },
+      {
+        title: 'You get your equipment.',
+        body: "Once a lender approves you, you sign the paperwork and get funded — then it's time to put your equipment to work.",
+      },
     ],
   },
   whyUs: {
     eyebrow: '02',
     heading: 'Why us',
     points: [
-      { title: 'We explain every "no."', body: 'If a lender says no, we tell you why. Then you know what to fix.' },
-      { title: 'We speak Spanish, English and French.', body: 'You can talk about money in the language you think in.' },
-      { title: 'We know machines.', body: 'Our founder grew up around trucks, factories and farms.' },
+      {
+        title: 'We explain every "no."',
+        body: 'If a lender turns you down, we tell you exactly why — so you know what to fix instead of guessing.',
+      },
+      {
+        title: 'We speak Spanish, English and French.',
+        body: 'Talk about money in whichever language feels most natural to you. Nothing gets lost in translation, and nothing gets buried in fine print.',
+      },
+      {
+        title: 'We know machines.',
+        body: 'Our founder grew up around trucks, factories and farms, so we understand your equipment as well as we understand financing.',
+      },
     ],
   },
   industriesSection: {
     eyebrow: '03',
     heading: 'Industries we know',
-    construction: { title: 'Construction', body: 'Excavators, skid steers and dump trucks. We know what they cost and what they earn.' },
-    trucking: { title: 'Trucking', body: 'Tractors, trailers and box trucks. We know how loads turn into payments.' },
-    restaurant: { title: 'Restaurants', body: 'Food trucks, ovens and fridges. We know the margins are thin.' },
-    other: 'Other industry? We can still help.',
+    construction: {
+      title: 'Construction',
+      body: 'Excavators, skid steers, dump trucks — we understand what this equipment costs, what it earns, and how it fits into a growing contracting business.',
+    },
+    trucking: {
+      title: 'Trucking',
+      body: 'Tractors, trailers, box trucks — we understand how every load on the road turns into a payment you can count on.',
+    },
+    restaurant: {
+      title: 'Restaurants',
+      body: "Walk-in fridges, ovens and prep equipment — we understand that in food service, margins are thin and reliable equipment isn't optional.",
+    },
+    other: "Don't see your industry listed? We work with plenty of others too, and can likely still help.",
     otherLink: 'Get started',
   },
   calculatorPreview: {
@@ -205,8 +232,8 @@ export const en: Dict = {
     back: 'Back',
     next: 'Next',
     step1: {
-      title: 'This is not an application.',
-      body: 'It does not check your credit. It does not affect your credit score. You tell us about your business. We read it. Then we email you to say if we can help.',
+      title: 'This is not a formal application, just an inquiry.',
+      body: "It won't affect your credit score. Tell us a little about your business and what you're looking to finance. We'll take a look and follow up by email to let you know how we can help.",
       timeNote: 'It takes about 5 minutes.',
       cta: "Let's start",
     },

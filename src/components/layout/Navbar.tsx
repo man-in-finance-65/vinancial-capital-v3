@@ -30,6 +30,9 @@ export function Navbar({ onApply }: { onApply: () => void }) {
             <Wordmark />
           </Link>
           <div className="hidden items-center gap-8 md:flex">
+            <Link to="/calculator" className="text-sm text-foreground/80 transition-colors hover:text-foreground">
+              {dict.nav.calculator}
+            </Link>
             <Link to="/about" className="text-sm text-foreground/80 transition-colors hover:text-foreground">
               {dict.nav.about}
             </Link>

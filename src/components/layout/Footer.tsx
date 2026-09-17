@@ -1,4 +1,4 @@
-import { Mail, Phone, MessageCircle, MapPin } from 'lucide-react';
+import { Mail, Phone, MessageCircle, MapPin, Linkedin } from 'lucide-react';
 import { Link } from '../../router/Router';
 import { useLang, interpolate } from '../../i18n';
 import { SITE } from '../../config/site';
@@ -35,6 +35,14 @@ export function Footer({ onApply }: { onApply: () => void }) {
             className="flex items-center gap-2 text-muted transition-colors hover:text-foreground"
           >
             <MessageCircle size={16} className="text-sky" aria-hidden /> WhatsApp
+          </a>
+          <a
+            href={SITE.linkedInUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-muted transition-colors hover:text-foreground"
+          >
+            <Linkedin size={16} className="text-sky" aria-hidden /> LinkedIn
           </a>
         </div>
 

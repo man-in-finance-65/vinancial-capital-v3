@@ -26,10 +26,12 @@ export type Dict = {
   };
   hero: {
     industries: {
-      construction: { eyebrow: string; h1Plain: string; h1Sky: string };
-      trucking: { eyebrow: string; h1Plain: string; h1Sky: string };
-      restaurant: { eyebrow: string; h1Plain: string; h1Sky: string };
+      construction: { eyebrow: string; word: string };
+      trucking: { eyebrow: string; word: string };
+      restaurant: { eyebrow: string; word: string };
     };
+    headlineTemplate: string;
+    headlineSky: string;
     subtext: string;
     ctaApply: string;
     ctaSeePayment: string;

@@ -49,7 +49,7 @@ The hero shows one of three machines (excavator, semi-truck, food truck) dependi
 1. **Add the files.** Drop the `.glb` files here:
    - `public/models/excavator.glb`
    - `public/models/semi-truck.glb`
-   - `public/models/food-truck.glb`
+   - `public/models/walk-in-fridge.glb`
 
    Also add a static poster image per industry (shown while the model loads, and permanently if WebGL is unavailable or the visitor has "reduce motion" turned on):
    - `public/models/construction.webp`

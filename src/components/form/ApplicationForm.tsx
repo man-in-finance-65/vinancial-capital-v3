@@ -82,7 +82,7 @@ export function ApplicationForm({
         <div className="flex items-center justify-between border-b border-border px-6 py-4 md:px-10">
           {form.screen === 'form' && !isFirstStep ? (
             <div className="flex-1 pr-6">
-              <div className="h-1 w-full max-w-xs overflow-hidden rounded-full bg-border">
+              <div className="h-1 w-full overflow-hidden rounded-full bg-border">
                 <div
                   className="h-full bg-sky transition-all duration-300"
                   style={{ width: `${(form.step / (form.totalSteps - 1)) * 100}%` }}

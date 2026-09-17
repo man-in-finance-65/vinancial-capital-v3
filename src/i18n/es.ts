@@ -3,7 +3,7 @@ import type { Dict } from './types';
 export const es: Dict = {
   meta: {
     home: {
-      title: 'Vinancial Capital | Financiamiento comercial, evaluado correctamente',
+      title: 'Vinancial Capital | Financiamiento de equipo, evaluado correctamente',
       description: 'Ayudamos a dueños de negocio a financiar equipo. Hablamos tu idioma. Te decimos la verdad.',
     },
     calculator: {
@@ -24,7 +24,7 @@ export const es: Dict = {
     menuClose: 'Cerrar menú',
   },
   footer: {
-    positioning: 'Financiamiento comercial, evaluado correctamente.',
+    positioning: 'Financiamiento de equipo, evaluado correctamente.',
     linksHeading: 'Enlaces',
     disclaimer:
       'Vinancial Capital es un intermediario de financiamiento. Todas las solicitudes están sujetas a verificación y aprobación del prestamista. Este sitio no constituye una oferta de crédito.',
@@ -34,11 +34,14 @@ export const es: Dict = {
   },
   hero: {
     industries: {
-      construction: { eyebrow: 'CONSTRUCCIÓN', h1Plain: 'Tu próxima excavadora.', h1Sky: 'Financiada bien.' },
-      trucking: { eyebrow: 'TRANSPORTE', h1Plain: 'Un camión más.', h1Sky: 'Más cargas.' },
-      restaurant: { eyebrow: 'RESTAURANTES', h1Plain: 'Tu camión de comida.', h1Sky: 'Listo para vender.' },
+      construction: { eyebrow: 'CONSTRUCCIÓN', word: 'excavadora' },
+      trucking: { eyebrow: 'TRANSPORTE', word: 'unidad' },
+      restaurant: { eyebrow: 'RESTAURANTES', word: 'cámara de refrigeración' },
     },
-    subtext: 'Ayudamos a dueños de negocio a financiar equipo. Hablamos tu idioma. Te decimos la verdad.',
+    headlineTemplate: 'Tu próxima {word},',
+    headlineSky: 'financiada bien.',
+    subtext:
+      'Ayudamos a negocios de dueños latinos en Canadá y Estados Unidos a financiar el equipo que los mantiene funcionando. Hablamos tu idioma, te acompañamos en cada paso, y te decimos la verdad, incluso cuando no es lo que quieres escuchar.',
     ctaApply: 'Empezar',
     ctaSeePayment: 'Ver mi pago',
     pickerLabel: 'Elige tu industria',
@@ -50,27 +53,51 @@ export const es: Dict = {
     eyebrow: '01',
     heading: 'Cómo funciona',
     steps: [
-      { title: 'Cuéntanos de tu negocio.', body: 'Toma unos 5 minutos. No revisa tu crédito.' },
-      { title: 'Buscamos el prestamista correcto.', body: 'Revisamos tu información y mostramos tu negocio a prestamistas que encajan.' },
-      { title: 'Recibes tu equipo.', body: 'Si un prestamista dice que sí, firmas y te dan el dinero.' },
+      { title: 'Cuéntanos de tu negocio.', body: 'Toma unos 5 minutos y no afecta tu puntaje de crédito.' },
+      {
+        title: 'Buscamos el prestamista correcto.',
+        body: 'Revisamos tu situación y conectamos tu negocio con prestamistas cuyos programas realmente se ajustan a tu industria y tus necesidades.',
+      },
+      {
+        title: 'Recibes tu equipo.',
+        body: 'Cuando un prestamista te aprueba, firmas los papeles y te dan el dinero. Después, es momento de poner tu equipo a trabajar.',
+      },
     ],
   },
   whyUs: {
     eyebrow: '02',
     heading: 'Por qué nosotros',
     points: [
-      { title: 'Te explicamos cada "no".', body: 'Si un prestamista dice que no, te decimos por qué. Así sabes qué arreglar.' },
-      { title: 'Hablamos español, inglés y francés.', body: 'Puedes hablar de dinero en el idioma en que piensas.' },
-      { title: 'Conocemos las máquinas.', body: 'Nuestro fundador creció entre camiones, fábricas y granjas.' },
+      {
+        title: 'Te explicamos cada "no".',
+        body: 'Si un prestamista te dice que no, te decimos exactamente por qué, para que sepas qué corregir en lugar de adivinar.',
+      },
+      {
+        title: 'Hablamos español, inglés y francés.',
+        body: 'Habla de dinero en el idioma que te resulte más natural. Nada se pierde en la traducción, ni se esconde en la letra pequeña.',
+      },
+      {
+        title: 'Conocemos las máquinas.',
+        body: 'Nuestro fundador creció entre camiones, fábricas y granjas, así que entendemos tu equipo tan bien como entendemos el financiamiento.',
+      },
     ],
   },
   industriesSection: {
     eyebrow: '03',
     heading: 'Industrias que conocemos',
-    construction: { title: 'Construcción', body: 'Excavadoras, minicargadoras y camiones de volteo. Sabemos cuánto cuestan y cuánto ganan.' },
-    trucking: { title: 'Transporte', body: 'Tractocamiones, remolques y camiones de caja. Sabemos cómo las cargas se convierten en pagos.' },
-    restaurant: { title: 'Restaurantes', body: 'Camiones de comida, hornos y refrigeradores. Sabemos que el margen es corto.' },
-    other: '¿Otra industria? Aún podemos ayudarte.',
+    construction: {
+      title: 'Construcción',
+      body: 'Excavadoras, minicargadoras, camiones de volteo: entendemos cuánto cuesta este equipo, cuánto genera, y cómo encaja en un negocio de construcción en crecimiento.',
+    },
+    trucking: {
+      title: 'Transporte',
+      body: 'Tractocamiones, remolques, camiones de caja: entendemos cómo cada carga en la carretera se convierte en un pago con el que puedes contar.',
+    },
+    restaurant: {
+      title: 'Restaurantes',
+      body: 'Cámaras de refrigeración, hornos y equipo de preparación: entendemos que en el servicio de alimentos el margen es corto y el equipo confiable no es opcional.',
+    },
+    other: '¿No ves tu industria en la lista? Trabajamos con muchas más, y probablemente también podamos ayudarte.',
     otherLink: 'Empezar',
   },
   calculatorPreview: {
@@ -205,8 +232,8 @@ export const es: Dict = {
     back: 'Atrás',
     next: 'Siguiente',
     step1: {
-      title: 'Esto no es una solicitud.',
-      body: 'No revisa tu crédito. No afecta tu puntaje de crédito. Nos cuentas de tu negocio. Lo leemos. Luego te escribimos por correo para decirte si podemos ayudarte.',
+      title: 'Esto no es una solicitud formal, solo una consulta.',
+      body: 'No afecta tu puntaje de crédito. Cuéntanos un poco sobre tu negocio y lo que quieres financiar. Lo revisamos y te escribimos por correo para decirte cómo podemos ayudarte.',
       timeNote: 'Toma unos 5 minutos.',
       cta: 'Empecemos',
     },

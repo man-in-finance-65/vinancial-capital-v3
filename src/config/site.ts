@@ -10,6 +10,7 @@ export const SITE = {
   telUrl: 'tel:+14374296575',
   address: '70 Temperance St., Toronto, Canada',
   locationsLine: 'Toronto, ON · Miami, FL',
+  linkedInUrl: 'https://www.linkedin.com/company/vinancial-capital/',
   founder: {
     name: 'Vicente E. Correa E.',
     title: 'Private Capital Broker',

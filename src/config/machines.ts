@@ -52,17 +52,11 @@ export const MACHINES: Record<IndustryKey, MachineConfig> = {
   },
   restaurant: {
     key: 'restaurant',
-    modelPath: '/models/food-truck.glb',
+    modelPath: '/models/walk-in-fridge.glb',
     posterPath: '/models/restaurant.webp',
     cameraPosition: [4, 1.8, 5],
     scale: 1,
-    parts: [
-      { nodeName: 'TODO_wheel_front_left', motion: { kind: 'spin', axis: 'x', speed: 2 } },
-      { nodeName: 'TODO_wheel_front_right', motion: { kind: 'spin', axis: 'x', speed: 2 } },
-      { nodeName: 'TODO_wheel_rear_left', motion: { kind: 'spin', axis: 'x', speed: 2 } },
-      { nodeName: 'TODO_wheel_rear_right', motion: { kind: 'spin', axis: 'x', speed: 2 } },
-      { nodeName: 'TODO_service_window', motion: { kind: 'hinge', axis: 'z', maxAngle: 1.1 } },
-    ],
+    parts: [{ nodeName: 'TODO_door', motion: { kind: 'hinge', axis: 'y', maxAngle: 1.3 } }],
   },
 };
 
