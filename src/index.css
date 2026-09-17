@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vc-ink: #071121;
+  --vc-surface: #0d182b;
+  --vc-panel: #0b1628;
+  --vc-secondary: #152337;
+  --vc-glow: #102037;
+  --vc-border: #23344d;
+  --vc-foreground: #d1dae5;
+  --vc-muted: #8b9bb1;
+  --vc-sky: #86d2f3;
+  --vc-destructive: #df3a3a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--vc-ink);
+  color: var(--vc-foreground);
+  font-family: 'Archivo', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-slab {
+  font-family: 'Zilla Slab', Georgia, serif;
+}
+
+::selection {
+  background: var(--vc-sky);
+  color: var(--vc-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--vc-sky);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.bg-brand-radial {
+  background: radial-gradient(ellipse 70% 55% at 50% 38%, var(--vc-glow) 0%, var(--vc-ink) 70%);
+}
+
+.vc-watermark {
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0.04;
+}
+
+.vc-watermark span {
+  font-family: 'Zilla Slab', Georgia, serif;
+  font-weight: 700;
+  font-size: min(60vw, 640px);
+  letter-spacing: 0.02em;
+  color: var(--vc-foreground);
+  line-height: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-rise,
+  .vc-reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+.vc-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.vc-reveal.vc-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vc-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.vc-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--vc-border);
+  border-radius: 4px;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--vc-border);
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--vc-sky);
+  cursor: pointer;
+  border: 3px solid var(--vc-ink);
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--vc-sky);
+  cursor: pointer;
+  border: 3px solid var(--vc-ink);
+}
