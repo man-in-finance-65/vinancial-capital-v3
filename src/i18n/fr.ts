@@ -322,4 +322,41 @@ export const fr: Dict = {
     disclaimer:
       'Vinancial Capital est un courtier en financement. Toutes les demandes sont sujettes à la vérification et à l’approbation du prêteur. Ce site ne constitue pas une offre de crédit.',
   },
+  privacy: {
+    metaTitle: 'Politique de confidentialité | Vinancial Capital',
+    metaDescription: 'Comment Vinancial Capital recueille, utilise et protège vos informations.',
+    heading: 'Politique de confidentialité',
+    intro:
+      'Cette page explique quelles informations nous recueillons quand vous utilisez ce site ou nous envoyez le formulaire, pourquoi nous les recueillons, et avec qui nous les partageons.',
+    sections: [
+      {
+        heading: 'Ce que nous recueillons',
+        body: 'Quand vous remplissez notre formulaire, nous recueillons votre nom, le nom de votre entreprise, vos coordonnées, et des informations sur votre entreprise et ce que vous voulez financer. Cela peut inclure votre fourchette de cote de crédit et l’historique financier et légal de votre entreprise.',
+      },
+      {
+        heading: 'Pourquoi nous les recueillons',
+        body: 'Nous utilisons ces informations pour chercher des options de financement pour votre entreprise et pour vous mettre en contact avec des prêteurs qui pourraient vous aider.',
+      },
+      {
+        heading: 'Avec qui nous les partageons',
+        body: 'Nous partageons vos informations seulement avec les prêteurs avec qui vous pourriez travailler, pour qu’ils examinent votre demande. Nous ne vendons vos informations à personne.',
+      },
+      {
+        heading: 'Comment nous les protégeons',
+        body: 'Nous prenons des mesures raisonnables pour garder vos informations en sécurité. Aucun système en ligne n’est parfaitement sécurisé, mais nous travaillons pour protéger ce que vous partagez avec nous.',
+      },
+      {
+        heading: 'Vos choix',
+        body: 'Vous pouvez nous demander quelles informations nous avons sur vous, nous demander de les corriger, ou nous demander de les supprimer. Contactez-nous avec les coordonnées ci-dessous.',
+      },
+      {
+        heading: 'Changements à cette politique',
+        body: 'Nous pouvons mettre à jour cette politique de temps en temps. Les changements apparaîtront sur cette page.',
+      },
+      {
+        heading: 'Nous contacter',
+        body: 'Des questions sur cette politique? Écrivez-nous à {email}.',
+      },
+    ],
+  },
 };

@@ -7,6 +7,7 @@ import { ApplicationForm } from './components/form/ApplicationForm';
 import { Home } from './pages/Home';
 import { CalculatorPage } from './pages/Calculator';
 import { About } from './pages/About';
+import { Privacy } from './pages/Privacy';
 
 function Shell() {
   const { path } = useRouter();
@@ -21,6 +22,7 @@ function Shell() {
   let page = <Home openForm={openForm} />;
   if (path === '/calculator') page = <CalculatorPage openForm={openForm} />;
   else if (path === '/about') page = <About openForm={openForm} />;
+  else if (path === '/privacy') page = <Privacy />;
 
   return (
     <div className="min-h-screen bg-ink">

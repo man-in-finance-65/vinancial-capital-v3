@@ -93,7 +93,12 @@ export function Step6Contact({
         )}
         <p id="consentimiento-notice" className="mt-3 text-xs leading-relaxed text-muted">
           {s.dataNotice}{' '}
-          <a href={PRIVACY_URL} className="underline decoration-border underline-offset-2 hover:text-foreground">
+          <a
+            href={PRIVACY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-border underline-offset-2 hover:text-foreground"
+          >
             {s.privacyLinkText}
           </a>
         </p>

@@ -318,4 +318,41 @@ export const es: Dict = {
     disclaimer:
       'Vinancial Capital es un intermediario de financiamiento. Todas las solicitudes están sujetas a verificación y aprobación del prestamista. Este sitio no constituye una oferta de crédito.',
   },
+  privacy: {
+    metaTitle: 'Política de privacidad | Vinancial Capital',
+    metaDescription: 'Cómo Vinancial Capital recolecta, usa y protege tu información.',
+    heading: 'Política de privacidad',
+    intro:
+      'Esta página explica qué información recolectamos cuando usas este sitio o nos envías el formulario, por qué la recolectamos, y con quién la compartimos.',
+    sections: [
+      {
+        heading: 'Qué recolectamos',
+        body: 'Cuando llenas nuestro formulario, recolectamos tu nombre, el nombre de tu negocio, tus datos de contacto, e información sobre tu negocio y lo que quieres financiar. Esto puede incluir tu rango de puntaje de crédito y el historial financiero y legal de tu negocio.',
+      },
+      {
+        heading: 'Por qué la recolectamos',
+        body: 'Usamos esta información para buscar opciones de financiamiento para tu negocio y para ponerte en contacto con prestamistas que puedan ayudarte.',
+      },
+      {
+        heading: 'Con quién la compartimos',
+        body: 'Solo compartimos tu información con los prestamistas con los que puedas trabajar, para que revisen tu solicitud. No vendemos tu información a nadie.',
+      },
+      {
+        heading: 'Cómo la protegemos',
+        body: 'Tomamos medidas razonables para mantener tu información segura. Ningún sistema en línea es perfectamente seguro, pero trabajamos para proteger lo que compartes con nosotros.',
+      },
+      {
+        heading: 'Tus opciones',
+        body: 'Puedes preguntarnos qué información tenemos sobre ti, pedirnos que la corrijamos, o pedirnos que la borremos. Contáctanos con los datos de abajo.',
+      },
+      {
+        heading: 'Cambios a esta política',
+        body: 'Podemos actualizar esta política de vez en cuando. Los cambios aparecerán en esta página.',
+      },
+      {
+        heading: 'Contáctanos',
+        body: '¿Tienes preguntas sobre esta política? Escríbenos a {email}.',
+      },
+    ],
+  },
 };

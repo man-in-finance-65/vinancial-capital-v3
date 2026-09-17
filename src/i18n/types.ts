@@ -247,4 +247,19 @@ export type Dict = {
     apply: string;
     disclaimer: string;
   };
+  privacy: {
+    metaTitle: string;
+    metaDescription: string;
+    heading: string;
+    intro: string;
+    sections: [
+      { heading: string; body: string },
+      { heading: string; body: string },
+      { heading: string; body: string },
+      { heading: string; body: string },
+      { heading: string; body: string },
+      { heading: string; body: string },
+      { heading: string; body: string },
+    ];
+  };
 };

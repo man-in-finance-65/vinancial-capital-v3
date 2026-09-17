@@ -318,4 +318,41 @@ export const en: Dict = {
     disclaimer:
       'Vinancial Capital is a financing broker. All applications are subject to lender verification and approval. This site does not constitute an offer of credit.',
   },
+  privacy: {
+    metaTitle: 'Privacy Policy | Vinancial Capital',
+    metaDescription: 'How Vinancial Capital collects, uses and protects your information.',
+    heading: 'Privacy Policy',
+    intro:
+      'This page explains what information we collect when you use this site or send us the form, why we collect it, and who we share it with.',
+    sections: [
+      {
+        heading: 'What we collect',
+        body: 'When you fill out our form, we collect your name, business name, contact details, and information about your business and what you want to finance. This can include your credit score range and your business’s financial and legal history.',
+      },
+      {
+        heading: 'Why we collect it',
+        body: 'We use this information to look for financing options for your business and to match you with lenders who may be able to help.',
+      },
+      {
+        heading: 'Who we share it with',
+        body: 'We share your information only with lenders you may work with, so they can review your request. We do not sell your information to anyone.',
+      },
+      {
+        heading: 'How we protect it',
+        body: 'We take reasonable steps to keep your information safe. No online system is perfectly secure, but we work to protect what you share with us.',
+      },
+      {
+        heading: 'Your choices',
+        body: 'You can ask us what information we have about you, ask us to correct it, or ask us to delete it. Contact us using the details below.',
+      },
+      {
+        heading: 'Changes to this policy',
+        body: 'We may update this policy from time to time. Any changes will appear on this page.',
+      },
+      {
+        heading: 'Contact us',
+        body: 'Questions about this policy? Email us at {email}.',
+      },
+    ],
+  },
 };

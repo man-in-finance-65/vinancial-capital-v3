@@ -66,7 +66,12 @@ export function Footer({ onApply }: { onApply: () => void }) {
           , {dict.footer.founderTitle}
         </p>
         <p className="mt-6 max-w-3xl text-xs leading-relaxed text-muted">{dict.footer.disclaimer}</p>
-        <p className="mt-4 text-xs text-muted">{interpolate(dict.footer.rights, { year })}</p>
+        <p className="mt-4 text-xs text-muted">
+          {interpolate(dict.footer.rights, { year })} ·{' '}
+          <Link to="/privacy" className="underline decoration-border underline-offset-2 hover:text-foreground">
+            {dict.form.step6.privacyLinkText}
+          </Link>
+        </p>
       </div>
     </footer>
   );

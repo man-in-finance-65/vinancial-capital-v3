@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { ContactShadows } from '@react-three/drei';
 import { MACHINES, type IndustryKey } from '../../config/machines';
 import { MachineModel } from './MachineModel';
+import { PlaceholderMachine } from './PlaceholderMachine';
 import { ThreeErrorBoundary } from './ErrorBoundary';
 
 function Poster({ industry }: { industry: IndustryKey }) {
@@ -64,21 +65,31 @@ export function HeroScene({ industry, reducedMotion }: { industry: IndustryKey; 
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
     >
-      <ThreeErrorBoundary fallback={<Poster industry={industry} />}>
-        <Suspense fallback={<Poster industry={industry} />}>
-          <Canvas
-            camera={{ position: config.cameraPosition, fov: 40 }}
-            dpr={[1, 1.5]}
-            gl={{ antialias: true, alpha: true }}
+      <Canvas
+        camera={{ position: config.cameraPosition, fov: 40 }}
+        dpr={[1, 1.5]}
+        gl={{ antialias: true, alpha: true }}
+      >
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[4, 6, 4]} intensity={1.1} />
+        <directionalLight position={[-4, 2, -3]} intensity={0.35} color="#86D2F3" />
+        {/* Real .glb models load here. Until they exist in public/models, this falls back
+            to a stylized procedural placeholder — same interactivity, no external files. */}
+        <ThreeErrorBoundary
+          fallback={
+            <PlaceholderMachine industry={industry} pointerRef={pointer} isTouch={isTouch} reducedMotion={reducedMotion} dragRotationRef={dragRotationRef} />
+          }
+        >
+          <Suspense
+            fallback={
+              <PlaceholderMachine industry={industry} pointerRef={pointer} isTouch={isTouch} reducedMotion={reducedMotion} dragRotationRef={dragRotationRef} />
+            }
           >
-            <ambientLight intensity={0.5} />
-            <directionalLight position={[4, 6, 4]} intensity={1.1} />
-            <directionalLight position={[-4, 2, -3]} intensity={0.35} color="#86D2F3" />
             <MachineModel config={config} pointerRef={pointer} isTouch={isTouch} reducedMotion={reducedMotion} dragRotationRef={dragRotationRef} />
-            <ContactShadows position={[0, -1.1, 0]} opacity={0.45} scale={10} blur={2.4} far={2} />
-          </Canvas>
-        </Suspense>
-      </ThreeErrorBoundary>
+          </Suspense>
+        </ThreeErrorBoundary>
+        <ContactShadows position={[0, -1.1, 0]} opacity={0.45} scale={10} blur={2.4} far={2} />
+      </Canvas>
     </div>
   );
 }
