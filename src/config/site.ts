@@ -17,8 +17,8 @@ export const SITE = {
   },
 } as const;
 
-// TODO: replace with the live Google Apps Script Web App URL (deploy as "Execute as: Me", "Who has access: Anyone").
-export const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/TODO_REPLACE_WITH_DEPLOYMENT_ID/exec';
+export const APPS_SCRIPT_URL =
+  'https://script.google.com/macros/s/AKfycbx8SeG1b8oznV1KNQ80ijzCr5cMeSBp6YETBaASuA6gLXekV6mWrs1a-soJFi-ErdQUwg/exec';
 
 // TODO: replace with the live privacy policy URL once it exists.
 export const PRIVACY_URL = '/privacy';
