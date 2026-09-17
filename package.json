@@ -1,0 +1,9 @@
+{
+  "name": "vinancial-capital-v3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vinancial Capital website",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
