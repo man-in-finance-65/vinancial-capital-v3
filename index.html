@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinancial Capital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;600;700&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #071121;
+    --glow: #102037;
+    --foreground: #D1DAE5;
+    --muted: #8B9BB1;
+    --sky: #86D2F3;
+    --border: #23344D;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse 70% 55% at 50% 38%, var(--glow) 0%, var(--ink) 70%);
+    color: var(--foreground);
+    font-family: 'Archivo', Arial, sans-serif;
+    text-align: center;
+    padding: 24px;
+  }
+  main {
+    max-width: 640px;
+  }
+  .wordmark {
+    font-family: 'Zilla Slab', Georgia, serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--foreground);
+    margin-bottom: 48px;
+  }
+  .wordmark span { color: var(--sky); }
+  h1 {
+    font-family: 'Zilla Slab', Georgia, serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1.15;
+    margin: 0 0 24px;
+  }
+  h1 em {
+    font-style: normal;
+    color: var(--sky);
+  }
+  p.lead {
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+  p.disclaimer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="wordmark">VINANCIAL<span>·</span>CAPITAL</div>
+  <h1>Welcome to Vinancial Capital<br>/ Bienvenido a Vinancial Capital</h1>
+  <p class="lead">We are a Latino-owned equipment financing company.</p>
+  <p class="lead">Somos una empresa de financiamiento de equipo, de propiedad latina.</p>
+  <p class="disclaimer">
+    Vinancial Capital is a financing broker. All applications are subject to lender verification and approval. This site does not constitute an offer of credit.<br>
+    Vinancial Capital es un intermediario de financiamiento. Todas las solicitudes están sujetas a verificación y aprobación del prestamista. Este sitio no constituye una oferta de crédito.
+  </p>
+</main>
+</body>
+</html>
