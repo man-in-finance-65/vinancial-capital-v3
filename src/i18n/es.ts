@@ -117,20 +117,30 @@ export const es: Dict = {
     eyebrow: '05',
     heading: 'Preguntas frecuentes',
     items: [
-      { q: '¿Esto revisa mi crédito?', a: 'No. Enviar el formulario no revisa tu crédito.' },
-      { q: '¿Esto es una solicitud?', a: 'No. Es un primer paso. Lo leemos y te decimos si podemos ayudarte.' },
       {
-        q: '¿Qué papeles voy a necesitar después?',
-        a: 'Solicitud firmada, 6 meses de estados de cuenta del negocio, una cotización o factura del equipo, una lista de tus deudas actuales, e información del dueño.',
+        q: '¿Qué tan rápido puedo obtener aprobación y financiamiento?',
+        a: 'El tiempo depende del prestamista, de tus documentos, y de lo que quieras financiar, pero trabajar con un intermediario casi siempre es más rápido que ir directo a un banco, porque ya sabemos qué prestamistas se mueven rápido para tu tipo de negocio. Puedes acelerar el proceso si tienes listo: 3 a 6 meses de estados de cuenta del negocio, una cotización o factura del equipo, y prueba de seguro sobre el equipo. Comprar equipo usado o de un vendedor privado puede añadir uno o dos días para revisar gravámenes, verificar el número de serie o VIN, y a veces una inspección. Entre más completos estén tus papeles desde el inicio, más rápido avanza todo.',
       },
-      { q: '¿Qué pasa si ya me dijeron que no antes?', a: 'Aún puedes preguntar. Te decimos qué ven los prestamistas.' },
-      { q: '¿Ustedes prestan el dinero?', a: 'No. Somos un intermediario. Trabajamos con prestamistas. El prestamista decide.' },
-      { q: '¿Trabajan en Canadá y en Estados Unidos?', a: 'Sí.' },
       {
-        q: '¿En qué se diferencia un arrendamiento de un préstamo?',
-        a: 'Con un préstamo, el equipo es tuyo desde el primer día. Con un arrendamiento, pagas por usarlo, y luego decides qué hacer al final.',
+        q: '¿Cuánto me va a costar esto? Tasas, comisiones y transparencia.',
+        a: 'Tu tasa depende de tu crédito, tu negocio, y el prestamista con el que termines trabajando. Nosotros no la fijamos, y no te vamos a adivinar un número antes de que un prestamista revise tu caso. No hay ningún costo por enviarnos tu información o por buscarte prestamistas, y la primera revisión de crédito es superficial (soft pull), así que no afecta tu puntaje. Antes de firmar, confirma siempre: el interés total durante toda la vida del préstamo, cualquier comisión de originación o de documentos, las condiciones para pagar antes de tiempo, el monto de compra final si es un arrendamiento, y cómo aplican los impuestos donde opera tu negocio.',
       },
-      { q: '¿Van a llamar a mi banco?', a: 'No. Solo contactamos a los prestamistas con los que tú aceptes trabajar.' },
+      {
+        q: '¿Puedo calificar con crédito dañado, poco tiempo en el negocio, o si un banco ya me dijo que no?',
+        a: 'En muchos casos, sí. Los bancos rechazan una buena parte de las solicitudes de financiamiento de pequeños negocios, y esa es exactamente la situación en la que nos especializamos: negocios nuevos, historial de crédito corto, flujo de caja estacional, e industrias que algunos prestamistas consideran de mayor riesgo, como transporte, hospitalidad y construcción. Dependiendo de tu situación, un prestamista puede pedirte un pago inicial más grande, un plazo más corto, una garantía personal, o más colateral. El equipo mismo, tu pago inicial, contratos o ingresos constantes, y un plan claro de cómo el equipo va a generar dinero, a veces importan tanto como tu puntaje de crédito. Los prestamistas ven el panorama completo, no solo un número.',
+      },
+      {
+        q: '¿Qué colateral, garantías y documentos necesito?',
+        a: 'Para financiamiento de equipo, el equipo mismo suele ser el colateral, registrado mediante el PPSA (RDPRM en Quebec). Para capital de trabajo, los prestamistas también pueden revisar tus cuentas por cobrar, inventario, o equipo que ya tengas. Una garantía personal es algo común en la mayoría de los negocios pequeños. Ten listo: 3 a 6 meses de estados de cuenta del negocio, identificación oficial, estados financieros o declaraciones de impuestos recientes, la cotización o factura del equipo, y una breve nota de cómo el equipo va a generar ingresos. Un expediente completo acelera el proceso y puede ayudarte a obtener un mejor resultado.',
+      },
+      {
+        q: '¿Cómo funciona el programa de proveedores de Vinancial Capital?',
+        a: 'Si vendes, fabricas o distribuyes equipo, nuestro programa de proveedores permite que ofrezcas financiamiento a tus clientes en el punto de venta, para que puedan quedar aprobados sin salir de tu local u obra. Te asignamos un contacto dedicado, conectamos a tu cliente con prestamistas que encajan, manejamos el papeleo, y te mantenemos informado en cada paso. A ti te pagan al cierre, sin riesgo de cobranza de tu lado. Cubre camiones y remolques, equipo de construcción e industrial, equipo agrícola, manejo de materiales, y equipo de restaurantes. No hay costo de inscripción: entrenamos a tu equipo para vender con base en el pago mensual, no solo en el precio.',
+      },
+      {
+        q: '¿Qué es el programa de sub-corredores, y puedo referir negocios?',
+        a: 'Sí. Está abierto a corredores independientes, agentes hipotecarios, contadores, consultores, distribuidores de equipo, y cualquiera que tenga una red de dueños de negocio que puedan necesitar financiamiento; no se necesita experiencia previa en financiamiento de equipo. Contáctanos a través de nuestra página de contacto para inscribirte, y luego envíanos tus negocios conforme vayan surgiendo. Nosotros nos encargamos de la evaluación, conectamos a tus clientes con prestamistas, manejamos el papeleo, y te mantenemos al tanto. Las comisiones se pagan una vez que el negocio se financia. Pregúntanos por los detalles actuales.',
+      },
     ],
     feesQuestion: '¿Cuánto cuesta hablar con ustedes?',
     feesAnswer: 'Depende de lo que quieras financiar. Usa nuestra calculadora para ver un número.',

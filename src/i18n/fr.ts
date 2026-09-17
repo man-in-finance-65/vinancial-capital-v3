@@ -117,20 +117,30 @@ export const fr: Dict = {
     eyebrow: '05',
     heading: 'Questions fréquentes',
     items: [
-      { q: 'Est-ce que cela vérifie mon crédit?', a: 'Non. Envoyer le formulaire ne vérifie pas votre crédit.' },
-      { q: 'Est-ce que c’est une demande officielle?', a: 'Non. C’est une première étape. Nous la lisons et nous vous disons si nous pouvons vous aider.' },
       {
-        q: 'Quels papiers vais-je avoir besoin plus tard?',
-        a: "Demande signée, 6 mois de relevés bancaires de l'entreprise, une soumission ou facture de l'équipement, une liste de vos dettes actuelles, et vos informations personnelles.",
+        q: 'À quelle vitesse puis-je être approuvé et financé?',
+        a: "Le délai dépend du prêteur, de vos documents, et de ce que vous voulez financer — mais travailler avec un courtier est presque toujours plus rapide que d'aller directement à la banque, parce que nous savons déjà quels prêteurs agissent vite pour votre type d'entreprise. Vous pouvez accélérer les choses en ayant prêts : 3 à 6 mois de relevés bancaires de l'entreprise, une soumission ou facture pour l'équipement, et une preuve d'assurance sur le bien. Acheter de l'équipement usagé ou d'un vendeur privé peut ajouter un jour ou deux pour vérifier les privilèges, le numéro de série ou le NIV, et parfois pour une inspection. Plus vos documents sont complets dès le départ, plus vite les choses avancent.",
       },
-      { q: 'Que faire si on m’a déjà refusé avant?', a: 'Vous pouvez quand même demander. Nous vous disons ce que les prêteurs voient.' },
-      { q: "Est-ce que vous prêtez l'argent?", a: 'Non. Nous sommes un courtier. Nous travaillons avec des prêteurs. C’est le prêteur qui décide.' },
-      { q: 'Travaillez-vous au Canada et aux États-Unis?', a: 'Oui.' },
       {
-        q: 'Quelle est la différence entre un bail et un prêt?',
-        a: "Avec un prêt, l'équipement est à vous dès le premier jour. Avec un bail, vous payez pour l'utiliser, puis vous choisissez quoi faire à la fin.",
+        q: 'Combien cela va-t-il me coûter — taux, frais et transparence?',
+        a: "Votre taux dépend de votre crédit, de votre entreprise, et du prêteur avec qui vous finirez par travailler. Nous ne le fixons pas, et nous ne devinerons pas un chiffre avant qu'un prêteur n'examine votre dossier. Il n'y a aucuns frais pour nous envoyer vos informations ou pour être jumelé à des prêteurs, et la première vérification de crédit est une vérification légère (soft pull) qui n'affecte pas votre cote. Avant de signer quoi que ce soit, confirmez toujours : l'intérêt total sur toute la durée du prêt, les frais d'ouverture de dossier ou de documents, les conditions de remboursement anticipé, le montant de rachat si c'est un bail, et comment les taxes s'appliquent là où vous faites affaire.",
       },
-      { q: 'Allez-vous contacter ma banque?', a: 'Non. Nous contactons seulement les prêteurs avec qui vous acceptez de travailler.' },
+      {
+        q: 'Puis-je être admissible avec un crédit abîmé, peu de temps en affaires, ou un refus bancaire?',
+        a: "Dans bien des cas, oui. Les banques refusent une grande partie des demandes de financement des petites entreprises, et c'est exactement le genre de situation dans laquelle nous nous spécialisons : nouvelles entreprises, dossiers de crédit minces, revenus saisonniers, et secteurs que certains prêteurs jugent plus risqués, comme le camionnage, l'hôtellerie et la construction. Selon votre situation, un prêteur pourrait demander une mise de fonds plus élevée, un terme plus court, une garantie personnelle, ou plus de garanties. L'équipement lui-même, votre mise de fonds, des contrats ou revenus stables, et un plan clair pour la façon dont l'équipement générera des revenus comptent souvent autant que votre cote de crédit. Les prêteurs regardent l'ensemble du portrait, pas seulement un chiffre.",
+      },
+      {
+        q: 'De quelles garanties et de quels documents ai-je besoin?',
+        a: "Pour le financement d'équipement, l'équipement lui-même sert habituellement de garantie, enregistrée par une inscription LSM (RDPRM au Québec). Pour le fonds de roulement, les prêteurs peuvent aussi examiner vos comptes recevables, votre inventaire, ou votre équipement existant. Une garantie personnelle est standard pour la plupart des petites entreprises. Ayez prêts : 3 à 6 mois de relevés bancaires de l'entreprise, une pièce d'identité, des états financiers ou déclarations de revenus récents, la soumission ou facture de l'équipement, et une courte note sur la façon dont l'équipement générera des revenus. Un dossier complet accélère le processus et peut vous aider à obtenir un meilleur résultat.",
+      },
+      {
+        q: 'Comment fonctionne le programme de fournisseurs de Vinancial Capital?',
+        a: "Si vous vendez, fabriquez ou distribuez de l'équipement, notre programme de fournisseurs vous permet d'offrir du financement à vos clients directement au point de vente, pour qu'ils puissent être approuvés sans quitter votre salle d'exposition ou votre chantier. Nous vous assignons une personne-ressource dédiée, jumelons votre client avec des prêteurs qui conviennent, gérons la paperasse, et vous tenons informé à chaque étape. Vous êtes payé à la clôture, sans risque de recouvrement de votre côté. Cela couvre les camions et remorques, l'équipement de construction et industriel, l'équipement agricole, la manutention, et l'équipement de restauration. Il n'y a aucuns frais d'installation — nous formons votre équipe à vendre sur la base du paiement plutôt que du prix.",
+      },
+      {
+        q: 'Qu’est-ce que le programme de sous-courtiers, et puis-je référer des dossiers?',
+        a: "Oui. Il est ouvert aux courtiers indépendants, agents hypothécaires, comptables, consultants, concessionnaires d'équipement, et à quiconque a un réseau de propriétaires d'entreprise qui pourraient avoir besoin de financement — aucune expérience en financement d'équipement n'est requise. Contactez-nous via notre page de contact pour vous inscrire, puis envoyez-nous vos dossiers au fur et à mesure. Nous nous occupons de l'analyse, jumelons vos clients avec des prêteurs, gérons la paperasse, et vous tenons au courant. Les commissions sont versées une fois le dossier financé. Demandez-nous les détails actuels.",
+      },
     ],
     feesQuestion: 'Combien ça coûte de vous parler?',
     feesAnswer: 'Cela dépend de ce que vous voulez financer. Utilisez notre calculateur pour voir un montant.',

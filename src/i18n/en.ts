@@ -117,20 +117,30 @@ export const en: Dict = {
     eyebrow: '05',
     heading: 'Questions people ask',
     items: [
-      { q: 'Does this check my credit?', a: 'No. Sending the form does not check your credit.' },
-      { q: 'Is this an application?', a: 'No. It is a first step. We read it and tell you if we can help.' },
       {
-        q: 'What papers will I need later?',
-        a: 'Signed application, 6 months of business bank statements, an equipment quote or invoice, a list of current debts, and owner info.',
+        q: 'How quickly can I get approved and funded?',
+        a: "Timelines depend on the lender, your paperwork, and what you're financing — but working with a broker is almost always faster than going straight to a bank, since we already know which lenders move quickly for your type of deal. You can speed things up by having ready: 3–6 months of business bank statements, an invoice or price quote for the equipment, and proof of insurance on the asset. Buying used or from a private seller can add a day or two for a lien search, serial number or VIN verification, and possibly an inspection. The more complete your paperwork is up front, the faster things move.",
       },
-      { q: 'What if I was turned down before?', a: 'You can still ask. We tell you what lenders see.' },
-      { q: 'Do you lend the money?', a: 'No. We are a broker. We work with lenders. The lender decides.' },
-      { q: 'Do you work in Canada and the U.S.?', a: 'Yes.' },
       {
-        q: 'How is a lease different from a loan?',
-        a: 'With a loan, you own the equipment from day one. With a lease, you pay to use it, then choose what to do at the end.',
+        q: 'What will this cost me — rates, fees, and transparency?',
+        a: "Your rate depends on your credit, your business, and the lender you end up with — we don't set it, and we won't guess a number before a lender actually reviews your file. There's no upfront fee to send us your information or get matched with lenders, and the initial credit check is a soft pull that won't affect your score. Before you sign anything, always confirm: the total interest over the life of the loan, any origination or documentation fees, the terms for paying it off early, the buyout amount if it's a lease, and how sales tax applies where you do business.",
       },
-      { q: 'Will you contact my bank?', a: 'No. We only contact lenders you agree to work with.' },
+      {
+        q: 'Can I qualify with bruised credit, limited time in business, or a bank decline?',
+        a: "Often, yes. Banks turn down a large share of small business financing requests, and that's exactly the kind of situation we specialize in — startups, thin credit files, seasonal cash flow, and industries some lenders consider higher risk, like trucking, hospitality, and construction. Depending on your situation, a lender may ask for a larger down payment, a shorter term, a personal guarantee, or stronger collateral. The equipment itself, your down payment, proof of steady revenue or contracts, and a clear plan for how it will generate income often matter as much as your credit score. Lenders look at the full picture, not just a number.",
+      },
+      {
+        q: 'What collateral, guarantees, and documents do I need?',
+        a: 'For equipment financing, the equipment itself is usually the collateral, registered through a PPSA filing (RDPRM in Québec). For working capital, lenders may also look at your receivables, inventory, or existing equipment. A personal guarantee is standard on most small business deals. Have these ready: 3–6 months of business bank statements, government ID, recent financial statements or tax returns, the equipment invoice or quote, and a short note on how the equipment will generate revenue. A complete file speeds up the process and can help you get a better outcome.',
+      },
+      {
+        q: "How does Vinancial Capital's vendor program work?",
+        a: "If you sell, manufacture, or distribute equipment, our vendor program lets you offer your customers financing at the point of sale, so they can get approved without leaving your showroom or job site. We assign a dedicated contact, match your customer with lenders that fit, handle the paperwork, and keep you updated at every step. You get paid at closing, with no collections risk on your side. It covers trucks and trailers, construction and industrial equipment, agricultural equipment, material handling, and restaurant equipment. There's no setup cost — we train your team to sell on payment instead of price.",
+      },
+      {
+        q: "What's the sub-broker program, and can I refer deals?",
+        a: 'Yes. It’s open to independent brokers, mortgage agents, accountants, consultants, equipment dealers, and anyone with a network of business owners who might need financing — no equipment finance experience required. Reach out through our contact page to get set up, then send us deals as they come. We handle underwriting, match your clients with lenders, manage the paperwork, and keep you in the loop. Commissions are paid once a deal funds. Ask us for the current details.',
+      },
     ],
     feesQuestion: 'How much does it cost to talk to you?',
     feesAnswer: 'It depends on what you want to finance. Use our calculator to see a number.',
