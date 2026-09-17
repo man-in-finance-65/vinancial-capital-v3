@@ -31,7 +31,7 @@ npm run test:watch # watch mode
 |---|---|---|
 | `APPS_SCRIPT_URL` | The deployed Google Apps Script Web App URL that receives form submissions | **TODO — placeholder URL, must be replaced** |
 | `PRIVACY_URL` | Link to the privacy policy | Points to `/privacy`, which now has a real starter policy (`src/pages/Privacy.tsx`, copy in `src/i18n/*.ts`) — **have a lawyer review it before launch**, it's a plain-language starting point, not legal advice, especially given the financial/credit data this form collects |
-| `CONSENT_COMPANY_NAME` | Name shown in the consent checkbox text | Currently `"Mehmi Financial Group"` per the brief — confirm this is correct |
+| `CONSENT_COMPANY_NAME` | Name shown in the consent checkbox text | `"Vinancial Capital"` |
 | `SITE.email`, `SITE.phoneDisplay`, `SITE.phoneE164`, `SITE.whatsappUrl`, `SITE.address` | Contact details | Filled in from the brief — double check before launch |
 | `SITE.founder.linkedInUrl` | Founder's LinkedIn | Filled in from the brief |
 

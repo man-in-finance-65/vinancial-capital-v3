@@ -19,7 +19,7 @@ export const fr: Dict = {
     home: 'Accueil',
     calculator: 'Calculateur',
     about: 'À propos',
-    apply: 'Faire une demande',
+    apply: 'Commencer',
     menuOpen: 'Ouvrir le menu',
     menuClose: 'Fermer le menu',
   },
@@ -39,7 +39,7 @@ export const fr: Dict = {
       restaurant: { eyebrow: 'RESTAURANTS', h1Plain: 'Votre camion de nourriture.', h1Sky: 'Prêt à servir.' },
     },
     subtext: "Nous aidons les propriétaires d'entreprise à financer leur équipement. Nous parlons votre langue. Nous disons la vérité.",
-    ctaApply: 'Faire une demande',
+    ctaApply: 'Commencer',
     ctaSeePayment: 'Voir mon paiement',
     pickerLabel: 'Choisissez votre secteur',
     pickerConstruction: 'Construction',
@@ -71,7 +71,7 @@ export const fr: Dict = {
     trucking: { title: 'Camionnage', body: 'Tracteurs, remorques et camions-cubes. Nous savons comment les charges deviennent des paiements.' },
     restaurant: { title: 'Restaurants', body: 'Camions de nourriture, fours et réfrigérateurs. Nous savons que les marges sont minces.' },
     other: 'Un autre secteur? Nous pouvons quand même vous aider.',
-    otherLink: 'Faire une demande',
+    otherLink: 'Commencer',
   },
   calculatorPreview: {
     eyebrow: '04',
@@ -81,7 +81,7 @@ export const fr: Dict = {
     aprLabel: 'Taux (APR)',
     termLabel: 'Durée',
     monthlyPaymentLabel: 'Paiement mensuel estimé',
-    applyWithAmount: 'Faire une demande avec ce montant',
+    applyWithAmount: 'Commencer avec ce montant',
     openFullCalculator: 'Ouvrir le calculateur complet',
     currencyNoteCAD: 'Montants en CAD',
     currencyNoteUSD: 'Montants en USD',
@@ -121,7 +121,7 @@ export const fr: Dict = {
     coreBeliefHeading: 'Ce que nous croyons',
     coreBelief:
       "Vous devriez perdre le sommeil à cause de votre entreprise, comme la paie et vos clients. Pas à cause de l'argent. Si vous avez signé quelque chose que vous n'avez pas compris, c'est la faute de la personne qui vous l'a expliqué.",
-    applyCta: 'Faire une demande',
+    applyCta: 'Commencer',
     founderPhotoAlt: 'Vicente E. Correa E., fondateur de Vinancial Capital',
   },
   calculatorPage: {
@@ -129,7 +129,7 @@ export const fr: Dict = {
     subheading: "Voyez à quoi pourrait ressembler votre paiement. Rien ici n'est final.",
     tabs: { lease: 'Bail', loan: 'Prêt', afford: 'Combien puis-je me permettre?' },
     disclaimer: "Ceci est seulement une estimation. Ce n'est pas une offre. Les taxes ne sont pas incluses. Le prêteur fixe le vrai taux et le vrai paiement.",
-    applyWithAmount: 'Faire une demande avec ce montant',
+    applyWithAmount: 'Commencer avec ce montant',
     currencyNoteCAD: 'Montants en CAD',
     currencyNoteUSD: 'Montants en USD',
     downPaymentDollar: '$',
@@ -318,7 +318,7 @@ export const fr: Dict = {
     },
   },
   common: {
-    apply: 'Faire une demande',
+    apply: 'Commencer',
     disclaimer:
       'Vinancial Capital est un courtier en financement. Toutes les demandes sont sujettes à la vérification et à l’approbation du prêteur. Ce site ne constitue pas une offre de crédit.',
   },

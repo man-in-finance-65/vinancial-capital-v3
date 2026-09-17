@@ -24,6 +24,6 @@ export const APPS_SCRIPT_URL =
 export const PRIVACY_URL = '/privacy';
 
 // Shown next to the form's consent checkbox. Kept separate so it can be updated without touching layout code.
-export const CONSENT_COMPANY_NAME = 'Mehmi Financial Group';
+export const CONSENT_COMPANY_NAME = 'Vinancial Capital';
 
 export const LOCAL_STORAGE_DRAFT_KEY = 'vc_application_draft_v1';

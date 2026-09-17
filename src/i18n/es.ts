@@ -19,7 +19,7 @@ export const es: Dict = {
     home: 'Inicio',
     calculator: 'Calculadora',
     about: 'Nosotros',
-    apply: 'Aplicar',
+    apply: 'Empezar',
     menuOpen: 'Abrir menú',
     menuClose: 'Cerrar menú',
   },
@@ -39,7 +39,7 @@ export const es: Dict = {
       restaurant: { eyebrow: 'RESTAURANTES', h1Plain: 'Tu camión de comida.', h1Sky: 'Listo para vender.' },
     },
     subtext: 'Ayudamos a dueños de negocio a financiar equipo. Hablamos tu idioma. Te decimos la verdad.',
-    ctaApply: 'Aplicar',
+    ctaApply: 'Empezar',
     ctaSeePayment: 'Ver mi pago',
     pickerLabel: 'Elige tu industria',
     pickerConstruction: 'Construcción',
@@ -71,7 +71,7 @@ export const es: Dict = {
     trucking: { title: 'Transporte', body: 'Tractocamiones, remolques y camiones de caja. Sabemos cómo las cargas se convierten en pagos.' },
     restaurant: { title: 'Restaurantes', body: 'Camiones de comida, hornos y refrigeradores. Sabemos que el margen es corto.' },
     other: '¿Otra industria? Aún podemos ayudarte.',
-    otherLink: 'Aplicar',
+    otherLink: 'Empezar',
   },
   calculatorPreview: {
     eyebrow: '04',
@@ -81,7 +81,7 @@ export const es: Dict = {
     aprLabel: 'Tasa (APR)',
     termLabel: 'Plazo',
     monthlyPaymentLabel: 'Pago mensual estimado',
-    applyWithAmount: 'Aplicar con este monto',
+    applyWithAmount: 'Empezar con este monto',
     openFullCalculator: 'Abrir calculadora completa',
     currencyNoteCAD: 'Montos en CAD',
     currencyNoteUSD: 'Montos en USD',
@@ -121,7 +121,7 @@ export const es: Dict = {
     coreBeliefHeading: 'Lo que creemos',
     coreBelief:
       'Debes perder el sueño por tu negocio, como la nómina y tus clientes. No por el dinero. Si firmaste algo que no entendiste, eso es culpa de quien te lo explicó.',
-    applyCta: 'Aplicar',
+    applyCta: 'Empezar',
     founderPhotoAlt: 'Vicente E. Correa E., fundador de Vinancial Capital',
   },
   calculatorPage: {
@@ -129,7 +129,7 @@ export const es: Dict = {
     subheading: 'Mira cómo se vería tu pago. Nada aquí es final.',
     tabs: { lease: 'Arrendamiento', loan: 'Préstamo', afford: '¿Cuánto puedo pagar?' },
     disclaimer: 'Esto es solo un estimado. No es una oferta. No incluye impuestos. El prestamista fija la tasa y el pago real.',
-    applyWithAmount: 'Aplicar con este monto',
+    applyWithAmount: 'Empezar con este monto',
     currencyNoteCAD: 'Montos en CAD',
     currencyNoteUSD: 'Montos en USD',
     downPaymentDollar: '$',
@@ -314,7 +314,7 @@ export const es: Dict = {
     },
   },
   common: {
-    apply: 'Aplicar',
+    apply: 'Empezar',
     disclaimer:
       'Vinancial Capital es un intermediario de financiamiento. Todas las solicitudes están sujetas a verificación y aprobación del prestamista. Este sitio no constituye una oferta de crédito.',
   },

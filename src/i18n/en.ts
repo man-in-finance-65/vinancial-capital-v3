@@ -19,7 +19,7 @@ export const en: Dict = {
     home: 'Home',
     calculator: 'Calculator',
     about: 'About',
-    apply: 'Apply',
+    apply: 'Get started',
     menuOpen: 'Open menu',
     menuClose: 'Close menu',
   },
@@ -39,7 +39,7 @@ export const en: Dict = {
       restaurant: { eyebrow: 'RESTAURANTS', h1Plain: 'Your food truck.', h1Sky: 'Open for business.' },
     },
     subtext: 'We help business owners get equipment financing. We speak your language. We tell you the truth.',
-    ctaApply: 'Apply',
+    ctaApply: 'Get started',
     ctaSeePayment: 'See my payment',
     pickerLabel: 'Choose your industry',
     pickerConstruction: 'Construction',
@@ -71,7 +71,7 @@ export const en: Dict = {
     trucking: { title: 'Trucking', body: 'Tractors, trailers and box trucks. We know how loads turn into payments.' },
     restaurant: { title: 'Restaurants', body: 'Food trucks, ovens and fridges. We know the margins are thin.' },
     other: 'Other industry? We can still help.',
-    otherLink: 'Apply',
+    otherLink: 'Get started',
   },
   calculatorPreview: {
     eyebrow: '04',
@@ -81,7 +81,7 @@ export const en: Dict = {
     aprLabel: 'Rate (APR)',
     termLabel: 'Term',
     monthlyPaymentLabel: 'Estimated monthly payment',
-    applyWithAmount: 'Apply with this amount',
+    applyWithAmount: 'Get started with this amount',
     openFullCalculator: 'Open full calculator',
     currencyNoteCAD: 'Amounts in CAD',
     currencyNoteUSD: 'Amounts in USD',
@@ -121,7 +121,7 @@ export const en: Dict = {
     coreBeliefHeading: 'What we believe',
     coreBelief:
       'You should lose sleep over your business, like payroll and your clients. Not over money. If you signed something you did not understand, that is on the person who explained it.',
-    applyCta: 'Apply',
+    applyCta: 'Get started',
     founderPhotoAlt: 'Vicente E. Correa E., founder of Vinancial Capital',
   },
   calculatorPage: {
@@ -129,7 +129,7 @@ export const en: Dict = {
     subheading: 'See what your payment could look like. Nothing here is final.',
     tabs: { lease: 'Lease', loan: 'Loan', afford: 'How much can I afford?' },
     disclaimer: 'This is an estimate only. It is not an offer. Taxes not included. The lender sets the real rate and payment.',
-    applyWithAmount: 'Apply with this amount',
+    applyWithAmount: 'Get started with this amount',
     currencyNoteCAD: 'Amounts in CAD',
     currencyNoteUSD: 'Amounts in USD',
     downPaymentDollar: '$',
@@ -314,7 +314,7 @@ export const en: Dict = {
     },
   },
   common: {
-    apply: 'Apply',
+    apply: 'Get started',
     disclaimer:
       'Vinancial Capital is a financing broker. All applications are subject to lender verification and approval. This site does not constitute an offer of credit.',
   },
