@@ -28,7 +28,6 @@ npm run test:watch # watch mode
 | Constant | What it is | Status |
 |---|---|---|
 | `APPS_SCRIPT_URL` | The deployed Google Apps Script Web App URL that receives form submissions | **TODO — placeholder URL, must be replaced** |
-| `RECAPTCHA_SITE_KEY` | reCAPTCHA v3 site key | Empty string — reCAPTCHA is skipped entirely while empty (safe for dev). Fill in for production. |
 | `PRIVACY_URL` | Link to the privacy policy | Points to `/privacy`, which doesn't exist yet — either add that page or point this at wherever the policy lives |
 | `CONSENT_COMPANY_NAME` | Name shown in the consent checkbox text | Currently `"Mehmi Financial Group"` per the brief — confirm this is correct |
 | `SITE.email`, `SITE.phoneDisplay`, `SITE.phoneE164`, `SITE.whatsappUrl`, `SITE.address` | Contact details | Filled in from the brief — double check before launch |
@@ -79,14 +78,14 @@ Until real models are added, the hero falls back to the poster image for that in
 
 This repo only contains the frontend. The following changes need to be made to the separately-deployed Apps Script backend:
 
-1. **Verify `recaptcha_token` in `doPost`.** Call `UrlFetchApp.fetch('https://www.google.com/recaptcha/api/siteverify', ...)` with a secret stored in Script Properties (`RECAPTCHA_SECRET`). Reject the submission if the score is below `0.5`. If no secret is set in Script Properties, skip verification (so dev/staging without a secret still works) — mirroring how the frontend skips sending a real token when `RECAPTCHA_SITE_KEY` is empty.
-2. **Confirm the `FIELDS` list still matches** `src/lib/application.ts`'s `FIELDS` export exactly:
-   `tipo_financiamiento, servicio_financiero, situacion, monto_solicitado, urgencia, empresa, provincia_estado, industria, sitio_web, tipo_negocio, tiempo_operando, ingresos_anuales, vivienda, codeudor, puntaje_credito, historial_legal, nombre, apellido, correo, telefono, consentimiento` — plus `idioma`, `pagina`, `website` (honeypot — reject if non-empty), and `recaptcha_token`.
-3. **CORS:** the frontend POSTs with `Content-Type: text/plain;charset=utf-8` specifically to avoid a CORS preflight (which Apps Script can't answer), so the body arrives as a JSON string in `e.postData.contents` — make sure `doPost` parses it that way rather than expecting `e.parameter`.
+1. **Confirm the `FIELDS` list still matches** `src/lib/application.ts`'s `FIELDS` export exactly:
+   `tipo_financiamiento, servicio_financiero, situacion, monto_solicitado, urgencia, empresa, provincia_estado, industria, sitio_web, tipo_negocio, tiempo_operando, ingresos_anuales, vivienda, codeudor, puntaje_credito, historial_legal, nombre, apellido, correo, telefono, consentimiento` — plus `idioma`, `pagina`, and `website` (honeypot — reject the submission if this arrives non-empty; a real visitor never fills it in, only bots that fill in every field do).
+2. **CORS:** the frontend POSTs with `Content-Type: text/plain;charset=utf-8` specifically to avoid a CORS preflight (which Apps Script can't answer), so the body arrives as a JSON string in `e.postData.contents` — make sure `doPost` parses it that way rather than expecting `e.parameter`.
+
+**Note on spam protection:** reCAPTCHA was removed from this build (per request). The only spam guard left is the honeypot field above. That's normally enough to stop simple bots, but if spam becomes a real problem later, reCAPTCHA v3 can be added back on both ends.
 
 ## Known limitations / follow-ups
 
 - The `.glb` model files and their poster images are not included in this repo — see "3D machine models" above.
 - `/privacy` has no page yet; `PRIVACY_URL` currently points there anyway.
-- The FAQ's pricing answer is a placeholder (`TODO_CONFIRM_FEES`).
-- `APPS_SCRIPT_URL` and `RECAPTCHA_SITE_KEY` need real values before launch.
+- `APPS_SCRIPT_URL` needs a real value before launch.

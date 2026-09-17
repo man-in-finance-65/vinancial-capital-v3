@@ -1,8 +1,11 @@
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ArrowRight } from 'lucide-react';
 import type { QA } from '../../i18n';
+import { Link } from '../../router/Router';
 
-export function Accordion({ items }: { items: QA[] }) {
+type AccordionItem = QA & { linkTo?: string; linkLabel?: string };
+
+export function Accordion({ items }: { items: AccordionItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
@@ -32,8 +35,17 @@ export function Accordion({ items }: { items: QA[] }) {
               aria-labelledby={buttonId}
               className={`grid transition-[grid-template-rows] duration-300 ${isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}
             >
-              <div className="overflow-hidden">
-                <p className="pb-5 text-sm leading-relaxed text-muted md:text-base">{item.a}</p>
+              <div className="overflow-hidden pb-5">
+                <p className="text-sm leading-relaxed text-muted md:text-base">{item.a}</p>
+                {item.linkTo && (
+                  <Link
+                    to={item.linkTo}
+                    className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-sky hover:opacity-80"
+                  >
+                    {item.linkLabel}
+                    <ArrowRight size={14} />
+                  </Link>
+                )}
               </div>
             </div>
           </div>

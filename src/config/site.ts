@@ -20,9 +20,6 @@ export const SITE = {
 // TODO: replace with the live Google Apps Script Web App URL (deploy as "Execute as: Me", "Who has access: Anyone").
 export const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/TODO_REPLACE_WITH_DEPLOYMENT_ID/exec';
 
-// TODO: replace with the live reCAPTCHA v3 site key. Leave empty to skip reCAPTCHA in dev.
-export const RECAPTCHA_SITE_KEY = '';
-
 // TODO: replace with the live privacy policy URL once it exists.
 export const PRIVACY_URL = '/privacy';
 

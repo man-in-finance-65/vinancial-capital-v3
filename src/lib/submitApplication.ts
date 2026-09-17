@@ -7,12 +7,7 @@ export type SubmitResult =
   | { ok: false; error: 'validation'; fields: Partial<Record<FieldName, string>> }
   | { ok: false; error: 'network' | 'server' };
 
-export async function submitApplication(
-  data: ApplicationData,
-  lang: Lang,
-  recaptchaToken: string,
-  honeypot: string
-): Promise<SubmitResult> {
+export async function submitApplication(data: ApplicationData, lang: Lang, honeypot: string): Promise<SubmitResult> {
   const payload: Record<string, string> = {};
   for (const field of FIELDS) {
     payload[field] = data[field] ?? '';
@@ -20,7 +15,6 @@ export async function submitApplication(
   payload.idioma = lang;
   payload.pagina = window.location.href.slice(0, PAGINA_MAX_LENGTH);
   payload.website = honeypot; // honeypot — real users never fill this; the backend ignores submissions where it's set
-  payload.recaptcha_token = recaptchaToken;
 
   try {
     const response = await fetch(APPS_SCRIPT_URL, {

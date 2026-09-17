@@ -13,8 +13,6 @@ import {
 } from '../../lib/application';
 import { loadDraft, saveDraft, clearDraft, hasAnyValue } from '../../lib/draftStorage';
 import { submitApplication } from '../../lib/submitApplication';
-import { getRecaptchaToken, loadRecaptcha } from '../../lib/recaptcha';
-import { RECAPTCHA_SITE_KEY } from '../../config/site';
 import type { Lang } from '../../i18n/types';
 
 export type FormScreen = 'resume' | 'form' | 'success';
@@ -42,12 +40,6 @@ export function useApplicationForm(isOpen: boolean, lang: Lang, initial?: Partia
       setData((d) => ({ ...d, ...initial }));
     }
   }, [isOpen, initial]);
-
-  useEffect(() => {
-    if (isOpen && RECAPTCHA_SITE_KEY) {
-      loadRecaptcha(RECAPTCHA_SITE_KEY).catch(() => {});
-    }
-  }, [isOpen]);
 
   useEffect(() => {
     if (screen !== 'form') return;
@@ -120,8 +112,7 @@ export function useApplicationForm(isOpen: boolean, lang: Lang, initial?: Partia
     setSubmitting(true);
     setNetworkError(false);
     try {
-      const token = await getRecaptchaToken(RECAPTCHA_SITE_KEY);
-      const res = await submitApplication(data, lang, token, honeypot);
+      const res = await submitApplication(data, lang, honeypot);
 
       if (res.ok) {
         clearDraft();

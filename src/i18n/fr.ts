@@ -106,7 +106,7 @@ export const fr: Dict = {
       { q: 'Allez-vous contacter ma banque?', a: 'Non. Nous contactons seulement les prêteurs avec qui vous acceptez de travailler.' },
     ],
     feesQuestion: 'Combien ça coûte de vous parler?',
-    feesAnswer: 'TODO_CONFIRM_FEES',
+    feesAnswer: 'Cela dépend de ce que vous voulez financer. Utilisez notre calculateur pour voir un montant.',
   },
   about: {
     heading: 'Pourquoi Vinancial Capital existe',
