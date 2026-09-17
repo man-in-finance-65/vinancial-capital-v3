@@ -65,7 +65,7 @@ export function Hero({ onApply }: { onApply: (industry: IndustryKey) => void }) 
   return (
     <section className="relative flex h-screen min-h-[720px] flex-col overflow-hidden bg-brand-radial">
       <div className="vc-watermark">
-        <span>VC</span>
+        <img src="/logo-mark.svg" alt="" aria-hidden />
       </div>
 
       <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center px-6 pt-32 text-center md:pt-40">

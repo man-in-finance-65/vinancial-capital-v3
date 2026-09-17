@@ -17,8 +17,10 @@ export default {
         destructive: '#DF3A3A',
       },
       fontFamily: {
-        slab: ['"Zilla Slab"', 'Georgia', 'serif'],
-        sans: ['Archivo', 'Arial', 'sans-serif'],
+        // Closest free stand-ins for Ethnocentric (headings) and Avenir Next (body) —
+        // both are commercially licensed fonts; see README for how to swap in the real ones.
+        slab: ['Orbitron', 'Arial', 'sans-serif'],
+        sans: ['Poppins', 'Arial', 'sans-serif'],
       },
       borderRadius: {
         card: '8px',

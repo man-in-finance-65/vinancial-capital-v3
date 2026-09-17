@@ -35,7 +35,10 @@ npm run test:watch # watch mode
 | `SITE.email`, `SITE.phoneDisplay`, `SITE.phoneE164`, `SITE.whatsappUrl`, `SITE.address` | Contact details | Filled in from the brief — double check before launch |
 | `SITE.founder.linkedInUrl` | Founder's LinkedIn | Filled in from the brief |
 
-Also: the FAQ has a placeholder answer for "How much does it cost to talk to you?" — the literal string `TODO_CONFIRM_FEES` in all three `i18n` files (`faq.feesAnswer`). A console warning fires in dev for as long as it's still there. Replace it with the real answer (or "It's free") before launch.
+## Fonts and logo
+
+- **Fonts:** the brief asked for **Ethnocentric** (headings) and **Avenir Next** (body) — neither is free to use on a commercial site (Avenir Next is Adobe/Linotype-owned; Ethnocentric's free license is personal-use only). Until real licensed webfont files are provided, this build uses the closest free Google Fonts alternatives: **Orbitron** for headings/wordmark (`font-slab` in `tailwind.config.ts`) and **Poppins** for body/UI (`font-sans`). To swap in the real fonts once licensed: replace the Google Fonts `<link>` in `index.html` with your font kit (or self-host the `.woff2` files under `public/fonts/` and add `@font-face` rules in `src/index.css`), then update the two `fontFamily` entries in `tailwind.config.ts` and the two hardcoded `font-family` declarations in `src/index.css`.
+- **Logo:** `public/logo-mark.svg` is a hand-recreated approximation of the provided logo (built from a visual reference only — no source file was available), used in the navbar/footer wordmark (`src/components/layout/Wordmark.tsx`), the favicon (`public/favicon.svg`), and the hero background watermark (`src/components/home/Hero.tsx`). If you have the real source file (SVG/AI/EPS ideally), send it over and it can replace `public/logo-mark.svg` directly — everything else already points at that one file.
 
 ## 3D machine models
 
@@ -92,4 +95,5 @@ This repo only contains the frontend. The following changes need to be made to t
 
 - The real `.glb` model files aren't in this repo yet. The hero currently shows a stylized procedural placeholder machine built from basic shapes (`src/components/three/PlaceholderMachine.tsx`) so it isn't empty — drop real `.glb` files into `public/models/` (see "3D machine models" above) and the site automatically switches to them on the next page load, no code changes needed beyond filling in the node names.
 - `/privacy` has a real starter policy now, but it needs a lawyer's review before launch (see the table above).
-- `APPS_SCRIPT_URL` needs a real value before launch.
+- Fonts are free stand-ins (Orbitron/Poppins), not the licensed Ethnocentric/Avenir Next from the brief — see "Fonts and logo" above.
+- The logo is a hand-recreated approximation, not the original source file — see "Fonts and logo" above.

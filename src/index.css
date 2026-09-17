@@ -33,12 +33,12 @@ body {
   margin: 0;
   background-color: var(--vc-ink);
   color: var(--vc-foreground);
-  font-family: 'Archivo', Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, .font-slab {
-  font-family: 'Zilla Slab', Georgia, serif;
+  font-family: 'Orbitron', Arial, sans-serif;
 }
 
 ::selection {
@@ -68,13 +68,9 @@ h1, h2, h3, .font-slab {
   opacity: 0.04;
 }
 
-.vc-watermark span {
-  font-family: 'Zilla Slab', Georgia, serif;
-  font-weight: 700;
-  font-size: min(60vw, 640px);
-  letter-spacing: 0.02em;
-  color: var(--vc-foreground);
-  line-height: 1;
+.vc-watermark img {
+  width: min(70vw, 760px);
+  height: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
