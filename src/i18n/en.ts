@@ -153,16 +153,17 @@ export const en: Dict = {
     ],
     coreBeliefHeading: 'What we believe',
     coreBelief:
-      'You should lose sleep over taking care of your employees and taking care of your clients. Not over money. We are here to help you find the best financing options and help you overcome the traps.',
+      'You should lose sleep over taking care of your employees and taking care of your clients. Not over money. We help with the money part.',
     applyCta: 'Get started',
     founderPhotoAlt: 'Vicente E. Correa E., founder of Vinancial Capital',
     founderHeading: 'Why Vicente Built Vinancial Capital',
     founderCtaLabel: 'More about the founder, Vicente',
     founderParagraphs: [
       "Vicente's dad was an electrical engineer at P&G, then ran a pasta factory called Pasta Carabobo, raised cattle, and opened a butcher shop called ToroGordo.",
-      'The family moved constantly: from Venezuela to Mozambique, South Africa, Tanzania, and finally Canada.',
-      'Vicente studied finance in Canada on a scholarship, then worked in private equity, at an AI startup, and in wealth management.',
-      'Vinancial Capital combines both worlds: the finance he learned in an office, and the machinery he learned growing up at home.',
+      'In each of those companies, he learnt that equipment breaks at the most inconvenient time... when payroll is due, for example.',
+      'So after he worked in finance, he decided to fix that problem by combining both worlds: the finance he learned in an office, and the machinery he learned growing up at home.',
+      "The other thing that pushes him is the fact that it is not easy to build a life in a place that's not your original home, let alone want to grow a whole business.",
+      'Vicente wants you to thrive in business.',
     ],
   },
   calculatorPage: {

@@ -153,16 +153,17 @@ export const fr: Dict = {
     ],
     coreBeliefHeading: 'Ce que nous croyons',
     coreBelief:
-      "Vous devriez perdre le sommeil à prendre soin de vos employés et à prendre soin de vos clients. Pas à cause de l'argent. Nous sommes là pour vous aider à trouver les meilleures options de financement et à éviter les pièges.",
+      "Vous devriez perdre le sommeil à prendre soin de vos employés et à prendre soin de vos clients. Pas à cause de l'argent. Nous nous occupons de la partie argent.",
     applyCta: 'Commencer',
     founderPhotoAlt: 'Vicente E. Correa E., fondateur de Vinancial Capital',
     founderHeading: 'Pourquoi Vicente a fondé Vinancial Capital',
     founderCtaLabel: 'En savoir plus sur le fondateur, Vicente',
     founderParagraphs: [
       "Le père de Vicente était ingénieur électricien chez P&G, puis a dirigé une usine de pâtes appelée Pasta Carabobo, élevé du bétail, et ouvert une boucherie appelée ToroGordo.",
-      'La famille a déménagé constamment : du Venezuela au Mozambique, puis en Afrique du Sud, en Tanzanie, et finalement au Canada.',
-      "Vicente a étudié la finance au Canada grâce à une bourse, puis a travaillé en capital-investissement, dans une jeune entreprise d'intelligence artificielle, et en gestion de patrimoine.",
-      "Vinancial Capital réunit les deux mondes : la finance qu'il a apprise au bureau, et la machinerie qu'il a apprise en grandissant à la maison.",
+      "Dans chacune de ces entreprises, il a appris que l'équipement tombe en panne au pire moment... quand il faut payer la paie, par exemple.",
+      "Alors après avoir travaillé en finance, il a décidé de régler ce problème en combinant les deux mondes : la finance qu'il a apprise au bureau, et la machinerie qu'il a apprise en grandissant à la maison.",
+      "L'autre chose qui le motive, c'est qu'il n'est pas facile de bâtir une vie dans un endroit qui n'est pas votre pays d'origine, et encore moins de vouloir faire grandir toute une entreprise.",
+      'Vicente veut que votre entreprise prospère.',
     ],
   },
   calculatorPage: {
