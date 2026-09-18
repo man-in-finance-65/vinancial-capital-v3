@@ -4,6 +4,7 @@ import type { ApplicationData } from '../lib/application';
 import { SITE } from '../config/site';
 import { Reveal } from '../components/ui/Reveal';
 import { Button } from '../components/ui/Button';
+import { Disclosure } from '../components/ui/Disclosure';
 
 export function About({ openForm }: { openForm: (initial?: Partial<ApplicationData>) => void }) {
   const { dict } = useLang();
@@ -54,6 +55,19 @@ export function About({ openForm }: { openForm: (initial?: Partial<ApplicationDa
             {SITE.founder.name}
           </a>
         </p>
+
+        <Reveal delayMs={175}>
+          <div className="mt-10">
+            <Disclosure label={s.founderCtaLabel}>
+              <h2 className="font-slab text-lg font-semibold text-foreground">{s.founderHeading}</h2>
+              {s.founderParagraphs.map((p, i) => (
+                <p key={i} className="text-sm leading-relaxed text-muted md:text-base">
+                  {p}
+                </p>
+              ))}
+            </Disclosure>
+          </div>
+        </Reveal>
 
         <Reveal delayMs={200}>
           <div className="mt-10">

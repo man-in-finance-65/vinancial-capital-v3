@@ -3,7 +3,7 @@ import type { Dict } from './types';
 export const es: Dict = {
   meta: {
     home: {
-      title: 'Vinancial Capital | Financiamiento de equipo, evaluado correctamente',
+      title: 'Vinancial Capital | Financiamiento de equipo para negocios de dueños latinos',
       description: 'Ayudamos a dueños de negocio a financiar equipo. Hablamos tu idioma. Te decimos la verdad.',
     },
     calculator: {
@@ -24,7 +24,7 @@ export const es: Dict = {
     menuClose: 'Cerrar menú',
   },
   footer: {
-    positioning: 'Financiamiento de equipo, evaluado correctamente.',
+    positioning: 'Financiamiento de equipo para negocios de dueños latinos.',
     linksHeading: 'Enlaces',
     disclaimer:
       'Vinancial Capital es un intermediario de financiamiento. Todas las solicitudes están sujetas a verificación y aprobación del prestamista. Este sitio no constituye una oferta de crédito.',
@@ -36,12 +36,11 @@ export const es: Dict = {
     industries: {
       construction: { eyebrow: 'CONSTRUCCIÓN', word: 'excavadora' },
       trucking: { eyebrow: 'TRANSPORTE', word: 'unidad' },
-      restaurant: { eyebrow: 'RESTAURANTES', word: 'cámara de refrigeración' },
+      restaurant: { eyebrow: 'RESTAURANTES', word: 'estufa' },
     },
     headlineTemplate: 'Tu próxima {word},',
     headlineSky: 'financiada bien.',
-    subtext:
-      'Ayudamos a negocios de dueños latinos en Canadá y Estados Unidos a financiar el equipo que los mantiene funcionando. Hablamos tu idioma, te acompañamos en cada paso, y te decimos la verdad, incluso cuando no es lo que quieres escuchar.',
+    subtext: 'Ayudamos a negocios de dueños latinos en Canadá y Estados Unidos a financiar el equipo que los mantiene funcionando.',
     ctaApply: 'Empezar',
     ctaSeePayment: 'Ver mi pago',
     pickerLabel: 'Elige tu industria',
@@ -53,7 +52,10 @@ export const es: Dict = {
     eyebrow: '01',
     heading: 'Cómo funciona',
     steps: [
-      { title: 'Cuéntanos de tu negocio.', body: 'Toma unos 5 minutos y no afecta tu puntaje de crédito.' },
+      {
+        title: 'Cuéntanos de tu negocio.',
+        body: 'Toma menos tiempo que cepillarte los dientes (menos de 2 minutos) y no afecta tu puntaje de crédito.',
+      },
       {
         title: 'Buscamos el prestamista correcto.',
         body: 'Revisamos tu situación y conectamos tu negocio con prestamistas cuyos programas realmente se ajustan a tu industria y tus necesidades.',
@@ -119,7 +121,7 @@ export const es: Dict = {
     items: [
       {
         q: '¿Qué tan rápido puedo obtener aprobación y financiamiento?',
-        a: 'El tiempo depende del prestamista, de tus documentos, y de lo que quieras financiar, pero trabajar con un intermediario casi siempre es más rápido que ir directo a un banco, porque ya sabemos qué prestamistas se mueven rápido para tu tipo de negocio. Puedes acelerar el proceso si tienes listo: 3 a 6 meses de estados de cuenta del negocio, una cotización o factura del equipo, y prueba de seguro sobre el equipo. Comprar equipo usado o de un vendedor privado puede añadir uno o dos días para revisar gravámenes, verificar el número de serie o VIN, y a veces una inspección. Entre más completos estén tus papeles desde el inicio, más rápido avanza todo.',
+        a: 'La mayoría de los solicitantes reciben una decisión en 1 a 2 días, y el dinero llega 1 a 2 días después. Con nosotros, puedes recibir el financiamiento en menos de una semana, en vez de 4 a 6 semanas o más en un banco, porque te conectamos con un prestamista que constantemente hace tu tipo de negocio. Eso es lo que hace una correduría. Para acelerar aún más el proceso, ten listo: 3 a 6 meses de estados de cuenta del negocio, una factura o cotización del equipo, y prueba de seguro sobre el equipo. Comprar equipo usado o de un vendedor privado puede añadir uno o dos días para revisar gravámenes, verificar el número de serie o VIN, y a veces una inspección. Entre más completos estén tus papeles desde el inicio, más rápido avanza todo.',
       },
       {
         q: '¿Cuánto me va a costar esto? Tasas, comisiones y transparencia.',
@@ -137,29 +139,31 @@ export const es: Dict = {
         q: '¿Cómo funciona el programa de proveedores de Vinancial Capital?',
         a: 'Si vendes, fabricas o distribuyes equipo, nuestro programa de proveedores permite que ofrezcas financiamiento a tus clientes en el punto de venta, para que puedan quedar aprobados sin salir de tu local u obra. Te asignamos un contacto dedicado, conectamos a tu cliente con prestamistas que encajan, manejamos el papeleo, y te mantenemos informado en cada paso. A ti te pagan al cierre, sin riesgo de cobranza de tu lado. Cubre camiones y remolques, equipo de construcción e industrial, equipo agrícola, manejo de materiales, y equipo de restaurantes. No hay costo de inscripción: entrenamos a tu equipo para vender con base en el pago mensual, no solo en el precio.',
       },
-      {
-        q: '¿Qué es el programa de sub-corredores, y puedo referir negocios?',
-        a: 'Sí. Está abierto a corredores independientes, agentes hipotecarios, contadores, consultores, distribuidores de equipo, y cualquiera que tenga una red de dueños de negocio que puedan necesitar financiamiento; no se necesita experiencia previa en financiamiento de equipo. Contáctanos a través de nuestra página de contacto para inscribirte, y luego envíanos tus negocios conforme vayan surgiendo. Nosotros nos encargamos de la evaluación, conectamos a tus clientes con prestamistas, manejamos el papeleo, y te mantenemos al tanto. Las comisiones se pagan una vez que el negocio se financia. Pregúntanos por los detalles actuales.',
-      },
     ],
-    feesQuestion: '¿Cuánto cuesta hablar con ustedes?',
-    feesAnswer: 'Depende de lo que quieras financiar. Usa nuestra calculadora para ver un número.',
+    ctaLabel: 'Empezar',
   },
   about: {
     heading: 'Por qué existe Vinancial Capital',
-    subheading: 'Las finanzas se aprenden en la oficina. La maquinaria se aprende en casa.',
+    subheading:
+      'Vicente, el fundador, quiso combinar lo que aprendió en casa (maquinaria) con lo que aprendió en su carrera (finanzas).',
     paragraphs: [
-      'El papá de Vicente era ingeniero eléctrico. Trabajó en una empresa grande llamada P&G.',
-      'Después, su papá manejó una fábrica de pasta. Se llamaba Pasta Carabobo. También crió ganado y abrió una carnicería llamada ToroGordo.',
-      'La familia se mudó muchas veces. Fueron de Venezuela a Mozambique, luego a Sudáfrica, luego a Tanzania, y luego a Canadá.',
-      'Vicente estudió finanzas en Canadá con una beca. Trabajó en capital privado, en una empresa nueva de inteligencia artificial, y en gestión de patrimonio.',
-      'Vinancial Capital une dos mundos. El lado del dinero, aprendido en la oficina. El lado de las máquinas, aprendido en casa.',
+      'Los negocios de dueños latinos construyen buena parte de lo que mantiene a Canadá y Estados Unidos funcionando: cuadrillas de construcción, flotas de transporte, restaurantes y tiendas. Pero al momento de comprar equipo, a muchos los rechazan los bancos o les ofrecen financiamiento que no se ajusta a su negocio.',
+      'Vinancial Capital existe para cerrar esa brecha. Nos dedicamos solo al financiamiento de equipo, así que conocemos a los prestamistas que entienden los negocios de construcción, transporte y restaurantes, y hablamos el idioma en el que nuestros clientes se sienten más cómodos.',
+      'Somos una correduría, no un banco. Eso significa que comparamos tu caso entre muchos prestamistas en lugar de ofrecerte una sola opción, y te acompañamos en cada paso con un lenguaje claro.',
     ],
     coreBeliefHeading: 'Lo que creemos',
     coreBelief:
-      'Debes perder el sueño por tu negocio, como la nómina y tus clientes. No por el dinero. Si firmaste algo que no entendiste, eso es culpa de quien te lo explicó.',
+      'Debes perder el sueño por cuidar a tus empleados y cuidar a tus clientes. No por el dinero. Estamos aquí para ayudarte a encontrar las mejores opciones de financiamiento y ayudarte a evitar las trampas.',
     applyCta: 'Empezar',
     founderPhotoAlt: 'Vicente E. Correa E., fundador de Vinancial Capital',
+    founderHeading: 'Por qué Vicente construyó Vinancial Capital',
+    founderCtaLabel: 'Más sobre el fundador, Vicente',
+    founderParagraphs: [
+      'El papá de Vicente era ingeniero eléctrico en P&G, después manejó una fábrica de pasta llamada Pasta Carabobo, crió ganado, y abrió una carnicería llamada ToroGordo.',
+      'La familia se mudó constantemente: de Venezuela a Mozambique, Sudáfrica, Tanzania, y finalmente Canadá.',
+      'Vicente estudió finanzas en Canadá con una beca, y después trabajó en capital privado, en una empresa nueva de inteligencia artificial, y en gestión de patrimonio.',
+      'Vinancial Capital une los dos mundos: las finanzas que aprendió en una oficina, y la maquinaria que aprendió creciendo en casa.',
+    ],
   },
   calculatorPage: {
     heading: 'Calculadora',
@@ -244,7 +248,7 @@ export const es: Dict = {
     step1: {
       title: 'Esto no es una solicitud formal, solo una consulta.',
       body: 'No afecta tu puntaje de crédito. Cuéntanos un poco sobre tu negocio y lo que quieres financiar. Lo revisamos y te escribimos por correo para decirte cómo podemos ayudarte.',
-      timeNote: 'Toma unos 5 minutos.',
+      timeNote: 'Toma menos tiempo que cepillarte los dientes (menos de 2 minutos).',
       cta: 'Empecemos',
     },
     step2: {

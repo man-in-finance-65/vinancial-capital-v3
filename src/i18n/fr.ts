@@ -3,7 +3,7 @@ import type { Dict } from './types';
 export const fr: Dict = {
   meta: {
     home: {
-      title: "Vinancial Capital | Financement d'équipement, bien évalué",
+      title: "Vinancial Capital | Financement d'équipement pour les entreprises latino-américaines",
       description: "Nous aidons les propriétaires d'entreprise à financer leur équipement. Nous parlons votre langue. Nous disons la vérité.",
     },
     calculator: {
@@ -24,7 +24,7 @@ export const fr: Dict = {
     menuClose: 'Fermer le menu',
   },
   footer: {
-    positioning: "Financement d'équipement, bien évalué.",
+    positioning: "Financement d'équipement pour les entreprises latino-américaines.",
     linksHeading: 'Liens',
     disclaimer:
       'Vinancial Capital est un courtier en financement. Toutes les demandes sont sujettes à la vérification et à l’approbation du prêteur. Ce site ne constitue pas une offre de crédit.',
@@ -36,12 +36,11 @@ export const fr: Dict = {
     industries: {
       construction: { eyebrow: 'CONSTRUCTION', word: 'excavatrice' },
       trucking: { eyebrow: 'CAMIONNAGE', word: 'unité' },
-      restaurant: { eyebrow: 'RESTAURANTS', word: 'chambre froide' },
+      restaurant: { eyebrow: 'RESTAURANTS', word: 'cuisinière' },
     },
     headlineTemplate: 'Votre prochaine {word},',
     headlineSky: 'bien financée.',
-    subtext:
-      "Nous aidons les entreprises latino-américaines au Canada et aux États-Unis à financer l'équipement qui les fait tourner. Nous parlons votre langue, nous vous accompagnons à chaque étape, et nous disons la vérité, même quand ce n'est pas ce que vous voulez entendre.",
+    subtext: "Nous aidons les entreprises latino-américaines au Canada et aux États-Unis à financer l'équipement qui les fait tourner.",
     ctaApply: 'Commencer',
     ctaSeePayment: 'Voir mon paiement',
     pickerLabel: 'Choisissez votre secteur',
@@ -53,7 +52,10 @@ export const fr: Dict = {
     eyebrow: '01',
     heading: 'Comment ça marche',
     steps: [
-      { title: 'Parlez-nous de votre entreprise.', body: "Cela prend environ 5 minutes et n'affecte pas votre cote de crédit." },
+      {
+        title: 'Parlez-nous de votre entreprise.',
+        body: "Cela prend moins de temps que de vous brosser les dents (moins de 2 minutes) et n'affecte pas votre cote de crédit.",
+      },
       {
         title: 'Nous cherchons le bon prêteur.',
         body: 'Nous examinons votre situation et jumelons votre entreprise avec des prêteurs dont les programmes conviennent vraiment à votre secteur et à vos besoins.',
@@ -87,15 +89,15 @@ export const fr: Dict = {
     heading: 'Les secteurs que nous connaissons',
     construction: {
       title: 'Construction',
-      body: 'Excavatrices, chargeuses compactes, camions à benne — nous comprenons ce que cet équipement coûte, ce qu’il rapporte, et comment il s’inscrit dans une entreprise de construction en croissance.',
+      body: 'Excavatrices, chargeuses compactes, camions à benne : nous comprenons ce que cet équipement coûte, ce qu’il rapporte, et comment il s’inscrit dans une entreprise de construction en croissance.',
     },
     trucking: {
       title: 'Camionnage',
-      body: 'Tracteurs, remorques, camions-cubes — nous comprenons comment chaque charge sur la route devient un paiement sur lequel vous pouvez compter.',
+      body: 'Tracteurs, remorques, camions-cubes : nous comprenons comment chaque charge sur la route devient un paiement sur lequel vous pouvez compter.',
     },
     restaurant: {
       title: 'Restaurants',
-      body: "Chambres froides, fours et équipement de préparation — nous comprenons que dans la restauration, les marges sont minces et un équipement fiable n'est pas facultatif.",
+      body: "Chambres froides, fours et équipement de préparation : nous comprenons que dans la restauration, les marges sont minces et un équipement fiable n'est pas facultatif.",
     },
     other: 'Vous ne voyez pas votre secteur dans la liste? Nous travaillons avec plusieurs autres, et pouvons probablement vous aider aussi.',
     otherLink: 'Commencer',
@@ -119,10 +121,10 @@ export const fr: Dict = {
     items: [
       {
         q: 'À quelle vitesse puis-je être approuvé et financé?',
-        a: "Le délai dépend du prêteur, de vos documents, et de ce que vous voulez financer — mais travailler avec un courtier est presque toujours plus rapide que d'aller directement à la banque, parce que nous savons déjà quels prêteurs agissent vite pour votre type d'entreprise. Vous pouvez accélérer les choses en ayant prêts : 3 à 6 mois de relevés bancaires de l'entreprise, une soumission ou facture pour l'équipement, et une preuve d'assurance sur le bien. Acheter de l'équipement usagé ou d'un vendeur privé peut ajouter un jour ou deux pour vérifier les privilèges, le numéro de série ou le NIV, et parfois pour une inspection. Plus vos documents sont complets dès le départ, plus vite les choses avancent.",
+        a: "La plupart des demandeurs reçoivent une décision en 1 à 2 jours, et les fonds arrivent 1 à 2 jours après. Avec nous, vous pourriez être financé en moins d'une semaine, plutôt qu'en 4 à 6 semaines ou plus dans une banque, parce que nous vous jumelons avec un prêteur qui fait constamment votre type de dossier. C'est ce que fait un courtage. Pour accélérer encore plus les choses, ayez prêts : 3 à 6 mois de relevés bancaires de l'entreprise, une facture ou une soumission pour l'équipement, et une preuve d'assurance sur le bien. Acheter de l'équipement usagé ou d'un vendeur privé peut ajouter un jour ou deux pour vérifier les privilèges, le numéro de série ou le NIV, et parfois pour une inspection. Plus vos documents sont complets dès le départ, plus vite les choses avancent.",
       },
       {
-        q: 'Combien cela va-t-il me coûter — taux, frais et transparence?',
+        q: 'Combien cela va-t-il me coûter? Taux, frais et transparence.',
         a: "Votre taux dépend de votre crédit, de votre entreprise, et du prêteur avec qui vous finirez par travailler. Nous ne le fixons pas, et nous ne devinerons pas un chiffre avant qu'un prêteur n'examine votre dossier. Il n'y a aucuns frais pour nous envoyer vos informations ou pour être jumelé à des prêteurs, et la première vérification de crédit est une vérification légère (soft pull) qui n'affecte pas votre cote. Avant de signer quoi que ce soit, confirmez toujours : l'intérêt total sur toute la durée du prêt, les frais d'ouverture de dossier ou de documents, les conditions de remboursement anticipé, le montant de rachat si c'est un bail, et comment les taxes s'appliquent là où vous faites affaire.",
       },
       {
@@ -135,31 +137,33 @@ export const fr: Dict = {
       },
       {
         q: 'Comment fonctionne le programme de fournisseurs de Vinancial Capital?',
-        a: "Si vous vendez, fabriquez ou distribuez de l'équipement, notre programme de fournisseurs vous permet d'offrir du financement à vos clients directement au point de vente, pour qu'ils puissent être approuvés sans quitter votre salle d'exposition ou votre chantier. Nous vous assignons une personne-ressource dédiée, jumelons votre client avec des prêteurs qui conviennent, gérons la paperasse, et vous tenons informé à chaque étape. Vous êtes payé à la clôture, sans risque de recouvrement de votre côté. Cela couvre les camions et remorques, l'équipement de construction et industriel, l'équipement agricole, la manutention, et l'équipement de restauration. Il n'y a aucuns frais d'installation — nous formons votre équipe à vendre sur la base du paiement plutôt que du prix.",
-      },
-      {
-        q: 'Qu’est-ce que le programme de sous-courtiers, et puis-je référer des dossiers?',
-        a: "Oui. Il est ouvert aux courtiers indépendants, agents hypothécaires, comptables, consultants, concessionnaires d'équipement, et à quiconque a un réseau de propriétaires d'entreprise qui pourraient avoir besoin de financement — aucune expérience en financement d'équipement n'est requise. Contactez-nous via notre page de contact pour vous inscrire, puis envoyez-nous vos dossiers au fur et à mesure. Nous nous occupons de l'analyse, jumelons vos clients avec des prêteurs, gérons la paperasse, et vous tenons au courant. Les commissions sont versées une fois le dossier financé. Demandez-nous les détails actuels.",
+        a: "Si vous vendez, fabriquez ou distribuez de l'équipement, notre programme de fournisseurs vous permet d'offrir du financement à vos clients directement au point de vente, pour qu'ils puissent être approuvés sans quitter votre salle d'exposition ou votre chantier. Nous vous assignons une personne-ressource dédiée, jumelons votre client avec des prêteurs qui conviennent, gérons la paperasse, et vous tenons informé à chaque étape. Vous êtes payé à la clôture, sans risque de recouvrement de votre côté. Cela couvre les camions et remorques, l'équipement de construction et industriel, l'équipement agricole, la manutention, et l'équipement de restauration. Il n'y a aucuns frais d'installation. Nous formons votre équipe à vendre sur la base du paiement plutôt que du prix.",
       },
     ],
-    feesQuestion: 'Combien ça coûte de vous parler?',
-    feesAnswer: 'Cela dépend de ce que vous voulez financer. Utilisez notre calculateur pour voir un montant.',
+    ctaLabel: 'Commencer',
   },
   about: {
     heading: 'Pourquoi Vinancial Capital existe',
-    subheading: "La finance s'apprend au bureau. La machinerie s'apprend à la maison.",
+    subheading:
+      "Vicente, le fondateur, voulait combiner ce qu'il a appris à la maison (la machinerie) et ce qu'il a appris dans sa carrière (la finance).",
     paragraphs: [
-      'Le père de Vicente était ingénieur électricien. Il travaillait pour une grande entreprise appelée P&G.',
-      "Ensuite, son père a dirigé une usine de pâtes. Elle s'appelait Pasta Carabobo. Il élevait aussi du bétail et a ouvert une boucherie appelée ToroGordo.",
-      'La famille a beaucoup déménagé. Ils sont allés du Venezuela au Mozambique, puis en Afrique du Sud, puis en Tanzanie, puis au Canada.',
-      "Vicente a étudié la finance au Canada grâce à une bourse. Il a travaillé en capital-investissement, dans une jeune entreprise d'intelligence artificielle, et en gestion de patrimoine.",
-      "Vinancial Capital réunit deux mondes. Le côté de l'argent, appris au bureau. Le côté des machines, appris à la maison.",
+      "Les entreprises latino-américaines bâtissent une bonne partie de ce qui fait tourner le Canada et les États-Unis : équipes de construction, flottes de camionnage, restaurants et commerces. Mais au moment d'acheter de l'équipement, plusieurs se font refuser par les banques ou reçoivent un financement qui ne convient pas à leur entreprise.",
+      "Vinancial Capital existe pour combler cet écart. Nous nous concentrons uniquement sur le financement d'équipement, alors nous connaissons les prêteurs qui comprennent les entreprises de construction, de camionnage et de restauration, et nous parlons la langue dans laquelle nos clients sont le plus à l'aise.",
+      "Nous sommes un courtage, pas une banque. Cela veut dire que nous comparons votre dossier auprès de plusieurs prêteurs au lieu de vous offrir une seule option, et que nous vous accompagnons à chaque étape dans un langage clair.",
     ],
     coreBeliefHeading: 'Ce que nous croyons',
     coreBelief:
-      "Vous devriez perdre le sommeil à cause de votre entreprise, comme la paie et vos clients. Pas à cause de l'argent. Si vous avez signé quelque chose que vous n'avez pas compris, c'est la faute de la personne qui vous l'a expliqué.",
+      "Vous devriez perdre le sommeil à prendre soin de vos employés et à prendre soin de vos clients. Pas à cause de l'argent. Nous sommes là pour vous aider à trouver les meilleures options de financement et à éviter les pièges.",
     applyCta: 'Commencer',
     founderPhotoAlt: 'Vicente E. Correa E., fondateur de Vinancial Capital',
+    founderHeading: 'Pourquoi Vicente a fondé Vinancial Capital',
+    founderCtaLabel: 'En savoir plus sur le fondateur, Vicente',
+    founderParagraphs: [
+      "Le père de Vicente était ingénieur électricien chez P&G, puis a dirigé une usine de pâtes appelée Pasta Carabobo, élevé du bétail, et ouvert une boucherie appelée ToroGordo.",
+      'La famille a déménagé constamment : du Venezuela au Mozambique, puis en Afrique du Sud, en Tanzanie, et finalement au Canada.',
+      "Vicente a étudié la finance au Canada grâce à une bourse, puis a travaillé en capital-investissement, dans une jeune entreprise d'intelligence artificielle, et en gestion de patrimoine.",
+      "Vinancial Capital réunit les deux mondes : la finance qu'il a apprise au bureau, et la machinerie qu'il a apprise en grandissant à la maison.",
+    ],
   },
   calculatorPage: {
     heading: 'Calculateur',
@@ -244,7 +248,7 @@ export const fr: Dict = {
     step1: {
       title: "Ceci n'est pas une demande officielle, seulement une demande de renseignements.",
       body: "Cela n'affecte pas votre cote de crédit. Parlez-nous un peu de votre entreprise et de ce que vous voulez financer. Nous l'examinons et vous écrivons par courriel pour vous dire comment nous pouvons vous aider.",
-      timeNote: 'Cela prend environ 5 minutes.',
+      timeNote: 'Cela prend moins de temps que de vous brosser les dents (moins de 2 minutes).',
       cta: 'Commençons',
     },
     step2: {

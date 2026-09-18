@@ -31,7 +31,7 @@ export function Home({ openForm }: { openForm: (initial?: Partial<ApplicationDat
       <CalculatorPreview
         onApplyWithAmount={(amountLabel) => openForm({ monto_solicitado: amountLabel, servicio_financiero: 'prestamo_equipo' })}
       />
-      <FAQSection />
+      <FAQSection openForm={openForm} />
     </>
   );
 }

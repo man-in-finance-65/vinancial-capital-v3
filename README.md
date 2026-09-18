@@ -42,21 +42,21 @@ npm run test:watch # watch mode
 
 ## 3D machine models
 
-The hero shows one of three machines (excavator, semi-truck, food truck) depending on the selected industry, defined in `src/config/machines.ts`.
+The hero shows one of three machines (excavator, semi-truck, commercial oven) depending on the selected industry, defined in `src/config/machines.ts`.
 
-**Right now, with no `.glb` files in the repo, the hero shows a stylized placeholder** — a simple machine built from basic geometric shapes (boxes, cylinders) directly in code, with the same hover/touch interactivity (spinning wheels/tracks, a lifting arm, an opening service window) as the real models will have. See `src/components/three/PlaceholderMachine.tsx`. This isn't meant to be the final look — it's there so the site works and feels alive before real assets exist. Once you add real `.glb` files below, the site tries to load them first on every page load and only falls back to the placeholder if a file is missing or fails to load — no code changes needed to make the switch.
+**Right now, with no `.glb` files in the repo, the hero shows a stylized placeholder.** It's a simple machine built from basic geometric shapes (boxes, cylinders) directly in code, with the same hover/touch interactivity (spinning wheels/tracks, a lifting arm, an opening oven door) as the real models will have. See `src/components/three/PlaceholderMachine.tsx`. This isn't meant to be the final look. It's there so the site works and feels alive before real assets exist. Once you add real `.glb` files below, the site tries to load them first on every page load and only falls back to the placeholder if a file is missing or fails to load, so no code changes are needed to make the switch.
 
 1. **Add the files.** Drop the `.glb` files here:
    - `public/models/excavator.glb`
    - `public/models/semi-truck.glb`
-   - `public/models/walk-in-fridge.glb`
+   - `public/models/oven.glb`
 
    Also add a static poster image per industry (shown while the model loads, and permanently if WebGL is unavailable or the visitor has "reduce motion" turned on):
    - `public/models/construction.webp`
    - `public/models/trucking.webp`
    - `public/models/restaurant.webp`
 
-2. **Find the node names.** Every interactive part (wheels, tracks, the excavator arm/bucket, the food truck's service window) needs to reference the exact node name inside the `.glb`. Once a model is loading in dev, its node names are printed to the browser console automatically (see `logGLTFNodeNames` in `src/config/machines.ts`, wired into `src/components/three/MachineModel.tsx`) — open the browser console with the site running locally, load the hero, and you'll see a list like:
+2. **Find the node names.** Every interactive part (wheels, tracks, the excavator arm/bucket, the oven door) needs to reference the exact node name inside the `.glb`. Once a model is loading in dev, its node names are printed to the browser console automatically (see `logGLTFNodeNames` in `src/config/machines.ts`, wired into `src/components/three/MachineModel.tsx`) — open the browser console with the site running locally, load the hero, and you'll see a list like:
 
    ```
    [Vinancial Capital] GLTF node names:

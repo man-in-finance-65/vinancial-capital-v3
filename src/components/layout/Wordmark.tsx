@@ -1,9 +1,9 @@
 export function Wordmark({ className = '' }: { className?: string }) {
   return (
-    <span className={`inline-flex items-center gap-2 ${className}`}>
-      <img src="/logo-mark.svg" alt="" aria-hidden className="h-[0.9em] w-auto shrink-0" />
-      <span className="font-slab font-bold uppercase tracking-[0.22em] text-foreground">
-        VINANCIAL<span className="text-sky">·</span>CAPITAL
+    <span className={`inline-flex items-center ${className}`} role="img" aria-label="Vinancial Capital">
+      <img src="/logo-mark.svg" alt="" aria-hidden className="h-[1em] w-auto shrink-0" />
+      <span aria-hidden className="font-slab font-bold uppercase tracking-[0.06em] text-foreground">
+        INANCIAL CAPITAL
       </span>
     </span>
   );

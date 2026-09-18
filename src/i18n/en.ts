@@ -3,7 +3,7 @@ import type { Dict } from './types';
 export const en: Dict = {
   meta: {
     home: {
-      title: 'Vinancial Capital | Equipment financing, properly assessed',
+      title: 'Vinancial Capital | Equipment financing for Latino-owned businesses',
       description: 'We help business owners finance equipment. We speak your language. We tell you the truth.',
     },
     calculator: {
@@ -24,7 +24,7 @@ export const en: Dict = {
     menuClose: 'Close menu',
   },
   footer: {
-    positioning: 'Equipment financing, properly assessed.',
+    positioning: 'Equipment financing for Latino-owned businesses.',
     linksHeading: 'Links',
     disclaimer:
       'Vinancial Capital is a financing broker. All applications are subject to lender verification and approval. This site does not constitute an offer of credit.',
@@ -36,12 +36,11 @@ export const en: Dict = {
     industries: {
       construction: { eyebrow: 'CONSTRUCTION', word: 'excavator' },
       trucking: { eyebrow: 'TRUCKING', word: 'truck' },
-      restaurant: { eyebrow: 'RESTAURANTS', word: 'walk-in fridge' },
+      restaurant: { eyebrow: 'RESTAURANTS', word: 'oven' },
     },
     headlineTemplate: 'Your next {word},',
     headlineSky: 'Financed right.',
-    subtext:
-      "We help Latino-owned businesses across Canada and the United States finance the equipment that keeps them running. We speak your language, walk you through every step, and tell you the truth — even when it isn't what you want to hear.",
+    subtext: 'We help Latino-owned businesses across Canada and the United States finance the equipment that keeps them running.',
     ctaApply: 'Get started',
     ctaSeePayment: 'See my payment',
     pickerLabel: 'Choose your industry',
@@ -53,14 +52,17 @@ export const en: Dict = {
     eyebrow: '01',
     heading: 'How it works',
     steps: [
-      { title: 'Tell us about your business.', body: "It takes about 5 minutes, and it won't affect your credit score." },
+      {
+        title: 'Tell us about your business.',
+        body: "The form takes less time than brushing your teeth (under 2 minutes), and it won't affect your credit score.",
+      },
       {
         title: 'We look for the right lender.',
         body: 'We review your situation and match your business with lenders whose programs actually fit your industry and needs.',
       },
       {
         title: 'You get your equipment.',
-        body: "Once a lender approves you, you sign the paperwork and get funded — then it's time to put your equipment to work.",
+        body: "Once a lender approves you, you sign the paperwork and get funded. Then it's time to put your equipment to work.",
       },
     ],
   },
@@ -70,7 +72,7 @@ export const en: Dict = {
     points: [
       {
         title: 'We explain every "no."',
-        body: 'If a lender turns you down, we tell you exactly why — so you know what to fix instead of guessing.',
+        body: 'If a lender turns you down, we tell you exactly why, so you know what to fix instead of guessing.',
       },
       {
         title: 'We speak Spanish, English and French.',
@@ -87,15 +89,15 @@ export const en: Dict = {
     heading: 'Industries we know',
     construction: {
       title: 'Construction',
-      body: 'Excavators, skid steers, dump trucks — we understand what this equipment costs, what it earns, and how it fits into a growing contracting business.',
+      body: 'Excavators, skid steers, dump trucks: we understand what this equipment costs, what it earns, and how it fits into a growing contracting business.',
     },
     trucking: {
       title: 'Trucking',
-      body: 'Tractors, trailers, box trucks — we understand how every load on the road turns into a payment you can count on.',
+      body: 'Tractors, trailers, box trucks: we understand how every load on the road turns into a payment you can count on.',
     },
     restaurant: {
       title: 'Restaurants',
-      body: "Walk-in fridges, ovens and prep equipment — we understand that in food service, margins are thin and reliable equipment isn't optional.",
+      body: "Walk-in fridges, ovens and prep equipment: we understand that in food service, margins are thin and reliable equipment isn't optional.",
     },
     other: "Don't see your industry listed? We work with plenty of others too, and can likely still help.",
     otherLink: 'Get started',
@@ -119,15 +121,15 @@ export const en: Dict = {
     items: [
       {
         q: 'How quickly can I get approved and funded?',
-        a: "Timelines depend on the lender, your paperwork, and what you're financing — but working with a broker is almost always faster than going straight to a bank, since we already know which lenders move quickly for your type of deal. You can speed things up by having ready: 3–6 months of business bank statements, an invoice or price quote for the equipment, and proof of insurance on the asset. Buying used or from a private seller can add a day or two for a lien search, serial number or VIN verification, and possibly an inspection. The more complete your paperwork is up front, the faster things move.",
+        a: 'Most applicants get a decision in 1–2 days, with funds landing 1–2 days after that. Here, you could be funded in under a week, versus 4–6+ weeks at a bank, because we pair you up with a lender that constantly does your type of deal. That is what a brokerage does. To speed things up even more, have the following ready: 3–6 months of business bank statements, an invoice or price quote for the equipment, and proof of insurance on the asset. Buying used or from a private seller can add a day or two for a lien search, serial number or VIN verification, and possibly an inspection. The more complete your paperwork is up front, the faster things move.',
       },
       {
-        q: 'What will this cost me — rates, fees, and transparency?',
-        a: "Your rate depends on your credit, your business, and the lender you end up with — we don't set it, and we won't guess a number before a lender actually reviews your file. There's no upfront fee to send us your information or get matched with lenders, and the initial credit check is a soft pull that won't affect your score. Before you sign anything, always confirm: the total interest over the life of the loan, any origination or documentation fees, the terms for paying it off early, the buyout amount if it's a lease, and how sales tax applies where you do business.",
+        q: 'What will this cost me? Rates, fees, and transparency.',
+        a: "Your rate depends on your credit, your business, and the lender you end up with. We don't set it, and we won't guess a number before a lender actually reviews your file. There's no upfront fee to send us your information or get matched with lenders, and the initial credit check is a soft pull that won't affect your score. Before you sign anything, always confirm: the total interest over the life of the loan, any origination or documentation fees, the terms for paying it off early, the buyout amount if it's a lease, and how sales tax applies where you do business.",
       },
       {
         q: 'Can I qualify with bruised credit, limited time in business, or a bank decline?',
-        a: "Often, yes. Banks turn down a large share of small business financing requests, and that's exactly the kind of situation we specialize in — startups, thin credit files, seasonal cash flow, and industries some lenders consider higher risk, like trucking, hospitality, and construction. Depending on your situation, a lender may ask for a larger down payment, a shorter term, a personal guarantee, or stronger collateral. The equipment itself, your down payment, proof of steady revenue or contracts, and a clear plan for how it will generate income often matter as much as your credit score. Lenders look at the full picture, not just a number.",
+        a: "Often, yes. Banks turn down a large share of small business financing requests, and that's exactly the kind of situation we specialize in: startups, thin credit files, seasonal cash flow, and industries some lenders consider higher risk, like trucking, hospitality, and construction. Depending on your situation, a lender may ask for a larger down payment, a shorter term, a personal guarantee, or stronger collateral. The equipment itself, your down payment, proof of steady revenue or contracts, and a clear plan for how it will generate income often matter as much as your credit score. Lenders look at the full picture, not just a number.",
       },
       {
         q: 'What collateral, guarantees, and documents do I need?',
@@ -135,31 +137,33 @@ export const en: Dict = {
       },
       {
         q: "How does Vinancial Capital's vendor program work?",
-        a: "If you sell, manufacture, or distribute equipment, our vendor program lets you offer your customers financing at the point of sale, so they can get approved without leaving your showroom or job site. We assign a dedicated contact, match your customer with lenders that fit, handle the paperwork, and keep you updated at every step. You get paid at closing, with no collections risk on your side. It covers trucks and trailers, construction and industrial equipment, agricultural equipment, material handling, and restaurant equipment. There's no setup cost — we train your team to sell on payment instead of price.",
-      },
-      {
-        q: "What's the sub-broker program, and can I refer deals?",
-        a: 'Yes. It’s open to independent brokers, mortgage agents, accountants, consultants, equipment dealers, and anyone with a network of business owners who might need financing — no equipment finance experience required. Reach out through our contact page to get set up, then send us deals as they come. We handle underwriting, match your clients with lenders, manage the paperwork, and keep you in the loop. Commissions are paid once a deal funds. Ask us for the current details.',
+        a: "If you sell, manufacture, or distribute equipment, our vendor program lets you offer your customers financing at the point of sale, so they can get approved without leaving your showroom or job site. We assign a dedicated contact, match your customer with lenders that fit, handle the paperwork, and keep you updated at every step. You get paid at closing, with no collections risk on your side. It covers trucks and trailers, construction and industrial equipment, agricultural equipment, material handling, and restaurant equipment. There's no setup cost. We train your team to sell on payment instead of price.",
       },
     ],
-    feesQuestion: 'How much does it cost to talk to you?',
-    feesAnswer: 'It depends on what you want to finance. Use our calculator to see a number.',
+    ctaLabel: 'Get started',
   },
   about: {
     heading: 'Why Vinancial Capital exists',
-    subheading: 'Finance learned in an office. Machinery learned at home.',
+    subheading:
+      'Vicente, the founder, wanted to combine what he learned at home (machinery) and what he learnt in his career (finance).',
     paragraphs: [
-      "Vicente's dad was an electrical engineer. He worked at a big company called P&G.",
-      'Then his dad ran a pasta factory. It was called Pasta Carabobo. He also raised cattle and opened a butcher shop called ToroGordo.',
-      'The family moved a lot. They went from Venezuela to Mozambique, then South Africa, then Tanzania, then Canada.',
-      'Vicente studied finance in Canada on a scholarship. He worked in private equity, at an AI startup, and in wealth management.',
-      'Vinancial Capital joins two worlds. The money side, learned in an office. The machine side, learned at home.',
+      'Latino-owned businesses build a lot of what keeps Canada and the United States running: construction crews, trucking fleets, restaurants and shops. But when it comes time to buy equipment, many get turned away by banks or handed financing that does not fit their business.',
+      'Vinancial Capital exists to close that gap. We focus only on equipment financing, so we know the lenders who understand construction, trucking and restaurant businesses, and we speak the language our clients are most comfortable in.',
+      'We are a brokerage, not a bank. That means we shop your deal across many lenders instead of offering just one option, and we walk you through every step in plain language.',
     ],
     coreBeliefHeading: 'What we believe',
     coreBelief:
-      'You should lose sleep over your business, like payroll and your clients. Not over money. If you signed something you did not understand, that is on the person who explained it.',
+      'You should lose sleep over taking care of your employees and taking care of your clients. Not over money. We are here to help you find the best financing options and help you overcome the traps.',
     applyCta: 'Get started',
     founderPhotoAlt: 'Vicente E. Correa E., founder of Vinancial Capital',
+    founderHeading: 'Why Vicente Built Vinancial Capital',
+    founderCtaLabel: 'More about the founder, Vicente',
+    founderParagraphs: [
+      "Vicente's dad was an electrical engineer at P&G, then ran a pasta factory called Pasta Carabobo, raised cattle, and opened a butcher shop called ToroGordo.",
+      'The family moved constantly: from Venezuela to Mozambique, South Africa, Tanzania, and finally Canada.',
+      'Vicente studied finance in Canada on a scholarship, then worked in private equity, at an AI startup, and in wealth management.',
+      'Vinancial Capital combines both worlds: the finance he learned in an office, and the machinery he learned growing up at home.',
+    ],
   },
   calculatorPage: {
     heading: 'Calculator',
@@ -244,7 +248,7 @@ export const en: Dict = {
     step1: {
       title: 'This is not a formal application, just an inquiry.',
       body: "It won't affect your credit score. Tell us a little about your business and what you're looking to finance. We'll take a look and follow up by email to let you know how we can help.",
-      timeNote: 'It takes about 5 minutes.',
+      timeNote: 'The form takes less time than brushing your teeth (under 2 minutes).',
       cta: "Let's start",
     },
     step2: {

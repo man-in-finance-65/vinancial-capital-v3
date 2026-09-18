@@ -84,8 +84,7 @@ export type Dict = {
     eyebrow: string;
     heading: string;
     items: QA[];
-    feesQuestion: string;
-    feesAnswer: string;
+    ctaLabel: string;
   };
   about: {
     heading: string;
@@ -95,6 +94,9 @@ export type Dict = {
     coreBelief: string;
     applyCta: string;
     founderPhotoAlt: string;
+    founderHeading: string;
+    founderCtaLabel: string;
+    founderParagraphs: string[];
   };
   calculatorPage: {
     heading: string;

@@ -1,11 +1,22 @@
 import { useEffect, useRef, useState } from 'react';
 import { ChevronDown, ArrowRight } from 'lucide-react';
 import type { QA } from '../../i18n';
-import { Link } from '../../router/Router';
 
-type AccordionItem = QA & { linkTo?: string; linkLabel?: string };
-
-function AccordionRow({ item, index, isOpen, onToggle }: { item: AccordionItem; index: number; isOpen: boolean; onToggle: () => void }) {
+function AccordionRow({
+  item,
+  index,
+  isOpen,
+  onToggle,
+  ctaLabel,
+  onCtaClick,
+}: {
+  item: QA;
+  index: number;
+  isOpen: boolean;
+  onToggle: () => void;
+  ctaLabel?: string;
+  onCtaClick?: () => void;
+}) {
   const contentRef = useRef<HTMLDivElement>(null);
   const [maxHeight, setMaxHeight] = useState(0);
   const panelId = `faq-panel-${index}`;
@@ -40,11 +51,15 @@ function AccordionRow({ item, index, isOpen, onToggle }: { item: AccordionItem; 
       >
         <div ref={contentRef} className="pb-5">
           <p className="text-sm leading-relaxed text-muted md:text-base">{item.a}</p>
-          {item.linkTo && (
-            <Link to={item.linkTo} className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-sky hover:opacity-80">
-              {item.linkLabel}
+          {ctaLabel && onCtaClick && (
+            <button
+              type="button"
+              onClick={onCtaClick}
+              className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-sky hover:opacity-80"
+            >
+              {ctaLabel}
               <ArrowRight size={14} />
-            </Link>
+            </button>
           )}
         </div>
       </div>
@@ -52,13 +67,21 @@ function AccordionRow({ item, index, isOpen, onToggle }: { item: AccordionItem; 
   );
 }
 
-export function Accordion({ items }: { items: AccordionItem[] }) {
+export function Accordion({ items, ctaLabel, onCtaClick }: { items: QA[]; ctaLabel?: string; onCtaClick?: () => void }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <div className="divide-y divide-border border-y border-border">
       {items.map((item, i) => (
-        <AccordionRow key={i} item={item} index={i} isOpen={openIndex === i} onToggle={() => setOpenIndex(openIndex === i ? null : i)} />
+        <AccordionRow
+          key={i}
+          item={item}
+          index={i}
+          isOpen={openIndex === i}
+          onToggle={() => setOpenIndex(openIndex === i ? null : i)}
+          ctaLabel={ctaLabel}
+          onCtaClick={onCtaClick}
+        />
       ))}
     </div>
   );

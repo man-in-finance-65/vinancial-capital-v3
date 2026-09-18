@@ -52,11 +52,11 @@ export const MACHINES: Record<IndustryKey, MachineConfig> = {
   },
   restaurant: {
     key: 'restaurant',
-    modelPath: '/models/walk-in-fridge.glb',
+    modelPath: '/models/oven.glb',
     posterPath: '/models/restaurant.webp',
-    cameraPosition: [4, 1.8, 5],
+    cameraPosition: [5, 1.8, 5],
     scale: 1,
-    parts: [{ nodeName: 'TODO_door', motion: { kind: 'hinge', axis: 'y', maxAngle: 1.3 } }],
+    parts: [{ nodeName: 'TODO_door', motion: { kind: 'hinge', axis: 'x', maxAngle: 1.1 } }],
   },
 };
 

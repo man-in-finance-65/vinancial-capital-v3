@@ -29,3 +29,22 @@ export function stepHinge(
   state.angle = reducedMotion ? target : THREE.MathUtils.lerp(state.angle, target, 0.08);
   node.rotation[axis] = state.angle;
 }
+
+/** Subtle "pop" scale-up used as hover/touch feedback on interactive parts. */
+export function stepHoverScale(node: THREE.Object3D, active: boolean, reducedMotion: boolean, maxScale = 1.06) {
+  const target = active ? maxScale : 1;
+  const next = reducedMotion ? target : THREE.MathUtils.lerp(node.scale.x, target, 0.15);
+  node.scale.setScalar(next);
+}
+
+/** Brightens an accent mesh's emissive glow as hover/touch feedback. */
+export function stepHoverGlow(
+  material: THREE.MeshStandardMaterial,
+  active: boolean,
+  reducedMotion: boolean,
+  baseIntensity: number,
+  maxIntensity: number
+) {
+  const target = active ? maxIntensity : baseIntensity;
+  material.emissiveIntensity = reducedMotion ? target : THREE.MathUtils.lerp(material.emissiveIntensity, target, 0.12);
+}
