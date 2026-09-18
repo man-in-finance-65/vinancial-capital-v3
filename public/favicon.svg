@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#071121"/>
-  <g transform="translate(8.07,10.87) scale(0.04835)">
-    <line x1="90" y1="370" x2="400" y2="725" stroke="#1F4FE3" stroke-width="95" stroke-linecap="butt" />
-    <line x1="270" y1="370" x2="400" y2="725" stroke="#1F4FE3" stroke-width="95" stroke-linecap="butt" />
-    <line x1="435" y1="725" x2="905" y2="150" stroke="#1F4FE3" stroke-width="95" stroke-linecap="butt" />
-  </g>
-</svg>
