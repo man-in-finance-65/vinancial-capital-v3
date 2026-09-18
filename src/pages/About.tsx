@@ -20,7 +20,7 @@ export function About({ openForm }: { openForm: (initial?: Partial<ApplicationDa
       <div className="mx-auto max-w-3xl">
         <Reveal>
           <h1 className="font-slab text-4xl font-semibold text-foreground md:text-5xl">{s.heading}</h1>
-          <p className="mt-3 text-lg text-muted">{s.subheading}</p>
+          {s.subheading && <p className="mt-3 text-lg text-muted">{s.subheading}</p>}
         </Reveal>
 
         <div className="mt-10 aspect-[4/3] w-full max-w-xs overflow-hidden rounded-card border border-border bg-panel">

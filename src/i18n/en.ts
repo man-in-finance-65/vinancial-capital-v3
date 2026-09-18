@@ -144,10 +144,9 @@ export const en: Dict = {
   },
   about: {
     heading: 'Why Vinancial Capital exists',
-    subheading:
-      'Vicente, the founder, wanted to combine what he learned at home (machinery) and what he learnt in his career (finance).',
+    subheading: '',
     paragraphs: [
-      'Latino-owned businesses build a lot of what keeps Canada and the United States running: construction crews, trucking fleets, restaurants and shops. But when it comes time to buy equipment, many get turned away by banks or handed financing that does not fit their business.',
+      'When it comes time to buy equipment, many get turned away by banks or handed financing that does not fit their business.',
       'Vinancial Capital exists to close that gap. We focus only on equipment financing, so we know the lenders who understand construction, trucking and restaurant businesses, and we speak the language our clients are most comfortable in.',
       'We are a brokerage, not a bank. That means we shop your deal across many lenders instead of offering just one option, and we walk you through every step in plain language.',
     ],

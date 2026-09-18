@@ -144,10 +144,9 @@ export const fr: Dict = {
   },
   about: {
     heading: 'Pourquoi Vinancial Capital existe',
-    subheading:
-      "Vicente, le fondateur, voulait combiner ce qu'il a appris à la maison (la machinerie) et ce qu'il a appris dans sa carrière (la finance).",
+    subheading: '',
     paragraphs: [
-      "Les entreprises latino-américaines bâtissent une bonne partie de ce qui fait tourner le Canada et les États-Unis : équipes de construction, flottes de camionnage, restaurants et commerces. Mais au moment d'acheter de l'équipement, plusieurs se font refuser par les banques ou reçoivent un financement qui ne convient pas à leur entreprise.",
+      "Au moment d'acheter de l'équipement, plusieurs se font refuser par les banques ou reçoivent un financement qui ne convient pas à leur entreprise.",
       "Vinancial Capital existe pour combler cet écart. Nous nous concentrons uniquement sur le financement d'équipement, alors nous connaissons les prêteurs qui comprennent les entreprises de construction, de camionnage et de restauration, et nous parlons la langue dans laquelle nos clients sont le plus à l'aise.",
       "Nous sommes un courtage, pas une banque. Cela veut dire que nous comparons votre dossier auprès de plusieurs prêteurs au lieu de vous offrir une seule option, et que nous vous accompagnons à chaque étape dans un langage clair.",
     ],
