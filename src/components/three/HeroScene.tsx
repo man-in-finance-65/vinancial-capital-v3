@@ -1,6 +1,6 @@
 import { Suspense, useRef, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { ContactShadows } from '@react-three/drei';
+import { ContactShadows, Environment, Lightformer } from '@react-three/drei';
 import { MACHINES, type IndustryKey } from '../../config/machines';
 import { MachineModel } from './MachineModel';
 import { PlaceholderMachine } from './PlaceholderMachine';
@@ -73,6 +73,13 @@ export function HeroScene({ industry, reducedMotion }: { industry: IndustryKey; 
         <ambientLight intensity={0.5} />
         <directionalLight position={[4, 6, 4]} intensity={1.1} />
         <directionalLight position={[-4, 2, -3]} intensity={0.35} color="#86D2F3" />
+        {/* Studio reflections for the metal/glass materials, generated locally (no HDR download). */}
+        <Environment resolution={256}>
+          <Lightformer intensity={2} position={[0, 5, -2]} scale={[10, 2, 1]} />
+          <Lightformer intensity={1.5} position={[-5, 1, 2]} rotation-y={Math.PI / 2} scale={[8, 2, 1]} />
+          <Lightformer intensity={1} color="#86D2F3" position={[5, 1, 2]} rotation-y={-Math.PI / 2} scale={[8, 2, 1]} />
+          <Lightformer intensity={0.6} position={[0, -3, 3]} rotation-x={Math.PI / 2} scale={[10, 10, 1]} />
+        </Environment>
         {/* Real .glb models load here. Until they exist in public/models, this falls back
             to a stylized procedural placeholder — same interactivity, no external files. */}
         <ThreeErrorBoundary

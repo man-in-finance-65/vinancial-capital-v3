@@ -29,7 +29,7 @@ export type Dict = {
   hero: {
     industries: {
       construction: { eyebrow: string; word: string };
-      trucking: { eyebrow: string; word: string };
+      trucking: { eyebrow: string; word: string; sky?: string };
       restaurant: { eyebrow: string; word: string };
     };
     headlineTemplate: string;
@@ -96,6 +96,7 @@ export type Dict = {
     coreBelief: string;
     applyCta: string;
     founderPhotoAlt: string;
+    founderPhotoPlace: string;
     founderCtaLabel: string;
     founderParagraphs: string[];
   };

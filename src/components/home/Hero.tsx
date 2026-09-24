@@ -71,7 +71,7 @@ export function Hero({ onApply }: { onApply: (industry: IndustryKey) => void }) 
       <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center px-6 pt-32 text-center md:pt-40">
         <span className="font-sans text-xs font-semibold uppercase tracking-[0.34em] text-sky">{copy.eyebrow}</span>
         <h1 className="mt-4 font-slab text-4xl font-semibold leading-[1.08] text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-          {interpolate(dict.hero.headlineTemplate, { word: copy.word })} <span className="text-sky">{dict.hero.headlineSky}</span>
+          {interpolate(dict.hero.headlineTemplate, { word: copy.word })} <span className="text-sky">{('sky' in copy && copy.sky) || dict.hero.headlineSky}</span>
         </h1>
         <p className="mt-5 max-w-xl text-base leading-relaxed text-muted md:text-lg">{dict.hero.subtext}</p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
