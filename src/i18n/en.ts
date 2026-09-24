@@ -160,7 +160,7 @@ export const en: Dict = {
     founderPhotoPlace: 'Pastas Carabobo – Zona Industrial La Quizanda, Valencia, Venezuela (2004)',
     founderCtaLabel: 'More about the founder, Vicente',
     founderParagraphs: [
-      "Vicente's dad was an electrical engineer at P&G, then ran a pasta factory called Pasta Carabobo, raised cattle, and opened a butcher shop called ToroGordo.",
+      "Vicente's dad was an electrical engineer at P&G, then ran a pasta factory called Pastas Carabobo, raised cattle, and opened a butcher shop called ToroGordo.",
       'In each of those companies, he learnt that equipment breaks at the most inconvenient time… when payroll is due, for example.',
       'So after he worked in finance, he decided to fix that problem by combining both worlds: the finance he learned in an office, and the machinery he learned growing up at home.',
       "The other thing that pushes him is the fact that it is not easy to build a life in a place that's not your original home, let alone want to grow a whole business.",

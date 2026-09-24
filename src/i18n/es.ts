@@ -160,7 +160,7 @@ export const es: Dict = {
     founderPhotoPlace: 'Pastas Carabobo – Zona Industrial La Quizanda, Valencia, Venezuela (2004)',
     founderCtaLabel: 'Más sobre el fundador, Vicente',
     founderParagraphs: [
-      'El papá de Vicente era ingeniero eléctrico en P&G, después manejó una fábrica de pasta llamada Pasta Carabobo, crió ganado y abrió una carnicería llamada ToroGordo.',
+      'El papá de Vicente era ingeniero eléctrico en P&G, después manejó una fábrica de pasta llamada Pastas Carabobo, crió ganado y abrió una carnicería llamada ToroGordo.',
       'En cada una de esas empresas, aprendió que el equipo se descompone en el momento más inconveniente… cuando hay que pagar la nómina, por ejemplo.',
       'Así que después de trabajar en finanzas, decidió resolver ese problema combinando los dos mundos: las finanzas que aprendió en una oficina y la maquinaria que aprendió creciendo en casa.',
       'Lo otro que lo impulsa es que no es fácil construir una vida en un lugar que no es tu hogar de origen, y mucho menos querer hacer crecer todo un negocio.',
