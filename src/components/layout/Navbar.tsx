@@ -4,6 +4,7 @@ import { useLang } from '../../i18n';
 import { Wordmark } from './Wordmark';
 import { HamburgerButton } from './HamburgerButton';
 import { MobileMenu } from './MobileMenu';
+import { LanguagePicker } from './LanguagePicker';
 import { Button } from '../ui/Button';
 
 export function Navbar({ onApply }: { onApply: () => void }) {
@@ -42,8 +43,12 @@ export function Navbar({ onApply }: { onApply: () => void }) {
             <Button variant="primary" icon onClick={onApply}>
               {dict.nav.apply}
             </Button>
+            <LanguagePicker />
           </div>
-          <HamburgerButton isOpen={menuOpen} onClick={() => setMenuOpen((v) => !v)} label={menuOpen ? dict.nav.menuClose : dict.nav.menuOpen} />
+          <div className="flex items-center gap-3 md:hidden">
+            <LanguagePicker />
+            <HamburgerButton isOpen={menuOpen} onClick={() => setMenuOpen((v) => !v)} label={menuOpen ? dict.nav.menuClose : dict.nav.menuOpen} />
+          </div>
         </div>
       </header>
       <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} onApply={onApply} />

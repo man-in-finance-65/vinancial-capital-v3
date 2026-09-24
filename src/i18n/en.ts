@@ -22,6 +22,9 @@ export const en: Dict = {
     apply: 'Get started',
     menuOpen: 'Open menu',
     menuClose: 'Close menu',
+    langTitle: 'Select location & language',
+    langSearch: 'Search',
+    langEmpty: "We couldn't find that country.",
   },
   footer: {
     positioning: 'Equipment financing for Latino-owned businesses.',
@@ -29,7 +32,6 @@ export const en: Dict = {
     disclaimer:
       'Vinancial Capital is a financing broker. All applications are subject to lender verification and approval. This site does not constitute an offer of credit.',
     founderPrefix: 'Founded by',
-    founderTitle: 'Private Capital Broker',
     rights: '© {year} Vinancial Capital. All rights reserved.',
   },
   hero: {
@@ -143,7 +145,7 @@ export const en: Dict = {
     ctaLabel: 'Get started',
   },
   about: {
-    heading: 'Why Vinancial Capital exists',
+    heading: 'Why does Vinancial Capital exist?',
     subheading: '',
     paragraphs: [
       'When it comes time to buy equipment, many get turned away by banks or handed financing that does not fit their business.',
@@ -155,11 +157,10 @@ export const en: Dict = {
       'You should lose sleep over taking care of your employees and taking care of your clients. Not over money. We help with the money part.',
     applyCta: 'Get started',
     founderPhotoAlt: 'Young Vicente, held by his dad, next to the equipment his dad ran.',
-    founderHeading: 'Why Vicente Built Vinancial Capital',
     founderCtaLabel: 'More about the founder, Vicente',
     founderParagraphs: [
       "Vicente's dad was an electrical engineer at P&G, then ran a pasta factory called Pasta Carabobo, raised cattle, and opened a butcher shop called ToroGordo.",
-      'In each of those companies, he learnt that equipment breaks at the most inconvenient time... when payroll is due, for example.',
+      'In each of those companies, he learnt that equipment breaks at the most inconvenient time… when payroll is due, for example.',
       'So after he worked in finance, he decided to fix that problem by combining both worlds: the finance he learned in an office, and the machinery he learned growing up at home.',
       "The other thing that pushes him is the fact that it is not easy to build a life in a place that's not your original home, let alone want to grow a whole business.",
       'Vicente wants you to thrive in business.',
@@ -247,8 +248,8 @@ export const en: Dict = {
     next: 'Next',
     step1: {
       title: 'This is not a formal application, just an inquiry.',
-      body: "It won't affect your credit score. Tell us a little about your business and what you're looking to finance. We'll take a look and follow up by email to let you know how we can help.",
-      timeNote: 'The form takes less time than brushing your teeth (under 2 minutes).',
+      body: "It won't affect your credit score. You'll get an email afterwards.",
+      timeNote: 'It takes less time than brushing your teeth (<2 minutes).',
       cta: "Let's start",
     },
     step2: {
@@ -324,7 +325,7 @@ export const en: Dict = {
       dataNotice: 'We use your info only to look for financing for you. We share it only with lenders you may work with.',
       privacyLinkText: 'Privacy policy',
       sendButton: 'Send',
-      sendingButton: 'Sending...',
+      sendingButton: 'Sending…',
     },
     errors: {
       required: 'This field is needed.',

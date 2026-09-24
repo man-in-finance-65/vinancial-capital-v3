@@ -72,7 +72,7 @@ Until real models are added, the hero falls back to the poster image for that in
 
 ## Language and currency detection
 
-- No language switcher exists on purpose (a previous toggle confused Google Translate). The site is always shown in Spanish (set in an inline script in `index.html`); visitors who want another language use Google Translate. The English and French copy in `src/i18n/` is kept but not used. This runs before first paint, so `<html lang>` always matches the visible text.
+- The site opens in Spanish. The navbar has a country/language picker (`src/components/layout/LanguagePicker.tsx`, flags in `public/flags/`, from the MIT-licensed flag-icons set) that switches to English or French and remembers the choice in `localStorage` (`vc_lang`), which the inline script in `index.html` reads before first paint, so `<html lang>` always matches the visible text.
 - Currency (CAD vs USD) is auto-detected from the visitor's locale region or timezone — see `src/lib/currency.ts`.
 
 ## Testing notes

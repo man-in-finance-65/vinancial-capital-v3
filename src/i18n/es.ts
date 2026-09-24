@@ -22,6 +22,9 @@ export const es: Dict = {
     apply: 'Empezar',
     menuOpen: 'Abrir menú',
     menuClose: 'Cerrar menú',
+    langTitle: 'Elige tu país e idioma',
+    langSearch: 'Buscar',
+    langEmpty: 'No encontramos ese país.',
   },
   footer: {
     positioning: 'Financiamiento de equipo para negocios de dueños latinos.',
@@ -29,7 +32,6 @@ export const es: Dict = {
     disclaimer:
       'Vinancial Capital es un intermediario de financiamiento. Todas las solicitudes están sujetas a verificación y aprobación del prestamista. Este sitio no constituye una oferta de crédito.',
     founderPrefix: 'Fundado por',
-    founderTitle: 'Corredor de Capital Privado',
     rights: '© {year} Vinancial Capital. Todos los derechos reservados.',
   },
   hero: {
@@ -68,10 +70,10 @@ export const es: Dict = {
   },
   whyUs: {
     eyebrow: '02',
-    heading: 'Por qué nosotros',
+    heading: '¿Por qué nosotros?',
     points: [
       {
-        title: 'Te explicamos cada "no".',
+        title: 'Te explicamos cada “no”.',
         body: 'Si un prestamista te dice que no, te decimos exactamente por qué, para que sepas qué corregir en lugar de adivinar.',
       },
       {
@@ -89,7 +91,7 @@ export const es: Dict = {
     heading: 'Industrias que conocemos',
     construction: {
       title: 'Construcción',
-      body: 'Excavadoras, minicargadoras, camiones de volteo: entendemos cuánto cuesta este equipo, cuánto genera, y cómo encaja en un negocio de construcción en crecimiento.',
+      body: 'Excavadoras, minicargadoras, camiones de volteo: entendemos cuánto cuesta este equipo, cuánto genera y cómo encaja en un negocio de construcción en crecimiento.',
     },
     trucking: {
       title: 'Transporte',
@@ -99,7 +101,7 @@ export const es: Dict = {
       title: 'Restaurantes',
       body: 'Cámaras de refrigeración, hornos y equipo de preparación: entendemos que en el servicio de alimentos el margen es corto y el equipo confiable no es opcional.',
     },
-    other: '¿No ves tu industria en la lista? Trabajamos con muchas más, y probablemente también podamos ayudarte.',
+    other: '¿No ves tu industria en la lista? Trabajamos con muchas más y probablemente también podamos ayudarte.',
     otherLink: 'Empezar',
   },
   calculatorPreview: {
@@ -121,29 +123,29 @@ export const es: Dict = {
     items: [
       {
         q: '¿Qué tan rápido puedo obtener aprobación y financiamiento?',
-        a: 'La mayoría de los solicitantes reciben una decisión en 1 a 2 días, y el dinero llega 1 a 2 días después. Con nosotros, puedes recibir el financiamiento en menos de una semana, en vez de 4 a 6 semanas o más en un banco, porque te conectamos con un prestamista que constantemente hace tu tipo de negocio. Eso es lo que hace una correduría. Para acelerar aún más el proceso, ten listo: 3 a 6 meses de estados de cuenta del negocio, una factura o cotización del equipo, y prueba de seguro sobre el equipo. Comprar equipo usado o de un vendedor privado puede añadir uno o dos días para revisar gravámenes, verificar el número de serie o VIN, y a veces una inspección. Entre más completos estén tus papeles desde el inicio, más rápido avanza todo.',
+        a: 'La mayoría de los solicitantes reciben una decisión en 1 a 2 días, y el dinero llega 1 a 2 días después. Con nosotros, puedes recibir el financiamiento en menos de una semana, en vez de 4 a 6 semanas o más en un banco, porque te conectamos con un prestamista que constantemente hace tu tipo de negocio. Eso es lo que hace una correduría. Para acelerar aún más el proceso, ten listo: 3 a 6 meses de estados de cuenta del negocio, una factura o cotización del equipo y prueba de seguro sobre el equipo. Comprar equipo usado o de un vendedor privado puede añadir uno o dos días para revisar gravámenes, verificar el número de serie o VIN y, a veces, hacer una inspección. Entre más completos estén tus papeles desde el inicio, más rápido avanza todo.',
       },
       {
         q: '¿Cuánto me va a costar esto? Tasas, comisiones y transparencia.',
-        a: 'Tu tasa depende de tu crédito, tu negocio, y el prestamista con el que termines trabajando. Nosotros no la fijamos, y no te vamos a adivinar un número antes de que un prestamista revise tu caso. No hay ningún costo por enviarnos tu información o por buscarte prestamistas, y la primera revisión de crédito es superficial (soft pull), así que no afecta tu puntaje. Antes de firmar, confirma siempre: el interés total durante toda la vida del préstamo, cualquier comisión de originación o de documentos, las condiciones para pagar antes de tiempo, el monto de compra final si es un arrendamiento, y cómo aplican los impuestos donde opera tu negocio.',
+        a: 'Tu tasa depende de tu crédito, tu negocio y el prestamista con el que termines trabajando. Nosotros no la fijamos y no te vamos a adivinar un número antes de que un prestamista revise tu caso. No hay ningún costo por enviarnos tu información o por buscarte prestamistas, y la primera revisión de crédito es superficial (soft pull), así que no afecta tu puntaje. Antes de firmar, confirma siempre: el interés total durante toda la vida del préstamo, cualquier comisión de originación o de documentos, las condiciones para pagar antes de tiempo, el monto de compra final si es un arrendamiento y cómo aplican los impuestos donde opera tu negocio.',
       },
       {
-        q: '¿Puedo calificar con crédito dañado, poco tiempo en el negocio, o si un banco ya me dijo que no?',
-        a: 'En muchos casos, sí. Los bancos rechazan una buena parte de las solicitudes de financiamiento de pequeños negocios, y esa es exactamente la situación en la que nos especializamos: negocios nuevos, historial de crédito corto, flujo de caja estacional, e industrias que algunos prestamistas consideran de mayor riesgo, como transporte, hospitalidad y construcción. Dependiendo de tu situación, un prestamista puede pedirte un pago inicial más grande, un plazo más corto, una garantía personal, o más colateral. El equipo mismo, tu pago inicial, contratos o ingresos constantes, y un plan claro de cómo el equipo va a generar dinero, a veces importan tanto como tu puntaje de crédito. Los prestamistas ven el panorama completo, no solo un número.',
+        q: '¿Puedo calificar con crédito dañado, poco tiempo en el negocio o si un banco ya me dijo que no?',
+        a: 'En muchos casos, sí. Los bancos rechazan una buena parte de las solicitudes de financiamiento de pequeños negocios, y esa es exactamente la situación en la que nos especializamos: negocios nuevos, historial de crédito corto, flujo de caja estacional e industrias que algunos prestamistas consideran de mayor riesgo, como transporte, hospitalidad y construcción. Dependiendo de tu situación, un prestamista puede pedirte un pago inicial más grande, un plazo más corto, una garantía personal o más colateral. El equipo mismo, tu pago inicial, los contratos o ingresos constantes y un plan claro de cómo el equipo va a generar dinero a veces importan tanto como tu puntaje de crédito. Los prestamistas ven el panorama completo, no solo un número.',
       },
       {
         q: '¿Qué colateral, garantías y documentos necesito?',
-        a: 'Para financiamiento de equipo, el equipo mismo suele ser el colateral, registrado mediante el PPSA (RDPRM en Quebec). Para capital de trabajo, los prestamistas también pueden revisar tus cuentas por cobrar, inventario, o equipo que ya tengas. Una garantía personal es algo común en la mayoría de los negocios pequeños. Ten listo: 3 a 6 meses de estados de cuenta del negocio, identificación oficial, estados financieros o declaraciones de impuestos recientes, la cotización o factura del equipo, y una breve nota de cómo el equipo va a generar ingresos. Un expediente completo acelera el proceso y puede ayudarte a obtener un mejor resultado.',
+        a: 'Para financiamiento de equipo, el equipo mismo suele ser el colateral, registrado mediante el PPSA (RDPRM en Quebec). Para capital de trabajo, los prestamistas también pueden revisar tus cuentas por cobrar, inventario o equipo que ya tengas. Una garantía personal es algo común en la mayoría de los negocios pequeños. Ten listo: 3 a 6 meses de estados de cuenta del negocio, identificación oficial, estados financieros o declaraciones de impuestos recientes, la cotización o factura del equipo y una breve nota de cómo el equipo va a generar ingresos. Un expediente completo acelera el proceso y puede ayudarte a obtener un mejor resultado.',
       },
       {
         q: '¿Cómo funciona el programa de proveedores de Vinancial Capital?',
-        a: 'Si vendes, fabricas o distribuyes equipo, nuestro programa de proveedores permite que ofrezcas financiamiento a tus clientes en el punto de venta, para que puedan quedar aprobados sin salir de tu local u obra. Te asignamos un contacto dedicado, conectamos a tu cliente con prestamistas que encajan, manejamos el papeleo, y te mantenemos informado en cada paso. A ti te pagan al cierre, sin riesgo de cobranza de tu lado. Cubre camiones y remolques, equipo de construcción e industrial, equipo agrícola, manejo de materiales, y equipo de restaurantes. No hay costo de inscripción: entrenamos a tu equipo para vender con base en el pago mensual, no solo en el precio.',
+        a: 'Si vendes, fabricas o distribuyes equipo, nuestro programa de proveedores permite que ofrezcas financiamiento a tus clientes en el punto de venta, para que puedan quedar aprobados sin salir de tu local u obra. Te asignamos un contacto dedicado, conectamos a tu cliente con prestamistas que encajan, manejamos el papeleo y te mantenemos informado en cada paso. A ti te pagan al cierre, sin riesgo de cobranza de tu lado. Cubre camiones y remolques, equipo de construcción e industrial, equipo agrícola, manejo de materiales y equipo de restaurantes. No hay costo de inscripción: entrenamos a tu equipo para vender con base en el pago mensual, no solo en el precio.',
       },
     ],
     ctaLabel: 'Empezar',
   },
   about: {
-    heading: 'Por qué existe Vinancial Capital',
+    heading: '¿Por qué existe Vinancial Capital?',
     subheading: '',
     paragraphs: [
       'Al momento de comprar equipo, a muchos los rechazan los bancos o les ofrecen financiamiento que no se ajusta a su negocio.',
@@ -155,12 +157,11 @@ export const es: Dict = {
       'Debes perder el sueño por cuidar a tus empleados y cuidar a tus clientes. No por el dinero. Nosotros te ayudamos con la parte del dinero.',
     applyCta: 'Empezar',
     founderPhotoAlt: 'Vicente de niño, en brazos de su papá, junto al equipo que su papá manejaba.',
-    founderHeading: 'Por qué Vicente construyó Vinancial Capital',
     founderCtaLabel: 'Más sobre el fundador, Vicente',
     founderParagraphs: [
-      'El papá de Vicente era ingeniero eléctrico en P&G, después manejó una fábrica de pasta llamada Pasta Carabobo, crió ganado, y abrió una carnicería llamada ToroGordo.',
-      'En cada una de esas empresas, aprendió que el equipo se descompone en el momento más inconveniente... cuando hay que pagar la nómina, por ejemplo.',
-      'Así que después de trabajar en finanzas, decidió resolver ese problema combinando los dos mundos: las finanzas que aprendió en una oficina, y la maquinaria que aprendió creciendo en casa.',
+      'El papá de Vicente era ingeniero eléctrico en P&G, después manejó una fábrica de pasta llamada Pasta Carabobo, crió ganado y abrió una carnicería llamada ToroGordo.',
+      'En cada una de esas empresas, aprendió que el equipo se descompone en el momento más inconveniente… cuando hay que pagar la nómina, por ejemplo.',
+      'Así que después de trabajar en finanzas, decidió resolver ese problema combinando los dos mundos: las finanzas que aprendió en una oficina y la maquinaria que aprendió creciendo en casa.',
       'Lo otro que lo impulsa es que no es fácil construir una vida en un lugar que no es tu hogar de origen, y mucho menos querer hacer crecer todo un negocio.',
       'Vicente quiere que tu negocio prospere.',
     ],
@@ -218,7 +219,7 @@ export const es: Dict = {
     faqItems: [
       {
         q: '¿Cuál es la diferencia entre un arrendamiento y un préstamo?',
-        a: 'Con un préstamo, el equipo es tuyo desde el primer día y lo pagas con el tiempo. Con un arrendamiento, pagas por usar el equipo, y luego eliges comprarlo, devolverlo, o cambiarlo al final.',
+        a: 'Con un préstamo, el equipo es tuyo desde el primer día y lo pagas con el tiempo. Con un arrendamiento, pagas por usar el equipo y luego eliges comprarlo, devolverlo o cambiarlo al final.',
       },
       {
         q: '¿Qué significa APR?',
@@ -247,8 +248,8 @@ export const es: Dict = {
     next: 'Siguiente',
     step1: {
       title: 'Esto no es una solicitud formal, solo una consulta.',
-      body: 'No afecta tu puntaje de crédito. Cuéntanos un poco sobre tu negocio y lo que quieres financiar. Lo revisamos y te escribimos por correo para decirte cómo podemos ayudarte.',
-      timeNote: 'Toma menos tiempo que cepillarte los dientes (menos de 2 minutos).',
+      body: 'No afecta tu puntaje de crédito. Después te llegará un correo.',
+      timeNote: 'Toma menos tiempo que cepillarte los dientes (<2 minutos).',
       cta: 'Empecemos',
     },
     step2: {
@@ -271,7 +272,7 @@ export const es: Dict = {
     },
     step3: {
       situacionLabel: 'Cuéntanos un poco de tu situación.',
-      situacionPlaceholder: 'Ejemplo: Necesito un segundo camión de volteo para un contrato nuevo.',
+      situacionPlaceholder: 'Ejemplo: necesito un segundo camión de volteo para un contrato nuevo.',
       montoLabel: '¿Cuánto necesitas?',
       montoPlaceholder: 'Un rango está bien. Nada es final.',
       urgenciaLabel: '¿Qué tan pronto lo necesitas?',
@@ -282,7 +283,7 @@ export const es: Dict = {
       provinciaLabel: 'Provincia o estado',
       industriaLabel: 'Industria',
       sitioWebLabel: 'Sitio web',
-      sitioWebPlaceholder: 'Si no tienes uno, escribe "no tengo"',
+      sitioWebPlaceholder: 'Si no tienes uno, escribe “no tengo”.',
       tipoNegocioLabel: 'Tipo de negocio',
       tipoNegocioOptions: {
         propietario_unico: 'Solo yo (propietario único)',
@@ -294,7 +295,7 @@ export const es: Dict = {
       tiempoOperandoPlaceholder: 'Ejemplo: 3 años',
       ingresosLabel: '¿Cuánto gana tu negocio al año?',
       ingresosSubLabel: 'Ingresos anuales, antes de costos',
-      ingresosPlaceholder: 'Un rango está bien',
+      ingresosPlaceholder: 'Un rango está bien.',
     },
     step5: {
       viviendaLabel: '¿Eres dueño de tu casa?',
@@ -311,7 +312,7 @@ export const es: Dict = {
         menos_550: 'Menos de 550',
         no_seguro: 'No lo sé',
       },
-      historialLabel: '¿Alguna vez has tenido una bancarrota, una propuesta al consumidor, o un fallo judicial?',
+      historialLabel: '¿Alguna vez has tenido una bancarrota, una propuesta al consumidor o un fallo judicial?',
       historialSub: 'Está bien. Muchos dueños de negocio lo han tenido. Esto nos ayuda a encontrar el prestamista correcto.',
       historialOptions: { no: 'No', si_descargada: 'Sí, ya terminó (descargada)', si_activa: 'Sí, todavía sigue abierta (activa)' },
     },
@@ -324,7 +325,7 @@ export const es: Dict = {
       dataNotice: 'Usamos tu información solo para buscarte financiamiento. Solo la compartimos con los prestamistas con los que puedas trabajar.',
       privacyLinkText: 'Política de privacidad',
       sendButton: 'Enviar',
-      sendingButton: 'Enviando...',
+      sendingButton: 'Enviando…',
     },
     errors: {
       required: 'Este campo hace falta.',
@@ -334,7 +335,7 @@ export const es: Dict = {
       answer_all: 'Responde todas las preguntas para continuar.',
     },
     networkError: {
-      title: 'Algo salió mal. Tus respuestas están guardadas. Intenta de nuevo, o mándanos un WhatsApp.',
+      title: 'Algo salió mal. Tus respuestas están guardadas. Intenta de nuevo o mándanos un WhatsApp.',
       retry: 'Intentar de nuevo',
       whatsapp: 'Escríbenos por WhatsApp',
     },
@@ -367,11 +368,11 @@ export const es: Dict = {
     metaDescription: 'Cómo Vinancial Capital recolecta, usa y protege tu información.',
     heading: 'Política de privacidad',
     intro:
-      'Esta página explica qué información recolectamos cuando usas este sitio o nos envías el formulario, por qué la recolectamos, y con quién la compartimos.',
+      'Esta página explica qué información recolectamos cuando usas este sitio o nos envías el formulario, por qué la recolectamos y con quién la compartimos.',
     sections: [
       {
         heading: 'Qué recolectamos',
-        body: 'Cuando llenas nuestro formulario, recolectamos tu nombre, el nombre de tu negocio, tus datos de contacto, e información sobre tu negocio y lo que quieres financiar. Esto puede incluir tu rango de puntaje de crédito y el historial financiero y legal de tu negocio.',
+        body: 'Cuando llenas nuestro formulario, recolectamos tu nombre, el nombre de tu negocio, tus datos de contacto e información sobre tu negocio y lo que quieres financiar. Esto puede incluir tu rango de puntaje de crédito y el historial financiero y legal de tu negocio.',
       },
       {
         heading: 'Por qué la recolectamos',
@@ -387,7 +388,7 @@ export const es: Dict = {
       },
       {
         heading: 'Tus opciones',
-        body: 'Puedes preguntarnos qué información tenemos sobre ti, pedirnos que la corrijamos, o pedirnos que la borremos. Contáctanos con los datos de abajo.',
+        body: 'Puedes preguntarnos qué información tenemos sobre ti, pedirnos que la corrijamos o pedirnos que la borremos. Contáctanos con los datos de abajo.',
       },
       {
         heading: 'Cambios a esta política',
