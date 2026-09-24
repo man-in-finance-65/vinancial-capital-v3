@@ -15,13 +15,15 @@ export type Dict = {
     apply: string;
     menuOpen: string;
     menuClose: string;
+    langTitle: string;
+    langSearch: string;
+    langEmpty: string;
   };
   footer: {
     positioning: string;
     linksHeading: string;
     disclaimer: string;
     founderPrefix: string;
-    founderTitle: string;
     rights: string;
   };
   hero: {
@@ -94,7 +96,6 @@ export type Dict = {
     coreBelief: string;
     applyCta: string;
     founderPhotoAlt: string;
-    founderHeading: string;
     founderCtaLabel: string;
     founderParagraphs: string[];
   };

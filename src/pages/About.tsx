@@ -55,7 +55,6 @@ export function About({ openForm }: { openForm: (initial?: Partial<ApplicationDa
         <Reveal delayMs={175}>
           <div className="mt-10">
             <Disclosure label={s.founderCtaLabel}>
-              <h2 className="font-slab text-lg font-semibold text-foreground">{s.founderHeading}</h2>
               {s.founderParagraphs.map((p, i) => (
                 <Fragment key={i}>
                   <p className="text-sm leading-relaxed text-muted md:text-base">{p}</p>

@@ -61,19 +61,7 @@ export function Footer({ onApply }: { onApply: () => void }) {
       </div>
 
       <div className="mx-auto mt-12 max-w-7xl border-t border-border pt-8">
-        <p className="text-sm text-muted">
-          {dict.footer.founderPrefix}{' '}
-          <a
-            href={SITE.founder.linkedInUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-sky"
-          >
-            {SITE.founder.name}
-          </a>
-          , {dict.footer.founderTitle}
-        </p>
-        <p className="mt-6 max-w-3xl text-xs leading-relaxed text-muted">{dict.footer.disclaimer}</p>
+        <p className="max-w-3xl text-xs leading-relaxed text-muted">{dict.footer.disclaimer}</p>
         <p className="mt-4 text-xs text-muted">
           {interpolate(dict.footer.rights, { year })} ·{' '}
           <Link to="/privacy" className="underline decoration-border underline-offset-2 hover:text-foreground">

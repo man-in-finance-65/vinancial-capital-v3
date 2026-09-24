@@ -20,7 +20,11 @@
 <script>
   (function () {
     try {
-      var chosen = 'es'; // Site is always Spanish; visitors can use Google Translate for other languages.
+      var chosen = 'es'; // Spanish by default; the navbar picker saves another choice here.
+      try {
+        var saved = localStorage.getItem('vc_lang');
+        if (saved === 'en' || saved === 'fr') chosen = saved;
+      } catch (e) {}
 
       var CA_ZONES = [
         'America/Toronto', 'America/Montreal', 'America/Vancouver', 'America/Edmonton',

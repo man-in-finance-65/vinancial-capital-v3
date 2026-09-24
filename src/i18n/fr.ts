@@ -22,6 +22,9 @@ export const fr: Dict = {
     apply: 'Commencer',
     menuOpen: 'Ouvrir le menu',
     menuClose: 'Fermer le menu',
+    langTitle: 'Choisissez votre pays et votre langue',
+    langSearch: 'Rechercher',
+    langEmpty: 'Nous n’avons pas trouvé ce pays.',
   },
   footer: {
     positioning: "Financement d'équipement pour les entreprises latino-américaines.",
@@ -29,7 +32,6 @@ export const fr: Dict = {
     disclaimer:
       'Vinancial Capital est un courtier en financement. Toutes les demandes sont sujettes à la vérification et à l’approbation du prêteur. Ce site ne constitue pas une offre de crédit.',
     founderPrefix: 'Fondé par',
-    founderTitle: 'Courtier en capital privé',
     rights: '© {year} Vinancial Capital. Tous droits réservés.',
   },
   hero: {
@@ -89,7 +91,7 @@ export const fr: Dict = {
     heading: 'Les secteurs que nous connaissons',
     construction: {
       title: 'Construction',
-      body: 'Excavatrices, chargeuses compactes, camions à benne : nous comprenons ce que cet équipement coûte, ce qu’il rapporte, et comment il s’inscrit dans une entreprise de construction en croissance.',
+      body: 'Excavatrices, chargeuses compactes, camions à benne : nous comprenons ce que cet équipement coûte, ce qu’il rapporte et comment il s’inscrit dans une entreprise de construction en croissance.',
     },
     trucking: {
       title: 'Camionnage',
@@ -99,7 +101,7 @@ export const fr: Dict = {
       title: 'Restaurants',
       body: "Chambres froides, fours et équipement de préparation : nous comprenons que dans la restauration, les marges sont minces et un équipement fiable n'est pas facultatif.",
     },
-    other: 'Vous ne voyez pas votre secteur dans la liste? Nous travaillons avec plusieurs autres, et pouvons probablement vous aider aussi.',
+    other: 'Vous ne voyez pas votre secteur dans la liste? Nous travaillons avec plusieurs autres et pouvons probablement vous aider aussi.',
     otherLink: 'Commencer',
   },
   calculatorPreview: {
@@ -121,29 +123,29 @@ export const fr: Dict = {
     items: [
       {
         q: 'À quelle vitesse puis-je être approuvé et financé?',
-        a: "La plupart des demandeurs reçoivent une décision en 1 à 2 jours, et les fonds arrivent 1 à 2 jours après. Avec nous, vous pourriez être financé en moins d'une semaine, plutôt qu'en 4 à 6 semaines ou plus dans une banque, parce que nous vous jumelons avec un prêteur qui fait constamment votre type de dossier. C'est ce que fait un courtage. Pour accélérer encore plus les choses, ayez prêts : 3 à 6 mois de relevés bancaires de l'entreprise, une facture ou une soumission pour l'équipement, et une preuve d'assurance sur le bien. Acheter de l'équipement usagé ou d'un vendeur privé peut ajouter un jour ou deux pour vérifier les privilèges, le numéro de série ou le NIV, et parfois pour une inspection. Plus vos documents sont complets dès le départ, plus vite les choses avancent.",
+        a: "La plupart des demandeurs reçoivent une décision en 1 à 2 jours, et les fonds arrivent 1 à 2 jours après. Avec nous, vous pourriez être financé en moins d'une semaine, plutôt qu'en 4 à 6 semaines ou plus dans une banque, parce que nous vous jumelons avec un prêteur qui fait constamment votre type de dossier. C'est ce que fait un courtage. Pour accélérer encore plus les choses, ayez prêts : 3 à 6 mois de relevés bancaires de l'entreprise, une facture ou une soumission pour l'équipement et une preuve d'assurance sur le bien. Acheter de l'équipement usagé ou d'un vendeur privé peut ajouter un jour ou deux pour vérifier les privilèges, le numéro de série ou le NIV et, parfois, pour une inspection. Plus vos documents sont complets dès le départ, plus vite les choses avancent.",
       },
       {
         q: 'Combien cela va-t-il me coûter? Taux, frais et transparence.',
-        a: "Votre taux dépend de votre crédit, de votre entreprise, et du prêteur avec qui vous finirez par travailler. Nous ne le fixons pas, et nous ne devinerons pas un chiffre avant qu'un prêteur n'examine votre dossier. Il n'y a aucuns frais pour nous envoyer vos informations ou pour être jumelé à des prêteurs, et la première vérification de crédit est une vérification légère (soft pull) qui n'affecte pas votre cote. Avant de signer quoi que ce soit, confirmez toujours : l'intérêt total sur toute la durée du prêt, les frais d'ouverture de dossier ou de documents, les conditions de remboursement anticipé, le montant de rachat si c'est un bail, et comment les taxes s'appliquent là où vous faites affaire.",
+        a: "Votre taux dépend de votre crédit, de votre entreprise et du prêteur avec qui vous finirez par travailler. Nous ne le fixons pas et nous ne devinerons pas un chiffre avant qu'un prêteur n'examine votre dossier. Il n'y a aucuns frais pour nous envoyer vos informations ou pour être jumelé à des prêteurs, et la première vérification de crédit est une vérification légère (soft pull) qui n'affecte pas votre cote. Avant de signer quoi que ce soit, confirmez toujours : l'intérêt total sur toute la durée du prêt, les frais d'ouverture de dossier ou de documents, les conditions de remboursement anticipé, le montant de rachat si c'est un bail et comment les taxes s'appliquent là où vous faites affaire.",
       },
       {
-        q: 'Puis-je être admissible avec un crédit abîmé, peu de temps en affaires, ou un refus bancaire?',
-        a: "Dans bien des cas, oui. Les banques refusent une grande partie des demandes de financement des petites entreprises, et c'est exactement le genre de situation dans laquelle nous nous spécialisons : nouvelles entreprises, dossiers de crédit minces, revenus saisonniers, et secteurs que certains prêteurs jugent plus risqués, comme le camionnage, l'hôtellerie et la construction. Selon votre situation, un prêteur pourrait demander une mise de fonds plus élevée, un terme plus court, une garantie personnelle, ou plus de garanties. L'équipement lui-même, votre mise de fonds, des contrats ou revenus stables, et un plan clair pour la façon dont l'équipement générera des revenus comptent souvent autant que votre cote de crédit. Les prêteurs regardent l'ensemble du portrait, pas seulement un chiffre.",
+        q: 'Puis-je être admissible avec un crédit abîmé, peu de temps en affaires ou un refus bancaire?',
+        a: "Dans bien des cas, oui. Les banques refusent une grande partie des demandes de financement des petites entreprises, et c'est exactement le genre de situation dans laquelle nous nous spécialisons : nouvelles entreprises, dossiers de crédit minces, revenus saisonniers et secteurs que certains prêteurs jugent plus risqués, comme le camionnage, l'hôtellerie et la construction. Selon votre situation, un prêteur pourrait demander une mise de fonds plus élevée, un terme plus court, une garantie personnelle ou plus de garanties. L'équipement lui-même, votre mise de fonds, des contrats ou revenus stables et un plan clair pour la façon dont l'équipement générera des revenus comptent souvent autant que votre cote de crédit. Les prêteurs regardent l'ensemble du portrait, pas seulement un chiffre.",
       },
       {
         q: 'De quelles garanties et de quels documents ai-je besoin?',
-        a: "Pour le financement d'équipement, l'équipement lui-même sert habituellement de garantie, enregistrée par une inscription LSM (RDPRM au Québec). Pour le fonds de roulement, les prêteurs peuvent aussi examiner vos comptes recevables, votre inventaire, ou votre équipement existant. Une garantie personnelle est standard pour la plupart des petites entreprises. Ayez prêts : 3 à 6 mois de relevés bancaires de l'entreprise, une pièce d'identité, des états financiers ou déclarations de revenus récents, la soumission ou facture de l'équipement, et une courte note sur la façon dont l'équipement générera des revenus. Un dossier complet accélère le processus et peut vous aider à obtenir un meilleur résultat.",
+        a: "Pour le financement d'équipement, l'équipement lui-même sert habituellement de garantie, enregistrée par une inscription LSM (RDPRM au Québec). Pour le fonds de roulement, les prêteurs peuvent aussi examiner vos comptes recevables, votre inventaire ou votre équipement existant. Une garantie personnelle est standard pour la plupart des petites entreprises. Ayez prêts : 3 à 6 mois de relevés bancaires de l'entreprise, une pièce d'identité, des états financiers ou déclarations de revenus récents, la soumission ou facture de l'équipement et une courte note sur la façon dont l'équipement générera des revenus. Un dossier complet accélère le processus et peut vous aider à obtenir un meilleur résultat.",
       },
       {
         q: 'Comment fonctionne le programme de fournisseurs de Vinancial Capital?',
-        a: "Si vous vendez, fabriquez ou distribuez de l'équipement, notre programme de fournisseurs vous permet d'offrir du financement à vos clients directement au point de vente, pour qu'ils puissent être approuvés sans quitter votre salle d'exposition ou votre chantier. Nous vous assignons une personne-ressource dédiée, jumelons votre client avec des prêteurs qui conviennent, gérons la paperasse, et vous tenons informé à chaque étape. Vous êtes payé à la clôture, sans risque de recouvrement de votre côté. Cela couvre les camions et remorques, l'équipement de construction et industriel, l'équipement agricole, la manutention, et l'équipement de restauration. Il n'y a aucuns frais d'installation. Nous formons votre équipe à vendre sur la base du paiement plutôt que du prix.",
+        a: "Si vous vendez, fabriquez ou distribuez de l'équipement, notre programme de fournisseurs vous permet d'offrir du financement à vos clients directement au point de vente, pour qu'ils puissent être approuvés sans quitter votre salle d'exposition ou votre chantier. Nous vous assignons une personne-ressource dédiée, jumelons votre client avec des prêteurs qui conviennent, gérons la paperasse et vous tenons informé à chaque étape. Vous êtes payé à la clôture, sans risque de recouvrement de votre côté. Cela couvre les camions et remorques, l'équipement de construction et industriel, l'équipement agricole, la manutention et l'équipement de restauration. Il n'y a aucuns frais d'installation. Nous formons votre équipe à vendre sur la base du paiement plutôt que du prix.",
       },
     ],
     ctaLabel: 'Commencer',
   },
   about: {
-    heading: 'Pourquoi Vinancial Capital existe',
+    heading: 'Pourquoi Vinancial Capital existe-t-il ?',
     subheading: '',
     paragraphs: [
       "Au moment d'acheter de l'équipement, plusieurs se font refuser par les banques ou reçoivent un financement qui ne convient pas à leur entreprise.",
@@ -155,12 +157,11 @@ export const fr: Dict = {
       "Vous devriez perdre le sommeil à prendre soin de vos employés et à prendre soin de vos clients. Pas à cause de l'argent. Nous nous occupons de la partie argent.",
     applyCta: 'Commencer',
     founderPhotoAlt: 'Vicente enfant, dans les bras de son père, à côté de l’équipement que son père gérait.',
-    founderHeading: 'Pourquoi Vicente a fondé Vinancial Capital',
     founderCtaLabel: 'En savoir plus sur le fondateur, Vicente',
     founderParagraphs: [
-      "Le père de Vicente était ingénieur électricien chez P&G, puis a dirigé une usine de pâtes appelée Pasta Carabobo, élevé du bétail, et ouvert une boucherie appelée ToroGordo.",
-      "Dans chacune de ces entreprises, il a appris que l'équipement tombe en panne au pire moment... quand il faut payer la paie, par exemple.",
-      "Alors après avoir travaillé en finance, il a décidé de régler ce problème en combinant les deux mondes : la finance qu'il a apprise au bureau, et la machinerie qu'il a apprise en grandissant à la maison.",
+      "Le père de Vicente était ingénieur électricien chez P&G, puis a dirigé une usine de pâtes appelée Pasta Carabobo, élevé du bétail et ouvert une boucherie appelée ToroGordo.",
+      "Dans chacune de ces entreprises, il a appris que l'équipement tombe en panne au pire moment… quand il faut payer la paie, par exemple.",
+      "Alors après avoir travaillé en finance, il a décidé de régler ce problème en combinant les deux mondes : la finance qu'il a apprise au bureau et la machinerie qu'il a apprise en grandissant à la maison.",
       "L'autre chose qui le motive, c'est qu'il n'est pas facile de bâtir une vie dans un endroit qui n'est pas votre pays d'origine, et encore moins de vouloir faire grandir toute une entreprise.",
       'Vicente veut que votre entreprise prospère.',
     ],
@@ -218,7 +219,7 @@ export const fr: Dict = {
     faqItems: [
       {
         q: 'Quelle est la différence entre un bail et un prêt?',
-        a: "Avec un prêt, l'équipement est à vous dès le premier jour et vous le payez avec le temps. Avec un bail, vous payez pour utiliser l'équipement, puis vous choisissez de l'acheter, de le retourner, ou de le changer à la fin.",
+        a: "Avec un prêt, l'équipement est à vous dès le premier jour et vous le payez avec le temps. Avec un bail, vous payez pour utiliser l'équipement, puis vous choisissez de l'acheter, de le retourner ou de le changer à la fin.",
       },
       {
         q: 'Que veut dire APR?',
@@ -247,8 +248,8 @@ export const fr: Dict = {
     next: 'Suivant',
     step1: {
       title: "Ceci n'est pas une demande officielle, seulement une demande de renseignements.",
-      body: "Cela n'affecte pas votre cote de crédit. Parlez-nous un peu de votre entreprise et de ce que vous voulez financer. Nous l'examinons et vous écrivons par courriel pour vous dire comment nous pouvons vous aider.",
-      timeNote: 'Cela prend moins de temps que de vous brosser les dents (moins de 2 minutes).',
+      body: "Cela n'affecte pas votre cote de crédit. Vous recevrez ensuite un courriel.",
+      timeNote: 'Cela prend moins de temps que de vous brosser les dents (<2 minutes).',
       cta: 'Commençons',
     },
     step2: {
@@ -311,7 +312,7 @@ export const fr: Dict = {
         menos_550: 'Moins de 550',
         no_seguro: 'Je ne sais pas',
       },
-      historialLabel: 'Avez-vous déjà eu une faillite, une proposition de consommateur, ou un jugement de la cour?',
+      historialLabel: 'Avez-vous déjà eu une faillite, une proposition de consommateur ou un jugement de la cour?',
       historialSub: "C'est correct. Plusieurs propriétaires d'entreprise en ont eu une. Cela nous aide à trouver le bon prêteur.",
       historialOptions: { no: 'Non', si_descargada: 'Oui, c’est terminé (libérée)', si_activa: 'Oui, c’est encore en cours (active)' },
     },
@@ -324,7 +325,7 @@ export const fr: Dict = {
       dataNotice: "Nous utilisons vos informations seulement pour vous trouver du financement. Nous les partageons seulement avec les prêteurs avec qui vous pourriez travailler.",
       privacyLinkText: 'Politique de confidentialité',
       sendButton: 'Envoyer',
-      sendingButton: 'Envoi en cours...',
+      sendingButton: 'Envoi en cours…',
     },
     errors: {
       required: 'Ce champ est requis.',
@@ -334,7 +335,7 @@ export const fr: Dict = {
       answer_all: 'Répondez à toutes les questions pour continuer.',
     },
     networkError: {
-      title: "Quelque chose s'est mal passé. Vos réponses sont sauvegardées. Essayez encore, ou écrivez-nous sur WhatsApp.",
+      title: "Quelque chose s'est mal passé. Vos réponses sont sauvegardées. Essayez encore ou écrivez-nous sur WhatsApp.",
       retry: 'Essayer encore',
       whatsapp: 'Écrivez-nous sur WhatsApp',
     },
@@ -371,11 +372,11 @@ export const fr: Dict = {
     metaDescription: 'Comment Vinancial Capital recueille, utilise et protège vos informations.',
     heading: 'Politique de confidentialité',
     intro:
-      'Cette page explique quelles informations nous recueillons quand vous utilisez ce site ou nous envoyez le formulaire, pourquoi nous les recueillons, et avec qui nous les partageons.',
+      'Cette page explique quelles informations nous recueillons quand vous utilisez ce site ou nous envoyez le formulaire, pourquoi nous les recueillons et avec qui nous les partageons.',
     sections: [
       {
         heading: 'Ce que nous recueillons',
-        body: 'Quand vous remplissez notre formulaire, nous recueillons votre nom, le nom de votre entreprise, vos coordonnées, et des informations sur votre entreprise et ce que vous voulez financer. Cela peut inclure votre fourchette de cote de crédit et l’historique financier et légal de votre entreprise.',
+        body: 'Quand vous remplissez notre formulaire, nous recueillons votre nom, le nom de votre entreprise, vos coordonnées et des informations sur votre entreprise et ce que vous voulez financer. Cela peut inclure votre fourchette de cote de crédit et l’historique financier et légal de votre entreprise.',
       },
       {
         heading: 'Pourquoi nous les recueillons',
@@ -391,7 +392,7 @@ export const fr: Dict = {
       },
       {
         heading: 'Vos choix',
-        body: 'Vous pouvez nous demander quelles informations nous avons sur vous, nous demander de les corriger, ou nous demander de les supprimer. Contactez-nous avec les coordonnées ci-dessous.',
+        body: 'Vous pouvez nous demander quelles informations nous avons sur vous, nous demander de les corriger ou nous demander de les supprimer. Contactez-nous avec les coordonnées ci-dessous.',
       },
       {
         heading: 'Changements à cette politique',

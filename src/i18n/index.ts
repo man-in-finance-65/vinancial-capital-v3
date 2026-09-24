@@ -38,6 +38,7 @@ export function errorText(dict: Dict, code?: string): string | undefined {
 export type LangContextValue = {
   lang: Lang;
   dict: Dict;
+  setLang: (lang: Lang) => void;
 };
 
 export const LangContext = createContext<LangContextValue | null>(null);
