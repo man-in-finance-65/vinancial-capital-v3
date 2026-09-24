@@ -160,7 +160,7 @@ export const fr: Dict = {
     founderPhotoPlace: 'Pastas Carabobo – Zona Industrial La Quizanda, Valencia, Venezuela (2004)',
     founderCtaLabel: 'En savoir plus sur le fondateur, Vicente',
     founderParagraphs: [
-      "Le père de Vicente était ingénieur électricien chez P&G, puis a dirigé une usine de pâtes appelée Pasta Carabobo, élevé du bétail et ouvert une boucherie appelée ToroGordo.",
+      "Le père de Vicente était ingénieur électricien chez P&G, puis a dirigé une usine de pâtes appelée Pastas Carabobo, élevé du bétail et ouvert une boucherie appelée ToroGordo.",
       "Dans chacune de ces entreprises, il a appris que l'équipement tombe en panne au pire moment… quand il faut payer la paie, par exemple.",
       "Alors après avoir travaillé en finance, il a décidé de régler ce problème en combinant les deux mondes : la finance qu'il a apprise au bureau et la machinerie qu'il a apprise en grandissant à la maison.",
       "L'autre chose qui le motive, c'est qu'il n'est pas facile de bâtir une vie dans un endroit qui n'est pas votre pays d'origine, et encore moins de vouloir faire grandir toute une entreprise.",
