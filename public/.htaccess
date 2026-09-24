@@ -1,0 +1,15 @@
+# This site is a client-side-routed single-page app (React Router-style, hand-rolled).
+# Without this, a direct visit or refresh on /about, /calculator or /privacy 404s,
+# because those paths don't exist as real files — only index.html does, and it decides
+# what to show based on the URL once it loads.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Real files and directories (JS, CSS, images, models) are served as-is.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Everything else falls back to index.html so the app can render the right page.
+  RewriteRule ^ index.html [L]
+</IfModule>

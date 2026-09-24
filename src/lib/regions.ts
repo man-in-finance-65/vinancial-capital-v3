@@ -1,0 +1,78 @@
+// Provinces/territories and states used in the "Province or state" field.
+// The user's home country (from currency detection) is listed first.
+
+export type Region = { value: string; en: string; es: string; fr: string };
+
+export const CANADIAN_REGIONS: Region[] = [
+  { value: 'AB', en: 'Alberta', es: 'Alberta', fr: 'Alberta' },
+  { value: 'BC', en: 'British Columbia', es: 'Columbia Británica', fr: 'Colombie-Britannique' },
+  { value: 'MB', en: 'Manitoba', es: 'Manitoba', fr: 'Manitoba' },
+  { value: 'NB', en: 'New Brunswick', es: 'Nuevo Brunswick', fr: 'Nouveau-Brunswick' },
+  { value: 'NL', en: 'Newfoundland and Labrador', es: 'Terranova y Labrador', fr: 'Terre-Neuve-et-Labrador' },
+  { value: 'NS', en: 'Nova Scotia', es: 'Nueva Escocia', fr: 'Nouvelle-Écosse' },
+  { value: 'NT', en: 'Northwest Territories', es: 'Territorios del Noroeste', fr: 'Territoires du Nord-Ouest' },
+  { value: 'NU', en: 'Nunavut', es: 'Nunavut', fr: 'Nunavut' },
+  { value: 'ON', en: 'Ontario', es: 'Ontario', fr: 'Ontario' },
+  { value: 'PE', en: 'Prince Edward Island', es: 'Isla del Príncipe Eduardo', fr: 'Île-du-Prince-Édouard' },
+  { value: 'QC', en: 'Quebec', es: 'Quebec', fr: 'Québec' },
+  { value: 'SK', en: 'Saskatchewan', es: 'Saskatchewan', fr: 'Saskatchewan' },
+  { value: 'YT', en: 'Yukon', es: 'Yukón', fr: 'Yukon' },
+];
+
+export const US_REGIONS: Region[] = [
+  { value: 'AL', en: 'Alabama', es: 'Alabama', fr: 'Alabama' },
+  { value: 'AK', en: 'Alaska', es: 'Alaska', fr: 'Alaska' },
+  { value: 'AZ', en: 'Arizona', es: 'Arizona', fr: 'Arizona' },
+  { value: 'AR', en: 'Arkansas', es: 'Arkansas', fr: 'Arkansas' },
+  { value: 'CA', en: 'California', es: 'California', fr: 'Californie' },
+  { value: 'CO', en: 'Colorado', es: 'Colorado', fr: 'Colorado' },
+  { value: 'CT', en: 'Connecticut', es: 'Connecticut', fr: 'Connecticut' },
+  { value: 'DE', en: 'Delaware', es: 'Delaware', fr: 'Delaware' },
+  { value: 'DC', en: 'District of Columbia', es: 'Distrito de Columbia', fr: 'District de Columbia' },
+  { value: 'FL', en: 'Florida', es: 'Florida', fr: 'Floride' },
+  { value: 'GA', en: 'Georgia', es: 'Georgia', fr: 'Géorgie' },
+  { value: 'HI', en: 'Hawaii', es: 'Hawái', fr: 'Hawaï' },
+  { value: 'ID', en: 'Idaho', es: 'Idaho', fr: 'Idaho' },
+  { value: 'IL', en: 'Illinois', es: 'Illinois', fr: 'Illinois' },
+  { value: 'IN', en: 'Indiana', es: 'Indiana', fr: 'Indiana' },
+  { value: 'IA', en: 'Iowa', es: 'Iowa', fr: 'Iowa' },
+  { value: 'KS', en: 'Kansas', es: 'Kansas', fr: 'Kansas' },
+  { value: 'KY', en: 'Kentucky', es: 'Kentucky', fr: 'Kentucky' },
+  { value: 'LA', en: 'Louisiana', es: 'Luisiana', fr: 'Louisiane' },
+  { value: 'ME', en: 'Maine', es: 'Maine', fr: 'Maine' },
+  { value: 'MD', en: 'Maryland', es: 'Maryland', fr: 'Maryland' },
+  { value: 'MA', en: 'Massachusetts', es: 'Massachusetts', fr: 'Massachusetts' },
+  { value: 'MI', en: 'Michigan', es: 'Míchigan', fr: 'Michigan' },
+  { value: 'MN', en: 'Minnesota', es: 'Minnesota', fr: 'Minnesota' },
+  { value: 'MS', en: 'Mississippi', es: 'Misisipi', fr: 'Mississippi' },
+  { value: 'MO', en: 'Missouri', es: 'Misuri', fr: 'Missouri' },
+  { value: 'MT', en: 'Montana', es: 'Montana', fr: 'Montana' },
+  { value: 'NE', en: 'Nebraska', es: 'Nebraska', fr: 'Nebraska' },
+  { value: 'NV', en: 'Nevada', es: 'Nevada', fr: 'Nevada' },
+  { value: 'NH', en: 'New Hampshire', es: 'Nuevo Hampshire', fr: 'New Hampshire' },
+  { value: 'NJ', en: 'New Jersey', es: 'Nueva Jersey', fr: 'New Jersey' },
+  { value: 'NM', en: 'New Mexico', es: 'Nuevo México', fr: 'Nouveau-Mexique' },
+  { value: 'NY', en: 'New York', es: 'Nueva York', fr: 'New York' },
+  { value: 'NC', en: 'North Carolina', es: 'Carolina del Norte', fr: 'Caroline du Nord' },
+  { value: 'ND', en: 'North Dakota', es: 'Dakota del Norte', fr: 'Dakota du Nord' },
+  { value: 'OH', en: 'Ohio', es: 'Ohio', fr: 'Ohio' },
+  { value: 'OK', en: 'Oklahoma', es: 'Oklahoma', fr: 'Oklahoma' },
+  { value: 'OR', en: 'Oregon', es: 'Oregón', fr: 'Oregon' },
+  { value: 'PA', en: 'Pennsylvania', es: 'Pensilvania', fr: 'Pennsylvanie' },
+  { value: 'RI', en: 'Rhode Island', es: 'Rhode Island', fr: 'Rhode Island' },
+  { value: 'SC', en: 'South Carolina', es: 'Carolina del Sur', fr: 'Caroline du Sud' },
+  { value: 'SD', en: 'South Dakota', es: 'Dakota del Sur', fr: 'Dakota du Sud' },
+  { value: 'TN', en: 'Tennessee', es: 'Tennessee', fr: 'Tennessee' },
+  { value: 'TX', en: 'Texas', es: 'Texas', fr: 'Texas' },
+  { value: 'UT', en: 'Utah', es: 'Utah', fr: 'Utah' },
+  { value: 'VT', en: 'Vermont', es: 'Vermont', fr: 'Vermont' },
+  { value: 'VA', en: 'Virginia', es: 'Virginia', fr: 'Virginie' },
+  { value: 'WA', en: 'Washington', es: 'Washington', fr: 'Washington' },
+  { value: 'WV', en: 'West Virginia', es: 'Virginia Occidental', fr: 'Virginie-Occidentale' },
+  { value: 'WI', en: 'Wisconsin', es: 'Wisconsin', fr: 'Wisconsin' },
+  { value: 'WY', en: 'Wyoming', es: 'Wyoming', fr: 'Wyoming' },
+];
+
+export function regionsForCurrency(currency: 'CAD' | 'USD'): Region[] {
+  return currency === 'CAD' ? [...CANADIAN_REGIONS, ...US_REGIONS] : [...US_REGIONS, ...CANADIAN_REGIONS];
+}
