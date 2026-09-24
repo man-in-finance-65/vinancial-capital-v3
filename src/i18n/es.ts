@@ -36,11 +36,11 @@ export const es: Dict = {
   },
   hero: {
     industries: {
-      construction: { eyebrow: 'CONSTRUCCIÓN', word: 'excavadora' },
-      trucking: { eyebrow: 'TRANSPORTE', word: 'unidad' },
-      restaurant: { eyebrow: 'RESTAURANTES', word: 'estufa' },
+      construction: { eyebrow: 'CONSTRUCCIÓN', word: 'próxima excavadora' },
+      trucking: { eyebrow: 'TRANSPORTE', word: 'próximo camión', sky: 'financiado bien.' },
+      restaurant: { eyebrow: 'RESTAURANTES', word: 'próxima estufa' },
     },
-    headlineTemplate: 'Tu próxima {word},',
+    headlineTemplate: 'Tu {word},',
     headlineSky: 'financiada bien.',
     subtext: 'Ayudamos a negocios de dueños latinos en Canadá y Estados Unidos a financiar el equipo que los mantiene funcionando.',
     ctaApply: 'Empezar',
@@ -157,6 +157,7 @@ export const es: Dict = {
       'Debes perder el sueño por cuidar a tus empleados y cuidar a tus clientes. No por el dinero. Nosotros te ayudamos con la parte del dinero.',
     applyCta: 'Empezar',
     founderPhotoAlt: 'Vicente de niño, en brazos de su papá, junto al equipo que su papá manejaba.',
+    founderPhotoPlace: 'Pastas Carabobo – Zona Industrial La Quizanda, Valencia, Venezuela (2004)',
     founderCtaLabel: 'Más sobre el fundador, Vicente',
     founderParagraphs: [
       'El papá de Vicente era ingeniero eléctrico en P&G, después manejó una fábrica de pasta llamada Pasta Carabobo, crió ganado y abrió una carnicería llamada ToroGordo.',

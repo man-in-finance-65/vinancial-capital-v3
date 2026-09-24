@@ -61,7 +61,10 @@ export function About({ openForm }: { openForm: (initial?: Partial<ApplicationDa
                   {i === 0 && (
                     <figure className="mx-auto my-2 w-full max-w-md -rotate-1 rounded-card border border-border bg-surface p-2 shadow-lg shadow-black/40 transition-transform duration-500 hover:rotate-0">
                       <img src="/images/vicente-y-su-papa.webp" alt={s.founderPhotoAlt} width={1424} height={1068} className="h-auto w-full rounded-md" />
-                      <figcaption className="mt-2 px-1 text-[11px] italic leading-snug text-muted/80">{s.founderPhotoAlt}</figcaption>
+                      <figcaption className="mt-2 px-1 text-[11px] italic leading-snug text-muted/80">
+                        {s.founderPhotoAlt}
+                        <span className="mt-0.5 block">{s.founderPhotoPlace}</span>
+                      </figcaption>
                     </figure>
                   )}
                 </Fragment>

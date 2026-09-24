@@ -37,7 +37,7 @@ export const fr: Dict = {
   hero: {
     industries: {
       construction: { eyebrow: 'CONSTRUCTION', word: 'excavatrice' },
-      trucking: { eyebrow: 'CAMIONNAGE', word: 'unité' },
+      trucking: { eyebrow: 'CAMIONNAGE', word: 'unité', sky: 'bien financée.' },
       restaurant: { eyebrow: 'RESTAURANTS', word: 'cuisinière' },
     },
     headlineTemplate: 'Votre prochaine {word},',
@@ -157,6 +157,7 @@ export const fr: Dict = {
       "Vous devriez perdre le sommeil à prendre soin de vos employés et à prendre soin de vos clients. Pas à cause de l'argent. Nous nous occupons de la partie argent.",
     applyCta: 'Commencer',
     founderPhotoAlt: 'Vicente enfant, dans les bras de son père, à côté de l’équipement que son père gérait.',
+    founderPhotoPlace: 'Pastas Carabobo – Zona Industrial La Quizanda, Valencia, Venezuela (2004)',
     founderCtaLabel: 'En savoir plus sur le fondateur, Vicente',
     founderParagraphs: [
       "Le père de Vicente était ingénieur électricien chez P&G, puis a dirigé une usine de pâtes appelée Pasta Carabobo, élevé du bétail et ouvert une boucherie appelée ToroGordo.",

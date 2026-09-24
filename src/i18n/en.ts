@@ -37,7 +37,7 @@ export const en: Dict = {
   hero: {
     industries: {
       construction: { eyebrow: 'CONSTRUCTION', word: 'excavator' },
-      trucking: { eyebrow: 'TRUCKING', word: 'truck' },
+      trucking: { eyebrow: 'TRUCKING', word: 'truck', sky: 'Financed right.' },
       restaurant: { eyebrow: 'RESTAURANTS', word: 'oven' },
     },
     headlineTemplate: 'Your next {word},',
@@ -157,6 +157,7 @@ export const en: Dict = {
       'You should lose sleep over taking care of your employees and taking care of your clients. Not over money. We help with the money part.',
     applyCta: 'Get started',
     founderPhotoAlt: 'Young Vicente, held by his dad, next to the equipment his dad ran.',
+    founderPhotoPlace: 'Pastas Carabobo – Zona Industrial La Quizanda, Valencia, Venezuela (2004)',
     founderCtaLabel: 'More about the founder, Vicente',
     founderParagraphs: [
       "Vicente's dad was an electrical engineer at P&G, then ran a pasta factory called Pasta Carabobo, raised cattle, and opened a butcher shop called ToroGordo.",
