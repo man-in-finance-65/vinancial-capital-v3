@@ -161,9 +161,12 @@ export function ApplicationForm({
                     )}
                   </div>
                 ) : (
-                  <Button variant="primary" icon onClick={form.goNext}>
-                    {dict.form.next}
-                  </Button>
+                  <div className="flex flex-col items-end gap-2">
+                    {Object.keys(form.errors).length > 0 && <p className="text-sm text-destructive">{dict.form.errors.answer_all}</p>}
+                    <Button variant="primary" icon onClick={form.goNext}>
+                      {dict.form.next}
+                    </Button>
+                  </div>
                 ))}
             </div>
           </div>

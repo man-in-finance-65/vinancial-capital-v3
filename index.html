@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,18 +20,7 @@
 <script>
   (function () {
     try {
-      var SUPPORTED = ['es', 'fr', 'en'];
-      var langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en']);
-      var chosen = 'en';
-      outer: for (var i = 0; i < langs.length; i++) {
-        var code = (langs[i] || '').toLowerCase().split('-')[0];
-        for (var j = 0; j < SUPPORTED.length; j++) {
-          if (code === SUPPORTED[j]) {
-            chosen = SUPPORTED[j];
-            break outer;
-          }
-        }
-      }
+      var chosen = 'es'; // Site is always Spanish; visitors can use Google Translate for other languages.
 
       var CA_ZONES = [
         'America/Toronto', 'America/Montreal', 'America/Vancouver', 'America/Edmonton',

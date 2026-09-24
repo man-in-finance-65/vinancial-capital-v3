@@ -154,7 +154,7 @@ export const es: Dict = {
     coreBelief:
       'Debes perder el sueño por cuidar a tus empleados y cuidar a tus clientes. No por el dinero. Nosotros te ayudamos con la parte del dinero.',
     applyCta: 'Empezar',
-    founderPhotoAlt: 'Vicente E. Correa E., fundador de Vinancial Capital',
+    founderPhotoAlt: 'Vicente de niño, en brazos de su papá, junto al equipo que su papá manejaba.',
     founderHeading: 'Por qué Vicente construyó Vinancial Capital',
     founderCtaLabel: 'Más sobre el fundador, Vicente',
     founderParagraphs: [
@@ -265,7 +265,9 @@ export const es: Dict = {
         },
         comercio_internacional: { label: 'Comprar o vender con otros países', sub: 'Financiamiento de comercio / importación-exportación / cambio de moneda' },
         no_seguro: { label: 'No estoy seguro. Quiero hablar con alguien.', sub: '' },
+        otro: { label: 'Otro', sub: '' },
       },
+      otroPlaceholder: 'Cuéntanos qué necesitas.',
     },
     step3: {
       situacionLabel: 'Cuéntanos un poco de tu situación.',
@@ -280,7 +282,7 @@ export const es: Dict = {
       provinciaLabel: 'Provincia o estado',
       industriaLabel: 'Industria',
       sitioWebLabel: 'Sitio web',
-      sitioWebPlaceholder: 'Déjalo vacío si no tienes uno',
+      sitioWebPlaceholder: 'Si no tienes uno, escribe "no tengo"',
       tipoNegocioLabel: 'Tipo de negocio',
       tipoNegocioOptions: {
         propietario_unico: 'Solo yo (propietario único)',
@@ -329,6 +331,7 @@ export const es: Dict = {
       invalid_email: 'Escribe un correo válido.',
       invalid_value: 'Elige una de las opciones.',
       too_long: 'Esto es demasiado largo.',
+      answer_all: 'Responde todas las preguntas para continuar.',
     },
     networkError: {
       title: 'Algo salió mal. Tus respuestas están guardadas. Intenta de nuevo, o mándanos un WhatsApp.',

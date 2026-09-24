@@ -72,7 +72,7 @@ Until real models are added, the hero falls back to the poster image for that in
 
 ## Language and currency detection
 
-- No language switcher exists on purpose (a previous toggle confused Google Translate). Language is auto-detected once, from `navigator.languages`, matched against `es`/`fr`/`en` — first match wins, otherwise English. This happens in an inline script in `index.html` before first paint, so `<html lang>` always matches the visible text.
+- No language switcher exists on purpose (a previous toggle confused Google Translate). The site is always shown in Spanish (set in an inline script in `index.html`); visitors who want another language use Google Translate. The English and French copy in `src/i18n/` is kept but not used. This runs before first paint, so `<html lang>` always matches the visible text.
 - Currency (CAD vs USD) is auto-detected from the visitor's locale region or timezone — see `src/lib/currency.ts`.
 
 ## Testing notes
@@ -86,8 +86,26 @@ Until real models are added, the hero falls back to the poster image for that in
 This repo only contains the frontend. The following changes need to be made to the separately-deployed Apps Script backend:
 
 1. **Confirm the `FIELDS` list still matches** `src/lib/application.ts`'s `FIELDS` export exactly:
-   `tipo_financiamiento, servicio_financiero, situacion, monto_solicitado, urgencia, empresa, provincia_estado, industria, sitio_web, tipo_negocio, tiempo_operando, ingresos_anuales, vivienda, codeudor, puntaje_credito, historial_legal, nombre, apellido, correo, telefono, consentimiento` — plus `idioma`, `pagina`, and `website` (honeypot — reject the submission if this arrives non-empty; a real visitor never fills it in, only bots that fill in every field do).
-2. **CORS:** the frontend POSTs with `Content-Type: text/plain;charset=utf-8` specifically to avoid a CORS preflight (which Apps Script can't answer), so the body arrives as a JSON string in `e.postData.contents` — make sure `doPost` parses it that way rather than expecting `e.parameter`.
+   `tipo_financiamiento, servicio_financiero, servicio_otro, situacion, monto_solicitado, urgencia, empresa, provincia_estado, industria, sitio_web, tipo_negocio, tiempo_operando, ingresos_anuales, vivienda, codeudor, puntaje_credito, historial_legal, nombre, apellido, correo, telefono, consentimiento` — plus `idioma`, `pagina`, and `website` (honeypot — reject the submission if this arrives non-empty; a real visitor never fills it in, only bots that fill in every field do).
+   Also add `otro` to the allowed `servicio_financiero` values (it maps to `tipo_financiamiento = equipo`), and accept `servicio_otro` (free text, max 500 chars, only filled when `servicio_financiero` is `otro`). Every field is now required on the frontend.
+2. **Confirmation email to the applicant.** In `doPost`, right after the row is saved, add:
+
+   ```js
+   MailApp.sendEmail({
+     to: data.correo,
+     name: 'Vinancial Capital',
+     replyTo: 'support@vinancialcapital.com',
+     subject: 'Recibimos tu solicitud – Vinancial Capital',
+     body:
+       'Hola ' + data.nombre + ',\n\n' +
+       'Gracias por escribirnos. Recibimos tu solicitud (número ' + id + ') y la estamos revisando.\n' +
+       'Te contactamos en 1 día hábil. Si tienes preguntas, responde a este correo o escríbenos por WhatsApp: https://wa.me/14374296575\n\n' +
+       'Vicente Correa\nVinancial Capital',
+   });
+   ```
+
+   (`data` is the parsed JSON body and `id` the application id you already return.) Re-deploy the Web App as a **new version** afterwards, and approve the Gmail permission Apps Script asks for.
+3. **CORS:** the frontend POSTs with `Content-Type: text/plain;charset=utf-8` specifically to avoid a CORS preflight (which Apps Script can't answer), so the body arrives as a JSON string in `e.postData.contents` — make sure `doPost` parses it that way rather than expecting `e.parameter`.
 
 **Note on spam protection:** reCAPTCHA was removed from this build (per request). The only spam guard left is the honeypot field above. That's normally enough to stop simple bots, but if spam becomes a real problem later, reCAPTCHA v3 can be added back on both ends.
 

@@ -1,5 +1,6 @@
 import { useLang } from '../../../i18n';
-import { SERVICIO_FINANCIERO_VALUES, type ApplicationData } from '../../../lib/application';
+import { MAX_LENGTHS, SERVICIO_FINANCIERO_VALUES, type ApplicationData } from '../../../lib/application';
+import { TextArea } from '../../ui/Field';
 import { OptionCard } from '../../ui/OptionCard';
 
 export function Step2Service({
@@ -8,7 +9,7 @@ export function Step2Service({
   error,
 }: {
   data: ApplicationData;
-  setField: (field: 'servicio_financiero', value: string) => void;
+  setField: (field: 'servicio_financiero' | 'servicio_otro', value: string) => void;
   error?: string;
 }) {
   const { dict } = useLang();
@@ -31,6 +32,16 @@ export function Step2Service({
           );
         })}
       </div>
+      {data.servicio_financiero === 'otro' && (
+        <TextArea
+          id="servicio_otro"
+          className="mt-3"
+          maxLength={MAX_LENGTHS.servicio_otro}
+          placeholder={s.otroPlaceholder}
+          value={data.servicio_otro}
+          onChange={(e) => setField('servicio_otro', e.target.value)}
+        />
+      )}
       {error && (
         <p className="mt-3 text-sm text-destructive" role="alert">
           {error}

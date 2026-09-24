@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Fragment, useEffect } from 'react';
 import { useLang } from '../i18n';
 import type { ApplicationData } from '../lib/application';
 import { SITE } from '../config/site';
@@ -22,10 +22,6 @@ export function About({ openForm }: { openForm: (initial?: Partial<ApplicationDa
           <h1 className="font-slab text-4xl font-semibold text-foreground md:text-5xl">{s.heading}</h1>
           {s.subheading && <p className="mt-3 text-lg text-muted">{s.subheading}</p>}
         </Reveal>
-
-        <div className="mt-10 aspect-[4/3] w-full max-w-xs overflow-hidden rounded-card border border-border bg-panel">
-          <img src="/images/vicente.webp" alt={s.founderPhotoAlt} className="h-full w-full object-cover" onError={(e) => ((e.target as HTMLImageElement).style.opacity = '0')} />
-        </div>
 
         <Reveal delayMs={100}>
           <div className="mt-10 flex flex-col gap-5">
@@ -61,9 +57,15 @@ export function About({ openForm }: { openForm: (initial?: Partial<ApplicationDa
             <Disclosure label={s.founderCtaLabel}>
               <h2 className="font-slab text-lg font-semibold text-foreground">{s.founderHeading}</h2>
               {s.founderParagraphs.map((p, i) => (
-                <p key={i} className="text-sm leading-relaxed text-muted md:text-base">
-                  {p}
-                </p>
+                <Fragment key={i}>
+                  <p className="text-sm leading-relaxed text-muted md:text-base">{p}</p>
+                  {i === 0 && (
+                    <figure className="mx-auto my-2 w-full max-w-md -rotate-1 rounded-card border border-border bg-surface p-2 shadow-lg shadow-black/40 transition-transform duration-500 hover:rotate-0">
+                      <img src="/images/vicente-y-su-papa.webp" alt={s.founderPhotoAlt} width={1424} height={1068} className="h-auto w-full rounded-md" />
+                      <figcaption className="mt-2 px-1 text-[11px] italic leading-snug text-muted/80">{s.founderPhotoAlt}</figcaption>
+                    </figure>
+                  )}
+                </Fragment>
               ))}
             </Disclosure>
           </div>

@@ -154,7 +154,7 @@ export const en: Dict = {
     coreBelief:
       'You should lose sleep over taking care of your employees and taking care of your clients. Not over money. We help with the money part.',
     applyCta: 'Get started',
-    founderPhotoAlt: 'Vicente E. Correa E., founder of Vinancial Capital',
+    founderPhotoAlt: 'Young Vicente, held by his dad, next to the equipment his dad ran.',
     founderHeading: 'Why Vicente Built Vinancial Capital',
     founderCtaLabel: 'More about the founder, Vicente',
     founderParagraphs: [
@@ -265,7 +265,9 @@ export const en: Dict = {
         },
         comercio_internacional: { label: 'Buy or sell with other countries', sub: 'Trade finance / import-export / FX' },
         no_seguro: { label: 'Not sure. I want to talk to someone.', sub: '' },
+        otro: { label: 'Other', sub: '' },
       },
+      otroPlaceholder: 'Tell us what you need.',
     },
     step3: {
       situacionLabel: 'Tell us a little about your situation.',
@@ -280,7 +282,7 @@ export const en: Dict = {
       provinciaLabel: 'Province or state',
       industriaLabel: 'Industry',
       sitioWebLabel: 'Website',
-      sitioWebPlaceholder: "Leave empty if you don't have one",
+      sitioWebPlaceholder: "If you don't have one, type \"none\"",
       tipoNegocioLabel: 'Type of business',
       tipoNegocioOptions: {
         propietario_unico: 'Just me (sole proprietor)',
@@ -329,6 +331,7 @@ export const en: Dict = {
       invalid_email: 'Please enter a real email.',
       invalid_value: 'Please pick one of the options.',
       too_long: 'This is too long.',
+      answer_all: 'Answer every question to continue.',
     },
     networkError: {
       title: 'Something went wrong. Your answers are saved. Try again, or send us a WhatsApp.',

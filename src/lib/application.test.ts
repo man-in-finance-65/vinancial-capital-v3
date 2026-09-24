@@ -6,6 +6,7 @@ describe('FIELDS', () => {
     expect(FIELDS).toEqual([
       'tipo_financiamiento',
       'servicio_financiero',
+      'servicio_otro',
       'situacion',
       'monto_solicitado',
       'urgencia',
@@ -59,17 +60,35 @@ describe('validateApplication', () => {
     expect(errors.consentimiento).toBe('required');
   });
 
-  it('passes with a minimal valid submission', () => {
+  it('passes when every question is answered', () => {
     const data = {
       ...emptyApplicationData(),
+      tipo_financiamiento: 'equipo',
+      servicio_financiero: 'prestamo_equipo',
+      situacion: 'Necesito un camión',
+      monto_solicitado: '50000',
+      urgencia: 'esta_semana',
+      empresa: 'Ana Trucking',
+      provincia_estado: 'ON',
+      industria: 'transporte',
+      sitio_web: 'no tengo',
+      tipo_negocio: 'llc',
+      tiempo_operando: '3 años',
+      ingresos_anuales: '200000',
+      vivienda: 'rentando',
+      codeudor: 'no',
+      puntaje_credito: '650_700',
+      historial_legal: 'no',
       nombre: 'Ana',
       apellido: 'Gómez',
       correo: 'ana@example.com',
-      servicio_financiero: 'prestamo_equipo',
+      telefono: '+14165550000',
       consentimiento: 'si',
     };
-    const errors = validateApplication(data);
-    expect(errors).toEqual({});
+    expect(validateApplication(data)).toEqual({});
+    expect(validateApplication({ ...data, sitio_web: '' }).sitio_web).toBe('required');
+    expect(validateApplication({ ...data, servicio_financiero: 'otro' }).servicio_otro).toBe('required');
+    expect(validateApplication({ ...data, servicio_financiero: 'otro', servicio_otro: 'Un horno' })).toEqual({});
   });
 
   it('rejects an invalid choice value', () => {

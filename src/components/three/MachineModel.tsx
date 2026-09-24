@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { useGLTF } from '@react-three/drei';
+import { Center, useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 import { logGLTFNodeNames, type MachineConfig } from '../../config/machines';
 
@@ -119,12 +119,16 @@ export function MachineModel({
 
   return (
     <group ref={groupRef} scale={config.scale}>
-      <primitive
-        object={scene}
-        onPointerMove={handlePointerMove}
-        onPointerOut={handlePointerOut}
-        onPointerDown={handlePointerDown}
-      />
+      {/* The models are Z-up; rotate to three.js's Y-up and center them. */}
+      <Center>
+        <primitive
+          object={scene}
+          rotation={[-Math.PI / 2, 0, 0]}
+          onPointerMove={handlePointerMove}
+          onPointerOut={handlePointerOut}
+          onPointerDown={handlePointerDown}
+        />
+      </Center>
     </group>
   );
 }

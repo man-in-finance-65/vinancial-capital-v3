@@ -173,7 +173,9 @@ export type Dict = {
         financiamiento_activos: { label: string; sub: string };
         comercio_internacional: { label: string; sub: string };
         no_seguro: { label: string; sub: string };
+        otro: { label: string; sub: string };
       };
+      otroPlaceholder: string;
     };
     step3: {
       situacionLabel: string;
@@ -232,6 +234,7 @@ export type Dict = {
       invalid_email: string;
       invalid_value: string;
       too_long: string;
+      answer_all: string;
     };
     networkError: { title: string; retry: string; whatsapp: string };
     success: {

@@ -30,33 +30,23 @@ export const MACHINES: Record<IndustryKey, MachineConfig> = {
     posterPath: '/models/construction.webp',
     cameraPosition: [4, 2.2, 5],
     scale: 1,
-    parts: [
-      { nodeName: 'TODO_track_left', motion: { kind: 'spin', axis: 'x', speed: 2 } },
-      { nodeName: 'TODO_track_right', motion: { kind: 'spin', axis: 'x', speed: 2 } },
-      { nodeName: 'TODO_arm', motion: { kind: 'hinge', axis: 'x', maxAngle: 0.5 } },
-      { nodeName: 'TODO_bucket', motion: { kind: 'hinge', axis: 'x', maxAngle: 0.7 } },
-    ],
+    parts: [],
   },
   trucking: {
     key: 'trucking',
-    modelPath: '/models/semi-truck.glb',
+    modelPath: '/models/truck.glb',
     posterPath: '/models/trucking.webp',
     cameraPosition: [5, 1.6, 5],
     scale: 1,
-    parts: [
-      { nodeName: 'TODO_wheel_front_left', motion: { kind: 'spin', axis: 'x', speed: 2 } },
-      { nodeName: 'TODO_wheel_front_right', motion: { kind: 'spin', axis: 'x', speed: 2 } },
-      { nodeName: 'TODO_wheel_rear_left', motion: { kind: 'spin', axis: 'x', speed: 2 } },
-      { nodeName: 'TODO_wheel_rear_right', motion: { kind: 'spin', axis: 'x', speed: 2 } },
-    ],
+    parts: [],
   },
   restaurant: {
     key: 'restaurant',
-    modelPath: '/models/oven.glb',
+    modelPath: '/models/walk-in-fridge.glb',
     posterPath: '/models/restaurant.webp',
     cameraPosition: [5, 1.8, 5],
     scale: 1,
-    parts: [{ nodeName: 'TODO_door', motion: { kind: 'hinge', axis: 'x', maxAngle: 1.1 } }],
+    parts: [],
   },
 };
 

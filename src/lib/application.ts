@@ -4,6 +4,7 @@
 export const FIELDS = [
   'tipo_financiamiento',
   'servicio_financiero',
+  'servicio_otro',
   'situacion',
   'monto_solicitado',
   'urgencia',
@@ -38,6 +39,7 @@ export const SERVICIO_FINANCIERO_VALUES = [
   'financiamiento_activos',
   'comercio_internacional',
   'no_seguro',
+  'otro',
 ] as const;
 export type ServicioFinanciero = (typeof SERVICIO_FINANCIERO_VALUES)[number];
 
@@ -66,6 +68,7 @@ const EQUIPO_SERVICES: ServicioFinanciero[] = [
   'financiamiento_reparaciones',
   'financiamiento_activos',
   'no_seguro',
+  'otro',
 ];
 const CAPITAL_TRABAJO_SERVICES: ServicioFinanciero[] = ['factoraje', 'capital_negocio', 'comercio_internacional'];
 
@@ -77,6 +80,7 @@ export function deriveTipoFinanciamiento(servicio: ServicioFinanciero | ''): Tip
 }
 
 export const MAX_LENGTHS: Partial<Record<FieldName, number>> = {
+  servicio_otro: 500,
   situacion: 2000,
   monto_solicitado: 60,
   empresa: 200,
@@ -112,10 +116,12 @@ export type ValidationErrors = Partial<Record<FieldName, string>>;
 export function validateApplication(data: ApplicationData): ValidationErrors {
   const errors: ValidationErrors = {};
 
-  if (!data.nombre.trim()) errors.nombre = 'required';
-  if (!data.apellido.trim()) errors.apellido = 'required';
+  // Every question is required; servicio_otro only when "Otro" is picked.
+  for (const field of FIELDS) {
+    if (field !== 'tipo_financiamiento' && field !== 'servicio_otro' && !data[field].trim()) errors[field] = 'required';
+  }
+  if (data.servicio_financiero === 'otro' && !data.servicio_otro.trim()) errors.servicio_otro = 'required';
   if (!data.correo.trim() || !EMAIL_RE.test(data.correo.trim())) errors.correo = 'invalid_email';
-  if (!data.servicio_financiero) errors.servicio_financiero = 'required';
   if (data.servicio_financiero && !SERVICIO_FINANCIERO_VALUES.includes(data.servicio_financiero as ServicioFinanciero)) {
     errors.servicio_financiero = 'invalid_value';
   }
@@ -147,7 +153,7 @@ export function hasErrors(errors: ValidationErrors): boolean {
 
 export const STEP_FIELDS: FieldName[][] = [
   [],
-  ['servicio_financiero'],
+  ['servicio_financiero', 'servicio_otro'],
   ['situacion', 'monto_solicitado', 'urgencia'],
   ['empresa', 'provincia_estado', 'industria', 'sitio_web', 'tipo_negocio', 'tiempo_operando', 'ingresos_anuales'],
   ['vivienda', 'codeudor', 'puntaje_credito', 'historial_legal'],
